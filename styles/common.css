@@ -1,0 +1,45 @@
+html {
+  font-size: 10px;
+  color: #fff;
+  font-family: Calibri, "PT Sans", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.title-font {
+  font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+.title {
+  font-size: 4.2rem;
+}
+
+h2,
+.keywords,
+.big-hint {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4,
+label,
+p,
+a,
+i {
+  font-size: 1.4rem;
+}
+
+h5,
+span {
+  font-size: 1.2rem;
+}
+
+.tiny-font {
+  font-size: 1.1rem;
+}
+
+.section {
+  background-color: #151b4e;
+}
