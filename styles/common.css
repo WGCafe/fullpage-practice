@@ -4,6 +4,10 @@ html {
   font-family: Calibri, "PT Sans", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 }
 
+#fp-nav ul li .fp-tooltip,
+.section h1,
+.section h2,
+.section h3,
 .title-font {
   font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -36,6 +40,17 @@ span {
   font-size: 1.2rem;
 }
 
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  border: 0;
+  background-color: #f5426c;
+  font-weight: bold;
+}
+
 .tiny-font {
   font-size: 1.1rem;
 }
@@ -43,3 +58,39 @@ span {
 .section {
   background-color: #151b4e;
 }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.em-text {
+  color: #f5426c;
+}
+
+/* Overwrite fullpage.js */
+.fp-slidesNav ul li:hover a span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+#fp-nav ul li a span {
+  margin: -5px 0 0 -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span {
+  opacity: 1;
+}
+
+#fp-nav ul li .fp-tooltip {
+  font-size: 12px;
+}
+/* end of Overwrite fullpage.js */
