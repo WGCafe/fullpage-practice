@@ -1,0 +1,128 @@
+.bg-image {
+  display: inline-block;
+}
+
+.bg-image:before {
+  content: "";
+  display: block;
+  width: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.logo:before {
+  padding-top: 144%;
+  background-image: url(../images/logo.png)
+}
+
+.section-1__header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  padding: 30px 0;
+  width: 80px;
+
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+.section-1__header-logo:before {
+  padding-top: 140%;
+  background-image: url(../images/1-header-logo.png);
+}
+
+.section-1__title {
+  display: inline-block;
+  width: 500px;
+}
+
+.section-1__title:before {
+  padding-top: 21.5%;
+  background-image: url(../images/1-populstay.png);
+}
+
+.section-1__link-website {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+}
+
+.section-1__link-website:before {
+  background-image: url(../images/1-web.png);
+}
+
+.icon {
+  display: inline-block;
+  width: 26px;
+}
+
+.icon:before,
+.section-1__link-website:before {
+  padding-top: 100%;
+}
+
+.icon__facebook:before {
+  background-image: url(../images/facebook.png);
+}
+
+.icon__youtube:before {
+  background-image: url(../images/youtube.png);
+}
+
+.icon__ins:before {
+  background-image: url(../images/ins.png);
+}
+
+.icon__telegram:before {
+  background-image: url(../images/telegram.png);
+}
+
+.icon__twitter:before {
+  background-image: url(../images/twitter.png);
+}
+
+.icon__reddit:before {
+  background-image: url(../images/reddit.png);
+}
+
+.icon__wechat:before {
+  background-image: url(../images/wechat.png);
+}
+
+.icon__weibo:before {
+  background-image: url(../images/weibo.png);
+}
+
+.section-1__nomiddleman {
+  width: 80px;
+}
+
+.section-1__nomiddleman:before {
+  padding-top: 62.5%;
+  background-image: url(../images/1-nomiddleman.png);
+}
+
+.section-1__data {
+  width: 80px;
+}
+
+.section-1__data:before {
+  padding-top: 72.5%;
+  background-image: url(../images/1-data.png);
+}
+
+.section-1__organize {
+  width: 94px;
+}
+
+.section-1__organize:before {
+  padding-top: 65.5%;
+  background-image: url(../images/1-organize.png);
+}
+
+.section-1__logo {
+  width: 80px;
+}

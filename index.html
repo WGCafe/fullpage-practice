@@ -11,51 +11,94 @@
 	<link rel="stylesheet" type="text/css" href="./fonts/font.css">
 	<link rel="stylesheet" type="text/css" href="./styles/jquery.fullpage.min.css" />
 	<link rel="stylesheet" type="text/css" href="./styles/common.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/image.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/section.css" />
 
 </head>
 <body>
 	<div id="fullpage">
-		<section class="section active" id="section0">
-			<div>logo</div>
-			<div class="container">
-				<div>title</div>
+		<section class="section" id="section0">
+			<i class="section-1__header-logo bg-image"></i>
+			<div class="section-1 container">
+				<i class="section-1__title bg-image"></i>
+
 				<p>The decentralized booking and autonomous property management platform for vacation rental and home sharing economy.</p>
-				<p>The company is selected as part of Blockchain Business Camp Tokyo, details can be found here.</p>
-				<ul>
-					<li>facebook</li>
-					<li>youtube</li>
-					<li>ins</li>
-					<li>telegram</li>
-					<li>twitter</li>
-					<li>reddit</li>
-					<li>wechat</li>
-					<li>weibo</li>
-				</ul>
-				<button>
-					<i>web</i>
-				 	<span>Visit Populstay demo</span>
-				</button>
-				<ul>
+				<p>The company is selected as part of Blockchain Business Camp Tokyo, details can be found <a href="">here</a>.</p>
+
+				<div class="section-1__social-icon">
+					<ul class="icon-list">
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__facebook bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__youtube bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__ins bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__telegram bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__twitter bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__reddit bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__wechat bg-image"></i></a>
+						</li>
+						<li class="icon-list__item">
+							<a href=""><i class="icon icon__weibo bg-image"></i></a>
+						</li>
+					</ul>
+					<span class="dot-container">
+						<i class="dot"></i>
+						<i class="dot"></i>
+						<i class="dot"></i>
+					</span>
+					<button>
+						<i class="section-1__link-website bg-image"></i>
+						<span>Visit Populstay demo</span>
+					</button>
+				</div>
+
+				<ul class="section-1__benefit-list">
 					<li>
-						<h3>Our Benefit</h3>
+						<h3 class="subtitle">Our Benefit</h3>
+						<hr />
+						<i class="section-1__dot-1 outline-dot"></i>
 					</li>
 					<li>
-						<i></i>
-						<h4 class="title-font">Decentralized Platform</h4>
-						<span>No middleman</span>
+						<i class="section-1__nomiddleman bg-image"></i>
+						<hr />
+						<i class="section-1__dot-2 outline-dot"></i>
+						<div class="section-1__nomiddleman-content text-center">
+							<h4 class="title-font">Decentralized Platform</h4>
+							<span>No middleman</span>
+						</div>
 					</li>
 					<li>
-						<i></i>
-						<h4 class="title-font">Machine Trust</h4>
-						<span>Define by smart contracts</span>
+						<i class="section-1__data bg-image"></i>
+						<hr class="section-1__data-line" />
+						<i class="section-1__dot-3 outline-dot"></i>
+						<div class="section-1__data-content text-center">
+							<h4 class="title-font">Machine Trust</h4>
+							<span>Define by smart contracts</span>
+						</div>
 					</li>
 					<li>
-						<i></i>
-						<h4 class="title-font">Decentralized Autonomous Organization</h4>
-						<span>Operate more efficiently</span>
+						<i class="section-1__organize bg-image"></i>
+						<hr class="section-1__organize-line" />
+						<i class="section-1__dot-4 outline-dot"></i>
+						<i class="section-1__dot-5 outline-dot"></i>
+						<div class="section-1__organize-content text-center">
+							<h4 class="title-font">Decentralized Autonomous Organization</h4>
+							<span>Operate more efficiently</span>
+						</div>
 					</li>
 					<li>
-						<i>logo</i>
+						<i class="section-1__logo logo bg-image"></i>
 					</li>
 				</ul>
 			</div>
@@ -79,46 +122,65 @@
 
 		</section>
 		<section class="section" id="section2">
-			<div>
-				top-point
-			</div>
-			<div class="container">
-				<div>bg-img</div>
-
-				<h2>Product</h2>
-				<p>Popular vacation rental or home sharing platforms were establish trust by being the dependable middleman to connect the owner and guest. Decentralized platform using the Blockchain technology is able connect owner and guest with transparency, fairness and trust with out the need for middlemen and the hefty transaction fees they charge.</p>
-			</div>
-			<div>
-				<h2>Decentralized Platform</h2>
-				<span class="em-text">No middleman</span>
-			</div>
+			<div class="section-2__bg-img bg-image"></div>
+			<div>circle</div>
 			<div>bg-red</div>
+			<div class="top-dot-container">
+				<i class="outline-dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+			</div>
+			<div class="section-2__content-1 container">
+				<h2 class="text-center">Product</h2>
+				<p>Popular vacation rental or home sharing platforms were establish trust by being the dependable middleman to connect the owner and guest. Decentralized platform using the Blockchain technology is able connect owner and guest with transparency, fairness and trust with out the need for middlemen and the hefty transaction fees they charge.</p>
+
+				<div class="section-2__content-2">
+					<h2>Decentralized Platform</h2>
+					<span class="title-font em-text">No middleman</span>
+				</div>
+			</div>
 		</section>
 		<section class="section" id="section3">
+			<div class="section-3__bg-img bg-image"></div>
+			<div>circle</div>
 			<div>red-bg</div>
-			<div>
-				top-point
+			<div class="top-dot-container">
+				<i class="outline-dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
 			</div>
-			<div class="container">
-				<div>bg-img</div>
-
-				<h1 class="em-text">Machine Trust </h1>
-				<h2>Defined by smart contracts</h2>
+			<div class="section-3 container">
+				<h1 class="em-text text-center">Machine Trust </h1>
+				<h2 class="text-center">Defined by smart contracts</h2>
 				<p>Owner and guest payment, guest dispute, additional service fee, property management fee, all these payment things are defined by smart contracts. No manual override, no cash payment for booking. More trust and more efficiency.</p>
 			</div>
-			<div>bg-red</div>
 		</section>
-		<section class="section" id="section4">
-			<div>
-				top-point
+		<section class="section active" id="section4">
+			<div>circle</div>
+			<div>red-bg</div>
+			<div class="top-dot-container">
+				<i class="outline-dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
+				<i class="dot"></i>
 			</div>
 			<div class="container">
-				<h2>Decentralized Autonomous Organization</h2>
-				<h3 class="em-text">Operate more efficiently</h3>
-				<p>Publishing a listing on our platform takes less than 10 minutes, but operating a listing takes efforts. To make it hassle free we integrate third party qualified service provider like cleaning, key exchange, professional photo shooting, interior design and dynamic pricing service to work for you, in an decentralized and autonomous way.</p>
-			</div>
-			<div>
-				robot
+				<div>
+					<h2>Decentralized <br />Autonomous </br/>Organization</h2>
+					<h3 class="em-text">Operate more efficiently</h3>
+					<p>Publishing a listing on our platform takes less than 10 minutes, but operating a listing takes efforts. To make it hassle free we integrate third party qualified service provider like cleaning, key exchange, professional photo shooting, interior design and dynamic pricing service to work for you, in an decentralized and autonomous way.</p>
+				</div>
+				<div>
+					robot
+				</div>
 			</div>
 		</section>
 		<section class="section" id="section5">
