@@ -103,8 +103,12 @@
 				</ul>
 			</div>
 		</section>
-		<section class="section active" id="section1">
-			<div class="bg-image"></div>
+		<section class="section" id="section1">
+			<div class="section-1__bg-image bg-image"></div>
+			<div class="section-1__bg-points"></div>
+			<div class="section-1__people-container container">
+				<img class="section-1__people" src="./images/2-people.png" alt="">
+			</div>
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -115,24 +119,23 @@
 				<i class="dot"></i>
 				<i class="dot"></i>
 			</div>
-			<div class="container">
-
-				<div>avatar</div>
-				<div>points</div>
-
-				<h2>Our Story</h2>
+			<h2 class="section-1__title text-center">Our Story</h2>
+			<div class="section-1__content container">
 				<h3 class="em-text">Get to konw Us</h3>
 				<p>The founder Walter Wang Yue is a veteran property management guru for the shared economy. He was an Airbnb host with over 200 reviews since 2013. He had hosted more than 500 guests from 100 cities, making friends from all over the world. To solve the issues of check-in,</p>
 				<p>he successfully co-founded the smart lock company called igloohome.
 					Now he is re-inventing the vacation rental and home sharing business using BlockChain. Meanwhile, he is an avid runner and has participated in marathons and a ukulele lover.</p>
-				<i></i>
+
+				<a href="">
+					<i></i>
+				</a>
 			</div>
 
 		</section>
 		<section class="section" id="section2">
 			<div class="section-2__bg-img bg-image"></div>
-			<div>circle</div>
-			<div>bg-red</div>
+			<!-- <div>circle</div>
+			<div>bg-red</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -155,8 +158,8 @@
 		</section>
 		<section class="section" id="section3">
 			<div class="section-3__bg-img bg-image"></div>
-			<div>circle</div>
-			<div>red-bg</div>
+			<!-- <div>circle</div>
+			<div>red-bg</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -172,8 +175,8 @@
 			</div>
 		</section>
 		<section class="section" id="section4">
-			<div>circle</div>
-			<div>red-bg</div>
+			<!-- <div>circle</div>
+			<div>red-bg</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -194,7 +197,7 @@
 			</div>
 		</section>
 		<section class="section" id="section5">
-			<div>red</div>
+			<!-- <div>red</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -299,7 +302,7 @@
 			</div>
 		</section>
 		<section class="section" id="section7">
-			<div>bg-img</div>
+			<!-- <div>bg-img</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -329,7 +332,7 @@
 			</div>
 		</section>
 		<section class="section" id="section8">
-			<div>bg-img</div>
+			<!-- <div>bg-img</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -371,57 +374,82 @@
 				</div>
 			</div>
 		</section>
-		<section class="section" id="section9">
-			<div>bg-img</div>
-			<div class="container">
-				<h2>Road Map</h2>
-				<div>
-					<section>
-						<h3 class="em-text">Q3 - Q4 2018</h3>
-						<ul>
-							<li>Integrate more partnership to make the booking and property management ecosystem complete</li>
-							<li>Continuously testing and debugging  the hardware and software to improve the user experience</li>
-							<li>Testing the scalability of the platform, upgrade the platform if necessary</li>
-						</ul>
-					</section>
-					<section>
-						<h3 class="em-text">Q3 - Q4  2019</h3>
-						<ul>
-							<li>Scale up, localize and replicate the business into Shanghai.</li>
-							<li>Scale up, localize and replicate the business into New York, US.</li>
-							<li>Set up local business entity.</li>
-						</ul>
-					</section>
-				</div>
-				<div>
-					<section>
-						<h3 class="em-text">Q1 - Q2  2018</h3>
-						<ul>
-							<li>Release the white paper version 1.0, English, Japanese and Chinese</li>
-							<li>Private-sale for institutional investors & Sign up partnership with clients</li>
-							<li>Deliver the first demo on public demo day of the Blockchain Tokyo Business Camp (16th March in Tokyo)</li>
-						</ul>
-					</section>
-					<section>
-						<h3 class="em-text">Q1 - Q2 2019</h3>
-						<ul>
-							<li>Continuously testing and debugging the hardware and software to improve the user experience</li>
-							<li>Scale and duplicate the business model in Singapore</li>
-						</ul>
-					</section>
-					<section>
-						<h3 class="em-text">2020</h3>
-						<ul>
-							<li>Scale up, localize and replicate the business into London, UK.</li>
-							<li>Scale up, localize and replicate the business into Paris, France.</li>
-						</ul>
-					</section>
+		<section class="section active" id="section9">
+			<!-- <div>bg-img</div> -->
+			<div class="section-9 container">
+				<div class="row">
+					<div class="col-6 text-right">
+						<section style="margin-top: 80px;">
+							<div>
+								<h3 class="em-text">Q3 - Q4 2018</h3>
+								<i class="dot"></i>
+							</div>
+							<ul style="margin-top: 50px;">
+								<li>Integrate more partnership to make the booking and property management ecosystem complete</li>
+								<li>Continuously testing and debugging  the hardware and software to improve the user experience</li>
+								<li>Testing the scalability of the platform, upgrade the platform if necessary</li>
+							</ul>
+						</section>
+						<section>
+							<div>
+								<h3 class="em-text">Q3 - Q4  2019</h3>
+								<i class="dot"></i>
+							</div>
+							<ul>
+								<li>Scale up, localize and replicate the business into Shanghai.</li>
+								<li>Scale up, localize and replicate the business into New York, US.</li>
+								<li>Set up local business entity.</li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-6">
+						<div class="section-9__road-title">
+							<div class="road-dot-container">
+								<i class="outline-dot"></i>
+							</div>
+							<h2>
+								Road Map
+							</h2>
+						</div>
+
+						<section>
+							<div>
+								<i class="dot"></i>
+								<h3 class="em-text">Q1 - Q2  2018</h3>
+							</div>
+							<ul>
+								<li>Release the white paper version 1.0, English, Japanese and Chinese</li>
+								<li>Private-sale for institutional investors & Sign up partnership with clients</li>
+								<li>Deliver the first demo on public demo day of the Blockchain Tokyo Business Camp (16th March in Tokyo)</li>
+							</ul>
+						</section>
+						<section>
+							<div>
+								<i class="dot"></i>
+								<h3 class="em-text">Q1 - Q2 2019</h3>
+							</div>
+							<ul>
+								<li>Continuously testing and debugging the hardware and software to improve the user experience</li>
+								<li>Scale and duplicate the business model in Singapore</li>
+							</ul>
+						</section>
+						<section style="transform: translateY(62px);">
+							<div>
+								<i class="dot"></i>
+								<h3 class="em-text">2020</h3>
+							</div>
+							<ul>
+								<li>Scale up, localize and replicate the business into London, UK.</li>
+								<li>Scale up, localize and replicate the business into Paris, France.</li>
+							</ul>
+						</section>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section" id="section10">
-			<div>bg-img</div>
-			<div>bg-img</div>
+			<!-- <div>bg-img</div>
+			<div>bg-img</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>
@@ -439,8 +467,8 @@
 			</div>
 		</section>
 		<section class="section" id="section11">
-			<div>bg-red</div>
-			<div>bg-img</div>
+			<!-- <div>bg-red</div>
+			<div>bg-img</div> -->
 			<div class="top-dot-container">
 				<i class="outline-dot"></i>
 				<i class="dot"></i>

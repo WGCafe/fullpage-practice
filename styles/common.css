@@ -172,6 +172,7 @@ button > span {
   -ms-transform: translateX(-50%);
 }
 
+.road-dot-container .outline-dot,
 .top-dot-container .outline-dot {
   margin-bottom: 10px;
   width: 30px;
@@ -180,6 +181,7 @@ button > span {
   border-color: #f5426c;
 }
 
+.road-dot-container .outline-dot:before,
 .top-dot-container .outline-dot:before {
   margin: 6px;
   width: 14px;
