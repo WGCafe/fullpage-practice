@@ -10,12 +10,25 @@
   background-repeat: no-repeat;
 }
 
+.image-icon {
+  display: block;
+}
+
+.image-icon:before {
+  padding-top: 100%;
+}
+
 .logo:before {
   padding-top: 144%;
   background-image: url(../images/logo.png)
 }
 
-.section-1__header-logo {
+.section-0__container .fp-tableCell {
+  background-image: url(../images/1-bg.png);
+  background-size: cover;
+}
+
+.section-0__header-logo {
   position: absolute;
   top: 0;
   left: 50%;
@@ -29,28 +42,28 @@
   -ms-transform: translateX(-50%);
 }
 
-.section-1__header-logo:before {
+.section-0__header-logo:before {
   padding-top: 140%;
   background-image: url(../images/1-header-logo.png);
 }
 
-.section-1__title {
+.section-0__title {
   display: inline-block;
   width: 500px;
 }
 
-.section-1__title:before {
+.section-0__title:before {
   padding-top: 21.5%;
   background-image: url(../images/1-populstay.png);
 }
 
-.section-1__link-website {
+.section-0__link-website {
   vertical-align: middle;
   display: inline-block;
   width: 20px;
 }
 
-.section-1__link-website:before {
+.section-0__link-website:before {
   background-image: url(../images/1-web.png);
 }
 
@@ -60,7 +73,7 @@
 }
 
 .icon:before,
-.section-1__link-website:before {
+.section-0__link-website:before {
   padding-top: 100%;
 }
 
@@ -96,33 +109,166 @@
   background-image: url(../images/weibo.png);
 }
 
-.section-1__nomiddleman {
+
+.section-0__nomiddleman {
   width: 80px;
 }
 
-.section-1__nomiddleman:before {
+.section-0__nomiddleman:before {
   padding-top: 62.5%;
   background-image: url(../images/1-nomiddleman.png);
 }
 
-.section-1__data {
+.section-0__data {
   width: 80px;
 }
 
-.section-1__data:before {
+.section-0__data:before {
   padding-top: 72.5%;
   background-image: url(../images/1-data.png);
 }
 
-.section-1__organize {
+.section-0__organize {
   width: 94px;
 }
 
-.section-1__organize:before {
+.section-0__organize:before {
   padding-top: 65.5%;
   background-image: url(../images/1-organize.png);
 }
 
-.section-1__logo {
+.section-0__logo {
   width: 80px;
+}
+
+
+.section-2__bg-img {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  margin: 115px auto 30px;
+  max-width: 550px;
+  width: 50%;
+
+  transform: translateX(30%);
+  -webkit-transform: translateX(30%);
+  -moz-transform: translateX(30%);
+  -ms-transform: translateX(30%);
+}
+
+.section-2__bg-img:before {
+  padding-top: 91.5%;
+  background-image: url(../images/3-product-bg.png);
+}
+
+
+.section-3__bg-img {
+  position: absolute;
+  top: 25%;
+  left: 56%;
+  max-width: 400px;
+  width: 40%;
+}
+
+.section-3__bg-img:before {
+  padding-top: 63%;
+  background-image: url(../images/4-code-bg.png);
+  background-size: cover;
+}
+
+.section-6__line {
+  margin: auto;
+  width: 480px;
+}
+
+.section-6__line:before {
+  padding-top: 16.5%;
+  background-image: url(../images/7-line.png);
+}
+
+.section-6__list .image-icon {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.section-6__1:before {
+  background-image: url(../images/7-service-1.png);
+}
+
+.section-6__2:before {
+  background-image: url(../images/7-service-2.png);
+}
+
+.section-6__3:before {
+  background-image: url(../images/7-service-3.png);
+}
+
+.section-6__4:before {
+  background-image: url(../images/7-service-4.png);
+}
+
+.section-6__5:before {
+  background-image: url(../images/7-service-5.png);
+}
+
+.section-6__6:before {
+  background-image: url(../images/7-service-6.png);
+}
+
+.section-6__7:before {
+  background-image: url(../images/7-service-7.png);
+}
+
+.section-6__8:before {
+  background-image: url(../images/7-service-8.png);
+}
+
+.section-6__9:before {
+  background-image: url(../images/7-service-9.png);
+}
+
+.section-6__10:before {
+  background-image: url(../images/7-service-10.png);
+}
+
+.section-6__11:before {
+  background-image: url(../images/7-service-11.png);
+}
+
+.section-6__12:before {
+  background-image: url(../images/7-service-12.png);
+}
+
+.section-7 .bg-image {
+  display: block;
+  margin: auto;
+  width: 106px;
+}
+
+.section-7 .bg-image:before {
+  padding-top: 100%;
+  border: 1px solid #f5426c;
+  border-radius: 50%;
+}
+
+.section-7__avatar-1:before {
+  background-image: url(../images/8-avatar-1.png);
+}
+
+.section-7__avatar-2:before {
+  background-image: url(../images/8-avatar-2.png);
+}
+
+.section-7__avatar-3:before {
+  background-image: url(../images/8-avatar-3.png);
+}
+
+.section-12__logo {
+  margin: 10px 0;
+  width: 50%;
+}
+
+.section-12__logo:before {
+  padding-top: 21%;
+  background-image: url(../images/13-populstay.png);
 }

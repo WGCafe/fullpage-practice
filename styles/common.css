@@ -12,7 +12,8 @@ html {
 .section h1,
 .section h2,
 .section h3,
-.title-font {
+.title-font,
+.section-10__button {
   font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -83,8 +84,21 @@ button > span {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .float-right {
   float: right;
+}
+
+.media-top {
+  display: table-cell;
+  vertical-align: top;
 }
 
 .section {
@@ -98,6 +112,11 @@ button > span {
 
 .em-text {
   color: #f5426c;
+}
+
+.robot:before {
+  padding-top: 200%;
+  background-image: url(../images/robot.png);
 }
 
 /* social icon list */
@@ -172,6 +191,28 @@ button > span {
   margin: 5px auto;
 }
 /* end of dot */
+
+/* column */
+.row {
+  display: table;
+  width: 100%;
+}
+
+.col-4 {
+  float: left;
+  width: 33.333333%;
+}
+
+.col-6 {
+  float: left;
+  width: 50%;
+}
+
+.col-8 {
+  float: left;
+  width: 66.666666%;
+}
+/* end of column */
 
 /* Overwrite fullpage.js */
 .fp-slidesNav ul li:hover a span,
