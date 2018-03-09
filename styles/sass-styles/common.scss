@@ -1,0 +1,106 @@
+@import '../sass-files/var';
+@import '../sass-files/color';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: $base-font;
+}
+
+.title {
+  font-family: $title-font;
+
+  &.hint {
+    color: $pink;
+  }
+
+  &__1 {
+    @extend .title;
+
+    font-size: 5.0rem;
+  }
+
+  &__2 {
+    @extend .title;
+
+    font-size: 4.0rem;
+  }
+
+  &__3 {
+    @extend .title;
+
+    font-size: 3.0rem;
+  }
+
+  &__h4 {
+    @extend .title;
+
+    font-size: 2.4rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+label {
+  font-size: 2.0rem;
+}
+
+a,
+p {
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+.section {
+  background-color: $dark-blue;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+/* Overwrite fullpage.js */
+#fp-nav ul li .fp-tooltip {
+  font-family: $title-font;
+}
+
+.fp-slidesNav ul li:hover a span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+#fp-nav ul li a span {
+  margin: -5px 0 0 -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span {
+  opacity: 1;
+}
+
+#fp-nav ul li .fp-tooltip {
+  font-size: 12px;
+}
+/* end of Overwrite fullpage.js */
+
+/* other component */
+@import './position';
+/* end of other component */
