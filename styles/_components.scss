@@ -75,3 +75,58 @@
   }
 }
 /* end of dot */
+
+/* social icon */
+.social {
+  li,
+  a {
+    display: inline-block;
+  }
+
+  &__icon {
+    width: 26px;
+  }
+
+  &__icon:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  &__facebook:before {
+    background-image: url(../images/facebook.png);
+  }
+
+  &__youtube:before {
+    background-image: url(../images/youtube.png);
+  }
+
+  &__ins:before {
+    background-image: url(../images/ins.png);
+  }
+
+  &__telegram:before {
+    background-image: url(../images/telegram.png);
+  }
+
+  &__twitter:before {
+    background-image: url(../images/twitter.png);
+  }
+
+  &__reddit:before {
+    background-image: url(../images/reddit.png);
+  }
+
+  &__wechat:before {
+    background-image: url(../images/wechat.png);
+  }
+
+  &__weibo:before {
+    background-image: url(../images/weibo.png);
+  }
+
+}
+/* end of social icon */
