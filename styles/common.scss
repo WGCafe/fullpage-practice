@@ -10,6 +10,10 @@ html {
   font-family: $base-font;
 }
 
+body {
+  min-width: 1024px;
+}
+
 .title {
   font-family: $title-font;
 
