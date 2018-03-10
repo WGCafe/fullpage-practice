@@ -1,5 +1,4 @@
-@import '../sass-files/var';
-@import '../sass-files/color';
+@import './sass-files/var';
 
 * {
   box-sizing: border-box;
@@ -7,6 +6,7 @@
 
 html {
   font-size: 10px;
+  color: $white;
   font-family: $base-font;
 }
 
@@ -15,6 +15,13 @@ html {
 
   &.hint {
     color: $pink;
+  }
+
+  &.top-title {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    width: 100%;
   }
 
   &__1 {
@@ -53,6 +60,10 @@ label {
   font-size: 2.0rem;
 }
 
+p {
+  line-height: 1.6em;
+}
+
 a,
 p {
   font-size: 1.6rem;
@@ -66,7 +77,7 @@ input,
 textarea {
   padding: 6px 12px;
   border: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 input {
@@ -75,8 +86,13 @@ input {
 }
 
 button {
+  font-size: 1.4rem;
   min-height: 36px;
   background-color: $pink;
+}
+
+.container {
+  max-width: $max-container
 }
 
 .section {
@@ -120,4 +136,9 @@ button {
 
 /* other component */
 @import './position';
+@import './components';
 /* end of other component */
+
+/* page */
+@import './sass-files/section';
+/* end of page */

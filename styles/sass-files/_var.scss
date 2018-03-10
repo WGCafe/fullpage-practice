@@ -1,2 +1,24 @@
 $base-font: Calibri, "PT Sans", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif;
 $title-font: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$max-container: 960px;
+$content-1: 520px;
+$content-2: 600px;
+$content-3: 800px;
+
+$dark-blue: #151b4e;
+$pink: #f5426c;
+$white: #fff;
+
+$vendors: webkit, moz, o, ms, official;
+
+@mixin autoprefixer ($props, $args) {
+	@each $vendor in $vendors {
+		@if $vendor == official {
+			#{$props}: $args;
+		}
+		@else {
+			-#{$vendor}-#{$props}: $args;
+		}
+	}
+}
