@@ -25,6 +25,7 @@
 .s0 {
   &__bg-points {
     background-image: url(../images/1-bg.png);
+    background-position: center 15%;
   }
 
   &__logo {
@@ -278,7 +279,7 @@
   &__people {
     position: absolute;
     right: 0;
-    max-width: 240px;
+    max-width: 228px;
   }
 
   &__content {
@@ -404,8 +405,10 @@
 /* section 4 */
 .s4 {
   &__content {
+    position: relative;
     max-width: $content-3;
     margin: auto;
+    z-index: 1;
 
     h2 {
       margin: 0;
@@ -430,8 +433,10 @@
 /* section 5 */
 .s5 {
   &__content {
+    position: relative;
     max-width: $content-3;
     margin: auto;
+    z-index: 1;
 
     h2,
     h4 {
@@ -483,8 +488,13 @@ $s6-image-path: "../images/7-";
     margin: auto;
     font-weight: lighter;
 
+    h3 {
+      margin-bottom: 10px;
+    }
+
     h4 {
       font-weight: inherit;
+      margin-bottom: 20px;
     }
 
     .col-4 {

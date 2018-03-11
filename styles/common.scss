@@ -26,6 +26,7 @@ body {
     top: 15%;
     text-align: center;
     width: 100%;
+    z-index: 1;
   }
 
   &__1 {
@@ -162,4 +163,5 @@ button {
 
 /* page */
 @import './sass-files/section';
+@import './sass-files/breakpoints';
 /* end of page */
