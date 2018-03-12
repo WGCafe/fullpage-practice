@@ -1,0 +1,167 @@
+@import './sass-files/var';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  color: $white;
+  font-family: $base-font;
+}
+
+body {
+  min-width: 1024px;
+}
+
+.title {
+  font-family: $title-font;
+
+  &.hint {
+    color: $pink;
+  }
+
+  &.top-title {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__1 {
+    @extend .title;
+
+    font-size: 5.0rem;
+  }
+
+  &__2 {
+    @extend .title;
+
+    font-size: 4.0rem;
+  }
+
+  &__3 {
+    @extend .title;
+
+    font-size: 3.0rem;
+  }
+
+  &__4 {
+    @extend .title;
+
+    display: block;
+    font-size: 2.4rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+label {
+  font-size: 2.0rem;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+a,
+p {
+  font-size: 1.6rem;
+}
+
+span {
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+input,
+textarea {
+  padding: 6px 12px;
+  border: 0;
+  font-size: 1.4rem;
+}
+
+input {
+  min-height: 40px;
+  line-height: 28px;
+}
+
+textarea {
+  padding: 12px;
+}
+
+button {
+  font-size: 1.4rem;
+  min-height: 40px;
+  background-color: $pink;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: $max-container
+}
+
+.section {
+  background-color: $dark-blue;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+/* Overwrite fullpage.js */
+#fp-nav ul li .fp-tooltip {
+  font-family: $title-font;
+}
+
+.fp-slidesNav ul li:hover a span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span,
+#fp-nav ul li a span {
+  margin: -5px 0 0 -5px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span,
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span {
+  opacity: 1;
+}
+
+#fp-nav ul li .fp-tooltip {
+  font-size: 12px;
+}
+/* end of Overwrite fullpage.js */
+
+/* other component */
+@import './position';
+@import './components';
+/* end of other component */
+
+/* page */
+@import './sass-files/section';
+@import './sass-files/breakpoints';
+/* end of page */

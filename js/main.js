@@ -6,3 +6,9 @@ $(document).ready(function() {
     navigationTooltips: ['Home page']
   });
 });
+
+(function() {
+  window.onload = function () {
+    $('.loading').addClass('hidden');
+  };
+})()
