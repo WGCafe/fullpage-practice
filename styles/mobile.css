@@ -1,0 +1,12 @@
+body {
+  min-width: 0; }
+
+.s1__bg-image, .s1__bg-points {
+  top: 55%;
+  bottom: 0;
+  min-width: auto;
+  width: 100%; }
+.s1__bg-points {
+  background-image: url(../images/2-bg-point-m.png); }
+
+/*# sourceMappingURL=mobile.css.map */

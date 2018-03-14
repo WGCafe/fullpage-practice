@@ -1,0 +1,17 @@
+body {
+  min-width: 0;
+}
+
+.s1 {
+  &__bg-image,
+  &__bg-points {
+    top: 55%;
+    bottom: 0;
+    min-width: auto;
+    width: 100%;
+  }
+
+  &__bg-points {
+    background-image: url(../images/2-bg-point-m.png);
+  }
+}
