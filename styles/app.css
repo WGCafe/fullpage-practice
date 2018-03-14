@@ -776,14 +776,15 @@ button {
   z-index: 1; }
 .s2__bg-circle {
   position: absolute;
-  top: 40%;
-  left: 25%;
+  top: 50%;
+  left: 40%;
   right: 0;
-  padding-top: 140%;
-  background-image: url(../images/circle-3-4-5.png);
-  background-size: 175% auto;
+  padding-top: 175%;
+  background-image: url(../images/circle-3-4-5.gif);
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  z-index: 1; }
+  z-index: 1;
+  opacity: 0.3; }
 .s2__bg-image {
   top: 40%;
   left: 50%;
@@ -1486,6 +1487,9 @@ button {
     margin-top: -65px; }
 
   /* end of section 9 */ }
+@media (max-width: 1024px) and (orientation: portrait) {
+  body {
+    min-width: 0; } }
 /* end of page */
 
 /*# sourceMappingURL=app.css.map */
