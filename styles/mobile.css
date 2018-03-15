@@ -3,9 +3,6 @@
 body {
   min-width: 0; }
 
-#fp-nav {
-  display: none; }
-
 .top-title.title__2 {
   top: 130px; }
 
@@ -89,6 +86,64 @@ body {
   .title__4 {
     font-size: 1.4rem; }
 
+  .s0__bg-points {
+    background-size: 100% auto;
+    background-position: center top; }
+  .s0__content {
+    text-align: center; }
+    .s0__content div,
+    .s0__content p {
+      margin: auto; }
+    .s0__content p {
+      text-align: left;
+      margin-top: 10px; }
+  .s0__dots {
+    display: none !important; }
+  .s0__benifits li {
+    position: relative;
+    display: block; }
+    .s0__benifits li:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 50px;
+      margin: auto;
+      background-color: #fff; }
+    .s0__benifits li:last-child:after {
+      display: none; }
+    .s0__benifits li hr {
+      display: none; }
+    .s0__benifits li i.outline-dot--s {
+      display: block;
+      top: auto;
+      bottom: 15px;
+      left: 50%;
+      right: auto;
+      margin-left: -10px; }
+    .s0__benifits li:first-child .outline-dot--s {
+      bottom: 30px; }
+    .s0__benifits li.s0__benifit-4 .outline-dot--s {
+      bottom: 0; }
+    .s0__benifits li div, .s0__benifits li.s0__benifits-1,
+    .s0__benifits li .s0__benifit-logo {
+      -webkit-transform: none;
+      -moz-transform: none;
+      -o-transform: none;
+      -ms-transform: none;
+      transform: none; }
+    .s0__benifits li label {
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 1.2rem; }
+    .s0__benifits li span {
+      font-size: 1.1rem; }
+    .s0__benifits li .s0__benifit-logo {
+      margin: 5px 0; }
+  .s0__title {
+    width: 40%; }
+  .s0__nomiddleman, .s0__data, .s0__organize, .s0__benifit-logo {
+    width: 55px; }
+
   .s1__container {
     position: absolute;
     top: auto;
@@ -158,6 +213,37 @@ body {
   .s12__content {
     max-width: 500px; } }
 @media screen and (max-height: 950px) {
+  .s0__logo {
+    margin: 5px 0;
+    width: 35px; }
+  .s0__title {
+    width: 50%; }
+  .s0__content {
+    top: 4%;
+    padding: 0 15px; }
+    .s0__content p,
+    .s0__content p ~ p {
+      width: 75%;
+      margin-top: 0; }
+    .s0__content li i.outline-dot--s {
+      width: 16px;
+      height: 16px;
+      margin-left: -8px; }
+    .s0__content li:first-child .outline-dot--s {
+      bottom: 34px; }
+    .s0__content .social {
+      margin: 10px 0; }
+    .s0__content .outline-dot--s:before {
+      margin: 3px;
+      width: 8px;
+      height: 8px; }
+  .s0__web-link {
+    padding: 3px 10px; }
+  .s0__web-link span {
+    font-size: 1.1rem; }
+  .s0__nomiddleman, .s0__data, .s0__organize, .s0__benifit-logo {
+    width: 40px; }
+
   .s1__bg-image, .s1__bg-points {
     height: 45%; }
   .s1__people {
@@ -194,6 +280,10 @@ body {
     width: 74%; }
     .s3__text p {
       text-align: left; }
+
+  .s4__content img {
+    width: 150%;
+    margin-left: -50%; }
 
   .s6__content {
     padding-left: 15px;
@@ -275,6 +365,17 @@ body {
   .title__2.top-title {
     top: 90px; }
 
+  .s0__content {
+    top: 6%; }
+    .s0__content li i.outline-dot--s {
+      bottom: 8px; }
+    .s0__content li:first-child .outline-dot--s {
+      bottom: 20px; }
+  .s0__benifits {
+    padding: 0; }
+  .s0__benifits li:after {
+    height: 35px; }
+
   .s1__bg-image, .s1__bg-points {
     height: 40%; }
   .s1__container {
@@ -290,6 +391,23 @@ body {
   .s8__content:before {
     padding-top: 130%; } }
 @media screen and (max-height: 700px) {
+  #fp-nav {
+    display: none; }
+
+  .s0__content {
+    top: 3.5%; }
+    .s0__content .title__4 {
+      max-width: 60px; }
+    .s0__content p,
+    .s0__content p ~ p {
+      width: 100%;
+      line-height: 1.4em; }
+    .s0__content .social a {
+      width: 20px;
+      height: 20px; }
+  .s0__nomiddleman, .s0__data, .s0__organize, .s0__benifit-logo {
+    width: 35px; }
+
   .s1__content {
     padding: 0; }
     .s1__content .title__3 {
@@ -313,6 +431,18 @@ body {
 
   .title__2.top-title {
     top: 20px; }
+
+  .s0__title {
+    display: none; }
+  .s0__content li i.outline-dot--s,
+  .s0__content li:first-child .outline-dot--s {
+    bottom: 5px; }
+  .s0__benifits li:after {
+    height: 20px; }
+  .s0__benifits li label {
+    font-size: 1.1rem; }
+  .s0__benifits li span {
+    font-size: 1rem; }
 
   .s1__bg-image, .s1__bg-points {
     height: 50%; }
@@ -349,5 +479,13 @@ body {
 
   .s13__list img {
     height: 15px; } }
+@media screen and (max-width: 767px) {
+  .s9 {
+    display: none; }
+
+  .road-map-m {
+    display: block;
+    width: 95%;
+    margin: auto; } }
 
 /*# sourceMappingURL=mobile.css.map */

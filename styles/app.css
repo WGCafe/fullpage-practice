@@ -11,7 +11,8 @@ html {
 body {
   min-width: 1024px; }
 
-.m-display {
+.m-display,
+.road-map-m {
   display: none; }
 
 .title, .title__1, .title__2, .title__3, .title__4 {

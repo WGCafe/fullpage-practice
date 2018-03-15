@@ -4,10 +4,6 @@ body {
   min-width: 0;
 }
 
-#fp-nav {
-  display: none;
-}
-
 .top-title.title__2 {
   top: 130px;
 }
@@ -133,6 +129,101 @@ body {
     }
   }
 
+  .s0 {
+    &__bg-points {
+      background-size: 100% auto;
+      background-position: center top;
+    }
+
+    &__content {
+      text-align: center;
+
+      div,
+      p {
+        margin: auto;
+      }
+
+      p {
+        text-align: left;
+        margin-top: 10px;
+      }
+    }
+
+    &__dots {
+      display: none !important;
+    }
+
+    &__benifits li {
+      position: relative;
+      display: block;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 50px;
+        margin: auto;
+        background-color: $white;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
+      hr {
+        display: none;
+      }
+
+      i.outline-dot--s {
+        display: block;
+        top: auto;
+        bottom: 15px;
+        left: 50%;
+        right: auto;
+        margin-left: -10px;
+      }
+
+      &:first-child .outline-dot--s {
+        bottom: 30px;
+      }
+
+      &.s0__benifit-4 .outline-dot--s {
+        bottom: 0;
+      }
+
+      div,
+      &.s0__benifits-1,
+      .s0__benifit-logo {
+        @include autoprefixer("transform", none);
+      }
+
+      label {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+      }
+
+      span {
+        font-size: 1.1rem;
+      }
+
+      .s0__benifit-logo {
+        margin: 5px 0;
+      }
+    }
+
+    &__title {
+      width: 40%;
+    }
+
+    &__nomiddleman,
+    &__data,
+    &__organize,
+    &__benifit-logo {
+      width: 55px;
+    }
+  }
+
   .s1 {
     &__container {
       position: absolute;
@@ -231,6 +322,63 @@ body {
 }
 
 @media screen and (max-height: 950px) {
+  .s0 {
+    &__logo {
+      margin: 5px 0;
+      width: 35px;
+    }
+
+    &__title {
+      width: 50%;
+    }
+
+    &__content {
+      top: 4%;
+      padding: 0 15px;
+
+      p,
+      p ~ p {
+        width: 75%;
+        margin-top: 0;
+      }
+
+      li i.outline-dot--s {
+        width: 16px;
+        height: 16px;
+        margin-left: -8px;
+      }
+
+      li:first-child .outline-dot--s {
+        bottom: 34px;
+      }
+
+      .social {
+        margin: 10px 0;
+      }
+
+      .outline-dot--s:before {
+        margin: 3px;
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    &__web-link {
+      padding: 3px 10px;
+    }
+
+    &__web-link span  {
+      font-size: 1.1rem;
+    }
+
+    &__nomiddleman,
+    &__data,
+    &__organize,
+    &__benifit-logo {
+      width: 40px;
+    }
+  }
+
   .s1 {
     &__bg-image,
     &__bg-points {
@@ -286,6 +434,11 @@ body {
         text-align: left;
       }
     }
+  }
+
+  .s4__content img {
+    width: 150%;
+    margin-left: -50%;
   }
 
   .s6 {
@@ -426,6 +579,28 @@ body {
     }
   }
 
+  .s0 {
+    &__content {
+      top: 6%;
+
+      li i.outline-dot--s {
+        bottom: 8px;
+      }
+
+      li:first-child .outline-dot--s {
+        bottom: 20px;
+      }
+    }
+
+    &__benifits {
+      padding: 0;
+    }
+
+    &__benifits li:after {
+      height: 35px;
+    }
+  }
+
   .s1 {
     &__bg-image,
     &__bg-points {
@@ -459,6 +634,38 @@ body {
 }
 
 @media screen and (max-height: 700px) {
+  #fp-nav {
+    display: none;
+  }
+
+  .s0 {
+    &__content {
+      top: 3.5%;
+
+      .title__4 {
+        max-width: 60px;
+      }
+
+      p,
+      p ~ p {
+        width: 100%;
+        line-height: 1.4em;
+      }
+
+      .social a {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &__nomiddleman,
+    &__data,
+    &__organize,
+    &__benifit-logo {
+      width: 35px;
+    }
+  }
+
   .s1 {
     &__content {
       padding: 0;
@@ -503,6 +710,33 @@ body {
   .title {
     &__2.top-title {
       top: 20px;
+    }
+  }
+
+  .s0 {
+    &__title {
+      display: none;
+    }
+
+    &__content {
+      li i.outline-dot--s,
+      li:first-child .outline-dot--s {
+        bottom: 5px;
+      }
+    }
+
+    &__benifits li {
+      &:after {
+        height: 20px;
+      }
+
+      label {
+        font-size: 1.1rem;
+      }
+
+      span {
+        font-size: 1rem;
+      }
     }
   }
 
@@ -569,5 +803,17 @@ body {
     &__list img {
       height: 15px;
     }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .s9 {
+    display: none;
+  }
+
+  .road-map-m {
+    display: block;
+    width: 95%;
+    margin: auto;
   }
 }
