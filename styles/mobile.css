@@ -41,6 +41,17 @@ body {
   margin-top: 20px;
   max-width: 50px; }
 
+.s7__bg-points {
+  background-position: 60% top; }
+.s7__bg-points ~ .top-title.title__2 {
+  top: 80px; }
+.s7__content .col-4 {
+  margin-bottom: 50px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
 .s9__bg-cover, .s10__bg-cover, .s11__bg-cover {
   max-width: 70%; }
 
@@ -67,6 +78,8 @@ body {
     font-size: 2.6rem; }
   .title__3 {
     font-size: 2.0rem; }
+  .title__4 {
+    font-size: 1.4rem; }
 
   .s1__container {
     position: absolute;
@@ -95,10 +108,17 @@ body {
     background-repeat: no-repeat;
     z-index: 1; }
 
-  .s6__content {
-    max-width: 500px; }
+  .s7__content {
+    margin-top: 20%; }
+    .s7__content .title__4 {
+      margin: 10px auto;
+      max-width: 150px; }
+  .s7__avatar {
+    width: 110px; }
 
-  .s11__form {
+  .s6__content,
+  .s11__form,
+  .s12__content {
     max-width: 500px; } }
 @media screen and (max-height: 950px) {
   .s1__bg-image, .s1__bg-points {
@@ -151,7 +171,14 @@ body {
       flex: 0 0 50%;
       max-width: 50%; }
     .s6__content .offset-4 {
-      margin-left: 0; } }
+      margin-left: 0; }
+
+  .s7__content {
+    margin-top: 20%; }
+    .s7__content .col-4 {
+      margin-bottom: 20px; }
+  .s7__avatar {
+    width: 90px; } }
 @media screen and (max-height: 800px) {
   .title__2.top-title {
     top: 90px; }
@@ -171,7 +198,16 @@ body {
 
   .s6__content .col-6 {
     padding-left: 50px;
-    padding-right: 50px; } }
+    padding-right: 50px; }
+
+  .s7__bg-points ~ .top-title.title__2 {
+    top: 20px; }
+  .s7__content {
+    margin-top: 30%; }
+  .s7__content .title__4 {
+    max-width: 120px; }
+  .s7__avatar {
+    max-width: 70px; } }
 @media screen and (max-height: 630px) {
   .top-dot__container {
     display: none; }
@@ -199,6 +235,11 @@ body {
     margin-top: 0; }
     .s6__content .col-6 {
       padding-left: 40px;
-      padding-right: 40px; } }
+      padding-right: 40px; }
+
+  .s7__content {
+    margin-top: 10%; }
+    .s7__content .col-4 {
+      margin-bottom: 5px; } }
 
 /*# sourceMappingURL=mobile.css.map */
