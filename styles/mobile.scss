@@ -486,14 +486,18 @@ body {
     &__content {
       top: 5%;
 
+      li {
+        margin-bottom: 0;
+      }
+
       .row {
         margin: auto;
       }
 
       .col-4 {
-        -ms-flex: 0 0 80%;
-        flex: 0 0 80%;
-        max-width: 80%;
+        -ms-flex: 0 0 70%;
+        flex: 0 0 70%;
+        max-width: 70%;
         margin: auto;
       }
     }

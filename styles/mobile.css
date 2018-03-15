@@ -310,12 +310,14 @@ body {
     top: 80px; }
   .s8__content {
     top: 5%; }
+    .s8__content li {
+      margin-bottom: 0; }
     .s8__content .row {
       margin: auto; }
     .s8__content .col-4 {
-      -ms-flex: 0 0 80%;
-      flex: 0 0 80%;
-      max-width: 80%;
+      -ms-flex: 0 0 70%;
+      flex: 0 0 70%;
+      max-width: 70%;
       margin: auto; }
   .s8__content:before {
     padding-top: 160%;
