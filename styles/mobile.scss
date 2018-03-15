@@ -69,7 +69,6 @@ body {
 
   &__content .col-4 {
     margin-bottom: 50px;
-    -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -100,6 +99,10 @@ body {
 }
 
 @media screen and (max-height: 1024px) {
+  label {
+    font-size: 1.4rem;
+  }
+
   p {
     font-size: 1.2rem;
   }
@@ -256,7 +259,6 @@ body {
 
       .col-4 {
         padding: 0;
-        -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
@@ -279,6 +281,95 @@ body {
 
     &__avatar {
       width: 90px;
+    }
+  }
+
+  .s8 {
+    &__bg-points ~ .top-title.title__2 {
+      top: 80px;
+    }
+
+    &__content {
+      top: 5%;
+
+      .row {
+        margin: auto;
+      }
+
+      .col-4 {
+        -ms-flex: 0 0 80%;
+        flex: 0 0 80%;
+        max-width: 80%;
+        margin: auto;
+      }
+    }
+
+    &__content:before {
+      padding-top: 160%;
+      background-image: url(../images/9-banner-m.png);
+      background-position: center center;
+      background-size: 100% 100%;
+    }
+  }
+
+  .s10 {
+    &__content {
+      padding: 0 15px;
+    }
+
+    &__form-group button {
+      width: 90px;
+    }
+  }
+
+  .s11__form,
+  .s12__content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .s12__content {
+    .col-4 {
+      -ms-flex: 0 0 65%;
+      flex: 0 0 65%;
+      max-width: 65%;
+      margin: auto;
+    }
+
+    .col-5 {
+      -ms-flex: 0 0 60%;
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+    > .row > .col-3 {
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+
+    .s12__contactus {
+      left: 0;
+      width: 97%;
+    }
+
+    .s12__logo {
+      width: 70%;
+    }
+  }
+
+  .s13{
+    &__title,
+    &__text {
+      max-width: 90%;
+    }
+
+    &__list li {
+      margin: 0 4px;
+    }
+
+    &__list img {
+      height: 18px;
     }
   }
 }
@@ -304,6 +395,20 @@ body {
   .s6 {
     &__content {
       margin-top: 50px;
+    }
+  }
+
+  .s8 {
+    &__content {
+      .col-4 {
+        -ms-flex: 0 0 65%;
+        flex: 0 0 65%;
+        max-width: 65%;
+      }
+    }
+
+    &__content:before {
+      padding-top: 130%;
     }
   }
 }
@@ -404,6 +509,16 @@ body {
       .col-4 {
         margin-bottom: 5px;
       }
+    }
+  }
+
+  .s8__bg-points ~ .top-title.title__2 {
+    top: 20px;
+  }
+
+  .s13{
+    &__list img {
+      height: 15px;
     }
   }
 }
