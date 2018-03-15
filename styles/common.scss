@@ -14,6 +14,11 @@ body {
   min-width: 1024px;
 }
 
+.m-display,
+.road-map-m {
+  display: none;
+}
+
 .title {
   font-family: $title-font;
 
