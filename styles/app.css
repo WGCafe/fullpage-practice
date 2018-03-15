@@ -11,6 +11,9 @@ html {
 body {
   min-width: 1024px; }
 
+.m-display {
+  display: none; }
+
 .title, .title__1, .title__2, .title__3, .title__4 {
   font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   .title.hint, .hint.title__1, .hint.title__2, .hint.title__3, .hint.title__4 {
@@ -881,14 +884,18 @@ button {
     margin-bottom: 10px;
     border-top: 6px solid #fff;
     width: 50px; }
+  .s5__content a.col-8 {
+    display: block;
+    cursor: pointer; }
   .s5__content .col-8:before {
     content: "";
     display: block;
     width: 100%;
     padding-top: 60%;
-    background-image: url(../images/6-video.jpg);
+    background-image: url(../images/6-video-cover.png);
     background-size: 100% auto;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    cursor: pointer; }
   .s5__content .col-4 {
     text-align: right;
     position: absolute;

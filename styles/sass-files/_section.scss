@@ -455,14 +455,20 @@
       width: 50px;
     }
 
+    a.col-8 {
+      display: block;
+      cursor: pointer;
+    }
+
     .col-8:before {
       content: "";
       display: block;
       width: 100%;
       padding-top: 60%;
-      background-image: url(../images/6-video.jpg);
+      background-image: url(../images/6-video-cover.png);
       background-size: 100% auto;
       background-repeat: no-repeat;
+      cursor: pointer;
     }
 
     .col-4 {
