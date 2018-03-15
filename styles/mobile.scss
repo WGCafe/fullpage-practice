@@ -719,10 +719,12 @@ body {
 
   .s0 {
     &__title {
-      display: none;
+      width: 40%;
     }
 
     &__content {
+      top: 5.5%;
+
       li i.outline-dot--s,
       li:first-child .outline-dot--s {
         bottom: 5px;

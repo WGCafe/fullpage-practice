@@ -435,10 +435,12 @@ body {
     top: 20px; }
 
   .s0__title {
-    display: none; }
-  .s0__content li i.outline-dot--s,
-  .s0__content li:first-child .outline-dot--s {
-    bottom: 5px; }
+    width: 40%; }
+  .s0__content {
+    top: 5.5%; }
+    .s0__content li i.outline-dot--s,
+    .s0__content li:first-child .outline-dot--s {
+      bottom: 5px; }
   .s0__benifits li:after {
     height: 20px; }
   .s0__benifits li label {
