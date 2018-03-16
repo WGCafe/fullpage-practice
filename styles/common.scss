@@ -130,6 +130,10 @@ button {
   opacity: 0.7;
 }
 
+.qrcode {
+  text-align: center;
+}
+
 /* Overwrite fullpage.js */
 #fp-nav ul li .fp-tooltip {
   font-family: $title-font;

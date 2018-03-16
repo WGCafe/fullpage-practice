@@ -91,6 +91,9 @@ button {
 .opacity-7 {
   opacity: 0.7; }
 
+.qrcode {
+  text-align: center; }
+
 /* Overwrite fullpage.js */
 #fp-nav ul li .fp-tooltip {
   font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif; }
