@@ -1007,9 +1007,12 @@ button {
   position: relative;
   margin: auto;
   max-width: 960px; }
+  .s8__content a {
+    display: block;
+    font-size: 0; }
   .s8__content .row {
     position: absolute;
-    top: 50%;
+    top: 46%;
     left: 50%;
     width: 70%;
     -webkit-transform: translate(-50%, -50%);
@@ -1030,6 +1033,8 @@ button {
   padding-top: 42%;
   background-image: url(../images/9-banner.png);
   background-size: 100% auto; }
+.s8__top-offset-1 {
+  margin-top: 40%; }
 
 /* end of section 8 */
 .s9__bg-cover,

@@ -3,7 +3,16 @@ $(document).ready(function() {
     navigation: true,
     navigationColor: '#fff',
     showActiveTooltip: true,
+    loopBottom: true,
     navigationTooltips: ['Home page']
+  });
+
+  $('#fullpage').on('click', function(){
+    $.fn.fullpage.moveSectionDown();
+  });
+
+  $('#fullpage a, button, input, textarea').on('click', function(e) {
+    e.stopPropagation();
   });
 });
 

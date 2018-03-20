@@ -645,9 +645,14 @@ $s6-image-path: "../images/7-";
     margin: auto;
     max-width: $max-container;
 
+    a {
+      display: block;
+      font-size: 0;
+    }
+
     .row {
       position: absolute;
-      top: 50%;
+      top: 46%;
       left: 50%;
       width: 70%;
 
@@ -674,6 +679,10 @@ $s6-image-path: "../images/7-";
     padding-top: 42%;
     background-image: url(../images/9-banner.png);
     background-size: 100% auto;
+  }
+
+  &__top-offset-1 {
+    margin-top: 40%;
   }
 }
 /* end of section 8 */

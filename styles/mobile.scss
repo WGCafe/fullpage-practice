@@ -71,6 +71,12 @@ body {
   }
 }
 
+.s8 {
+  &__top-offset-1 {
+    margin-top: 30%;
+  }
+}
+
 .s9, .s10, .s11 {
   &__bg-cover {
     max-width: 70%;
@@ -299,6 +305,12 @@ body {
     }
   }
 
+  .s8 {
+    &__top-offset-1 {
+      margin-top: 40%;
+    }
+  }
+
   .s7 {
     &__content {
       margin-top: 20%;
@@ -490,12 +502,20 @@ body {
     &__content {
       top: 5%;
 
+      ul {
+        margin: 0;
+      }
+
       li {
-        margin-bottom: 0;
+        margin-bottom: 10px;
       }
 
       .row {
         margin: auto;
+      }
+
+      > .row {
+        margin-top: 7%;
       }
 
       .col-4 {
@@ -511,6 +531,10 @@ body {
       background-image: url(../images/9-banner-m.png);
       background-position: center center;
       background-size: 100% 100%;
+    }
+
+    &__top-offset-1 {
+      margin-top: 0%;
     }
   }
 
@@ -628,6 +652,10 @@ body {
 
   .s8 {
     &__content {
+      li {
+        margin-bottom: 5px;
+      }
+
       .col-4 {
         -ms-flex: 0 0 65%;
         flex: 0 0 65%;
