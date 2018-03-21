@@ -600,6 +600,16 @@ $s6-image-path: "../images/7-";
       background-color: $pink;
       border-radius: 4px;
     }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    label {
+      color: $white;
+      cursor: pointer;
+    }
   }
 
   &__avatar {

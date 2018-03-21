@@ -105,6 +105,7 @@ button {
   display: block;
   padding-top: 56.3%; }
 
+.video-modal iframe,
 .video {
   position: absolute;
   top: 0;
@@ -999,6 +1000,12 @@ button {
     max-width: 200px;
     background-color: #f5426c;
     border-radius: 4px; }
+  .s7__content a {
+    text-decoration: none;
+    cursor: pointer; }
+  .s7__content label {
+    color: #fff;
+    cursor: pointer; }
 .s7__avatar {
   margin: auto;
   width: 150px; }

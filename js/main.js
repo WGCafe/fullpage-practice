@@ -23,21 +23,21 @@ $(document).ready(function() {
     $('#videomodal').modal();
   });
 
-  $('#videomodal').on($.modal.OPEN, function() {
-    var productVideo = document.getElementById('product-video');
+  // $('#videomodal').on($.modal.OPEN, function() {
+  //   var productVideo = document.getElementById('product-video');
 
-    setTimeout(() => {
-      productVideo.loop;
-      productVideo.play();
-    }, 700);
-  });
+  //   setTimeout(() => {
+  //     productVideo.loop;
+  //     productVideo.play();
+  //   }, 700);
+  // });
 
-  $('#videomodal').on($.modal.AFTER_CLOSE, function() {
-    var productVideo = document.getElementById('product-video');
+  // $('#videomodal').on($.modal.AFTER_CLOSE, function() {
+  //   var productVideo = document.getElementById('product-video');
 
-    productVideo.pause();
-    productVideo.currentTime = 0;
-  });
+  //   productVideo.pause();
+  //   productVideo.currentTime = 0;
+  // });
 
 });
 
