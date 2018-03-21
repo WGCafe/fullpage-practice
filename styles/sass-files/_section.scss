@@ -94,6 +94,14 @@
       margin-bottom: 0;
       max-width: 70px;
     }
+
+    .title__4.zh {
+      max-width: 80px;
+    }
+
+    .title__4.zh ~ hr {
+      margin-left: -30px;
+    }
   }
 
   &__title {
@@ -769,14 +777,26 @@ $s6-image-path: "../images/7-";
 
   .left-1 {
     margin-top: -394px;
+
+    &.zh {
+      margin-top: -315px;
+    }
   }
 
   .left-2 {
     margin-top: -104px;
+
+    &.zh {
+      margin-top: -124px;
+    }
   }
 
   .left-3 {
     margin-top: -46px;
+
+    &.zh {
+      margin-top: -95px;
+    }
   }
 
   .right-1 {
@@ -787,6 +807,11 @@ $s6-image-path: "../images/7-";
   .right-2 {
     padding-top: 10px;
     margin-top: -114px;
+
+    &.zh {
+      margin-top: -62px;
+      padding-top: 0px;
+    }
   }
 
   .left-1,

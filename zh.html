@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="./fonts/font.css">
 	<link rel="stylesheet" type="text/css" href="./styles/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="./styles/jquery.modal.min.css" />
 	<link rel="stylesheet" type="text/css" href="./styles/app.css" />
 	<link rel="stylesheet" media="(max-width: 1024px) and (orientation: portrait)" href="./styles/mobile.css" type="text/css" />
 	<link rel="icon" href="/favicon.ico">
@@ -38,7 +39,7 @@
 				<div class="s0__title"></div>
 				<p>PopulStay（潮箱）是为链接度假租房和共享民宿而打造，是去中心化的智能共享民宿平台。</p>
 				<p>项目已被东京区块链创业公司加速器选定，详情请点击
-					<a class="s0__link" target="__blank" href="http://www.seisakukikaku.metro.tokyo.jp/bdc_tokyo/english/bizcamptky/blockchain/">链接。</a>
+					<a class="s0__link" target="__blank" href="http://www.seisakukikaku.metro.tokyo.jp/bdc_tokyo/english/bizcamptky/blockchain/">链接</a>。
 				</p>
 				<div class="s0__links">
 					<ul class="social">
@@ -61,7 +62,7 @@
 							<a class="social__reddit social__icon" target="_blank" href="https://www.reddit.com/user/PopulStay/"></a>
 						</li>
 						<li>
-							<a class="social__wechat social__icon" target="_blank" href="./qrcode.html"></a>
+							<a class="social__wechat social__icon" href="#wechatmodal"></a>
 						</li>
 						<!-- <li>
 							<a class="social__weibo social__icon" href=""></a>
@@ -82,7 +83,7 @@
 				<div>
 					<ul class="s0__benifits">
 						<li class="s0__benifits-1">
-							<h4 class="title__4">我们的优势</h4>
+							<h4 class="title__4 zh">我们的优势</h4>
 							<hr />
 							<i class="outline-dot--s"></i>
 						</li>
@@ -216,13 +217,22 @@
 				<i class="dot"></i>
 			</div>
 			<div class="s5__content row">
-				<a class="col-8 offset-5" target="_blank" href="https://youtu.be/lrWl11R2ar8"></a>
+				<!-- <a class="col-8 offset-5" target="_blank" href="https://youtu.be/lrWl11R2ar8"></a> -->
+				<a class="col-8 offset-5 s5__video" href="#videomodal"></a>
 				<div class="col-4">
 					<h2 class="title__2">PopulStay潮箱 高级房客体验 &</h2>
 					<h2 class="title__2">最大化的房东利润</h2>
 					<hr>
 					<p class="opacity-7">点此视频，了解更多。</p>
 				</div>
+			</div>
+
+			<div id="videomodal" class="modal video-modal">
+				<!-- <video id="product-video" class="video" loop muted data-autoplay>
+					<source class="video__mp4" src="" type="video/mp4">
+					<source class="video__webm" src="" type="video/webm">
+				</video> -->
+				<iframe  width="100%" height="100%" src="https://www.youtube.com/embed/lrWl11R2ar8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="section" id="section6">
@@ -315,17 +325,17 @@
 				<div class="row">
 					<div class="col-4">
 						<div class="s7__1 s7__avatar"></div>
-						<label class="title__4">王跃</label>
+						<a target="__blank" href="https://www.linkedin.com/in/yue-wang-02a45315/"><label class="title__4">王跃</label></a>
 						<span>创始人&CEO</span>
 					</div>
 					<div class="col-4">
 						<div class="s7__2 s7__avatar"></div>
-						<label class="title__4">蔡新朋</label>
+						<a target="__blank" href="https://www.linkedin.com/in/xinpeng-cai-920414131/"><label class="title__4">蔡新朋</label></a>
 						<span>联合创始人&COO</span>
 					</div>
 					<div class="col-4">
 						<div class="s7__3 s7__avatar"></div>
-						<label class="title__4">林凯亮</label>
+						<a target="__blank" href="https://www.linkedin.com/in/kailiang-lin-262b9315b/"><label class="title__4">林凯亮</label></a>
 						<span>CMO</span>
 					</div>
 				</div>
@@ -350,10 +360,10 @@
 								<a target="_blank" href="https://www.yoiju.com"><img src="./images/9-customer-squeeze.png" alt=""></a>
 							</li>
 							<li>
-								<a target="_blank" href="http://www.grandouce.co.jp"><img src="./images/9-customer-grandouce.png" alt=""></a>
+								<a target="_blank" href="http://febow.cn"><img src="./images/9-customer-febow.png" alt=""></a>
 							</li>
 							<li>
-								<a target="_blank" href="http://febow.cn"><img src="./images/9-customer-febow.png" alt=""></a>
+								<a target="_blank" href="http://www.grandouce.co.jp"><img src="./images/9-customer-grandouce.png" alt=""></a>
 							</li>
 						</ul>
 					</div>
@@ -365,7 +375,7 @@
 							<li>
 								<a target="_blank" href="http://www.japanfoodie.jp/"><img src="./images/9-customer-jp.png" alt=""></a>
 							</li>
-							<li>
+							<li class="s8__top-offset-1">
 								<a target="_blank" href="agora.io"><img src="./images/9-customer-agora.png" alt=""></a>
 							</li>
 						</ul>
@@ -394,7 +404,7 @@
 					<i class="outline-dot--lg"></i>
 					<h2 class="title__2">路线图和时间表</h2>
 				</div>
-				<div class="col-6 offset-6 right-1">
+				<div class="col-6 offset-6 right-1 zh">
 					<i class="dot"></i>
 					<h3 class="title__3 hint">2018年第一、二季度</h3>
 					<ul class="opacity-7">
@@ -413,7 +423,7 @@
 						<li>• 基于智能合约的窄带物联网智能锁批量生产；</li>
 					</ul>
 				</div>
-				<div class="col-6 left left-1">
+				<div class="col-6 left left-1 zh">
 					<h3 class="title__3 hint">2018年第三、四季度</h3>
 					<i class="dot"></i>
 					<ul class="opacity-7">
@@ -428,7 +438,7 @@
 					</ul>
 				</div>
 				<div class="col-6"></div>
-				<div class="col-6 left left-2">
+				<div class="col-6 left left-2 zh">
 					<h3 class="title__3 hint">2019年第一、二季度</h3>
 					<i class="dot"></i>
 					<ul class="opacity-7">
@@ -437,7 +447,7 @@
 						<li>• 分析累积的关于用户体验，资产所有者创造的价值和资产所有者所获利润的数据；</li>
 					</ul>
 				</div>
-				<div class="col-6 offset-6 right-2">
+				<div class="col-6 offset-6 right-2 zh">
 					<i class="dot"></i>
 					<h3 class="title__3 hint">2019年第三、四季度</h3>
 					<ul class="opacity-7">
@@ -446,7 +456,7 @@
 						<li>• 建立本地业务实体；</li>
 					</ul>
 				</div>
-				<div class="col-6 left left-3">
+				<div class="col-6 left left-3 zh">
 					<h3 class="title__3 hint">2020年</h3>
 					<i class="dot"></i>
 					<ul class="opacity-7">
@@ -472,7 +482,7 @@
 				<hr>
 				<div class="s10__form-group">
 					<div class="s10__input">
-						<input type="text" placeholder="Your Email">
+						<input type="text" placeholder="你的邮箱">
 					</div>
 					<button>订阅</button>
 				</div>
@@ -519,15 +529,15 @@
 				<label class="">+65 83381130 / walter@populstay.com</label>
 				<div class="row">
 					<div class="col-6">
-						<input type="text" placeholder="Your Name" />
+						<input type="text" placeholder="你的名字" />
 					</div>
 					<div class="col-6">
-						<input type="text" placeholder="Your Email"/>
+						<input type="text" placeholder="你的邮箱"/>
 					</div>
 				</div>
-				<di><input type="text" placeholder="Your Title"/></di>
+				<di><input type="text" placeholder="你的职位"/></di>
 				<div>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+					<textarea name="" id="" cols="30" rows="10" placeholder="你想要对我们说的"></textarea>
 				</div>
 				<button>发送</button>
 			</form>
@@ -569,7 +579,7 @@
 									<a class="social__reddit social__icon" target="_blank" href="https://www.reddit.com/user/PopulStay/"></a>
 								</li>
 								<li class="col-3">
-									<a class="social__wechat social__icon" target="_blank" href="./qrcode.html"></a>
+									<a class="social__wechat social__icon" href="#wechatmodal"></a>
 								</li>
 								<li class="col-3">
 									<a class="social__icon" href="social__weibo"></a>
@@ -582,6 +592,10 @@
 				<div class="s12__logo"></div>
 			</div>
 		</section>
+
+		<div id="wechatmodal" class="modal wechat-modal">
+			<img src="./images/qrcode.jpg" alt="">
+		</div>
 	</div>
 
 		<script src="./js/vendors/jquery.min.js"></script>
@@ -590,6 +604,7 @@
 		<script type="text/javascript" src="./js/vendors/scrolloverflow.min.js"></script>
 
 		<script type="text/javascript" src="./js/vendors/jquery.fullpage.min.js"></script>
+		<script type="text/javascript" src="./js/vendors/jquery.modal.min.js"></script>
 		<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

@@ -23,6 +23,23 @@ $(document).ready(function() {
     $('#videomodal').modal();
   });
 
+  var type = navigator.appName;
+  var lang = 'en';
+
+  if (type === "Netscape") {
+    lang = navigator.language
+  } else {
+    lang = navigator.userLanguage
+  }
+
+  lang = lang.substr(0, 2);
+
+  // if (lang === "en"){
+  //   window.location.href="http://www.populstay.com/"
+  // } else if (lang === "zh"){
+  //   window.location.href="http://www.populstay.com/zh.html"
+  // }
+
   // $('#videomodal').on($.modal.OPEN, function() {
   //   var productVideo = document.getElementById('product-video');
 

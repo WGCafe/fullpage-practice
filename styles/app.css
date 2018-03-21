@@ -648,6 +648,10 @@ button {
     display: inline-block;
     margin-bottom: 0;
     max-width: 70px; }
+  .s0__content .title__4.zh {
+    max-width: 80px; }
+  .s0__content .title__4.zh ~ hr {
+    margin-left: -30px; }
 .s0__title {
   width: 50%; }
 .s0__title:before {
@@ -1125,16 +1129,25 @@ button {
       text-align: left; }
   .s9 .left-1 {
     margin-top: -394px; }
+    .s9 .left-1.zh {
+      margin-top: -315px; }
   .s9 .left-2 {
     margin-top: -104px; }
+    .s9 .left-2.zh {
+      margin-top: -124px; }
   .s9 .left-3 {
     margin-top: -46px; }
+    .s9 .left-3.zh {
+      margin-top: -95px; }
   .s9 .right-1 {
     padding-top: 20px;
     margin-top: -24px; }
   .s9 .right-2 {
     padding-top: 10px;
     margin-top: -114px; }
+    .s9 .right-2.zh {
+      margin-top: -62px;
+      padding-top: 0px; }
   .s9 .left-1 h3,
   .s9 .left-2 h3,
   .s9 .left-3 h3 {
