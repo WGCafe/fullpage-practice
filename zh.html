@@ -77,7 +77,7 @@
 					</ul>
 					<a target="_blank" class="s0__web-link" href="./demo/index.html">
 						<img src="./images/1-web.png" alt="">
-						<span>Visit Populstay demo</span>
+						<span>浏览潮箱网站演示</span>
 					</a>
 				</div>
 				<div>
@@ -232,7 +232,7 @@
 					<source class="video__mp4" src="" type="video/mp4">
 					<source class="video__webm" src="" type="video/webm">
 				</video> -->
-				<iframe  width="100%" height="100%" src="https://www.youtube.com/embed/lrWl11R2ar8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+				<iframe  width="100%" height="100%" src="" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="section" id="section6">
@@ -480,12 +480,22 @@
 			<div class="s10__content">
 				<h2 class="title__2">订阅我们的通讯并索取白皮书</h2>
 				<hr>
-				<div class="s10__form-group">
-					<div class="s10__input">
-						<input type="text" placeholder="你的邮箱">
+				<form id="subscribeform" name="myform"></form>
+					<div class="s10__form-group">
+						<div class="s10__input">
+							<input type="email" placeholder="Your Email" id="subscribeEmail" name="email" data-placeholder="你的邮箱" />
+						</div>
+						<button type="submit" name="subscribeSubmit" id="subscribeSubmit">订阅</button>
 					</div>
-					<button>订阅</button>
-				</div>
+					<span class="subscribe-result"></span>
+				</form>
+			</div>
+
+			<div id="subscribeModal" class="modal subscribe-modal">
+				<h3 class="title__3 modal-loading">正在加载...</h3>
+				<h3 class="title__3">谢谢您关注潮箱!</h3>
+				<p class="success-text">订阅成功</p>
+				<p class="error-text">糟糕! 服务器故障了, 您可以联系管理员处理。</p>
 			</div>
 		</section>
 		<section class="section" id="section11">
@@ -529,18 +539,24 @@
 				<label class="">+65 83381130 / walter@populstay.com</label>
 				<div class="row">
 					<div class="col-6">
-						<input type="text" placeholder="你的名字" />
+						<input type="text" placeholder="你的名字" id="contactName" name="contactName" data-placeholder="Name"/>
 					</div>
 					<div class="col-6">
-						<input type="text" placeholder="你的邮箱"/>
+						<input type="text" placeholder="你的邮箱" id="contactEmail" name="contactEmail" data-placeholder="Email"/>
 					</div>
 				</div>
-				<di><input type="text" placeholder="你的职位"/></di>
+				<di><input type="text" placeholder="你的职位" id="contactTitle" name="contactTitle" data-placeholder="Name"/></di>
 				<div>
-					<textarea name="" id="" cols="30" rows="10" placeholder="你想要对我们说的"></textarea>
+					<textarea name="" cols="30" rows="10" placeholder="你想要对我们说的" id="contactMessage" name="contactMessage" data-placeholder="Message" /></textarea>
 				</div>
 				<button>发送</button>
 			</form>
+
+			<div id="contactModal" class="modal contact-modal">
+				<h3 class="title__3 modal-loading">正在加载...</h3>
+				<p class="success-text">您要对我们说的我们已经收到。</p>
+				<p class="error-text">糟糕! 服务器故障了, 您可以同过微信联系我们。</p>
+			</div>
 		</section>
 		<section class="section" id="section13">
 			<div class="s12__bg-cover"></div>

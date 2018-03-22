@@ -91,6 +91,22 @@ button {
 .opacity-7 {
   opacity: 0.7; }
 
+.error-msg::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg:-moz-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg::-moz-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg:-ms-input-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
 /* modal style */
 .wechat-modal img {
   width: 100%; }
@@ -114,6 +130,39 @@ button {
 
 .blocker {
   z-index: 100; }
+
+.subscribe-modal,
+.contact-modal {
+  text-align: center; }
+  .subscribe-modal .title__3,
+  .contact-modal .title__3 {
+    display: none;
+    color: #f5426c; }
+  .subscribe-modal .modal-loading,
+  .contact-modal .modal-loading {
+    display: block;
+    margin: 0; }
+  .subscribe-modal .success-text,
+  .contact-modal .success-text {
+    display: none;
+    color: #151b4e;
+    margin-bottom: 0; }
+  .subscribe-modal .error-text,
+  .contact-modal .error-text {
+    display: none;
+    color: red; }
+  .subscribe-modal.error .error-text, .subscribe-modal.success .title__3, .subscribe-modal.success .success-text,
+  .contact-modal.error .error-text,
+  .contact-modal.success .title__3,
+  .contact-modal.success .success-text {
+    display: block; }
+  .subscribe-modal.error .modal-loading, .subscribe-modal.success .modal-loading,
+  .contact-modal.error .modal-loading,
+  .contact-modal.success .modal-loading {
+    display: none; }
+
+.contact-modal .success-text {
+  margin-bottom: 16px; }
 
 /* end of modal style */
 /* Overwrite fullpage.js */
