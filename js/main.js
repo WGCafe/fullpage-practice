@@ -70,19 +70,18 @@ $(document).ready(function() {
 
 
   // FORM VALIDATION
-  $("#subscribeSubmit").on('click', function() {
-
+  function checkSubscribe() {
     //email (check if entered anything)
     var email = $("input#subscribeEmail").val();
     var email_base = 'Provide Valid E-mail';
     //email (check if entered anything)
 
     function isValidEmailAddress(emailAddress) {
-        var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
-        return pattern.test(emailAddress);
+      var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
+      return pattern.test(emailAddress);
     }
 
-    if (email === "") {
+    if (!email || email === "") {
         $("input#subscribeEmail").focus();
         $('input#subscribeEmail').attr('placeholder', email_base);
         $('input#subscribeEmail').addClass('error-msg');
@@ -95,24 +94,93 @@ $(document).ready(function() {
             $('input#subscribeEmail').addClass('error-msg');
             return false;
         }
+
+        return true;
     } else {
       return true;
     }
-  });
+  }
 
-  $('#subscribeSubmit').on('click', function() {
-    console.log($('input[name="receiver"]').val());
+  function checkContact() {
+    //name
+    var name = $("input#contactName").val();
+    var name_base = 'Provide Valid Name';
+
+    //email (check if entered anything)
+    var email = $("input#contactEmail").val();
+    var email_base = 'Provide Valid E-mail';
+    //email (check if entered anything)
+
+    // title
+    var title = $("input#contactTitle").val();
+    var title_base = 'Title must not be empty';
+
+    // comments
+    var comments = $("textarea#contactMessage").val();
+    var comments_base = 'Message must not be empty';
+
+    function isValidEmailAddress(emailAddress) {
+        var pattern = new RegExp(/^(("[\w-+\s]+")|([\w-+]+(?:\.[\w-+]+)*)|("[\w-+\s]+")([\w-+]+(?:\.[\w-+]+)*))(@((?:[\w-+]+\.)*\w[\w-+]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][\d]\.|1[\d]{2}\.|[\d]{1,2}\.))((25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\.){2}(25[0-5]|2[0-4][\d]|1[\d]{2}|[\d]{1,2})\]?$)/i);
+        return pattern.test(emailAddress);
+    }
+
+    if (!name || name === "") {
+      $('input#contactName').focus();
+      $('input#contactName').attr('placeholder', name_base);
+      $('input#contactName').addClass('error-msg');
+      return false;
+    } else if (!email || email === "") {
+        $('input#contactEmail').focus();
+        $('input#contactEmail').attr('placeholder', email_base);
+        $('input#contactEmail').addClass('error-msg');
+        return false;
+    } else if (email !== "") { // If something was entered
+        if (!isValidEmailAddress(email)) {
+            $('input#contactEmail').focus();
+            $('input#contactEmail').val('');
+            $('input#contactEmail').attr('placeholder', email_base);
+            $('input#contactEmail').addClass('error-msg');
+            return false;
+        }
+    }
+
+    if (!comments || comments === "") {
+      $('textarea#contactMessage').focus();
+      $('textarea#contactMessage').attr('placeholder', comments_base);
+      $('textarea#contactMessage').addClass('error-msg');
+      return false;
+    }
+
+    if (!title || title === "") {
+      $('input#contactTitle').focus();
+      $('input#contactTitle').attr('placeholder', title_base);
+      $('input#contactTitle').addClass('error-msg');
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  $('#subscribeSubmit').on('click', function(e) {
+    if(!checkSubscribe()) {
+      e.preventDefault();
+      e.returnValue = false;
+
+      return false;
+    }
+
+    $('#subscribeModal').modal();
 
     $.ajax({
-      type: $("#subscribeform").attr('method'),
-      url: $("#subscribeform").attr('action'),
-      data: {
-        receiver: $('input[name="receiver"]').val(),
-        subject: $('input[name="subject"]').val(),
+      type: 'post',
+      url: 'http://18.218.189.87/populstay/subscribe',
+      dataType: 'json',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({
         email: $('input#subscribeEmail').val()
-      },
+      }),
       success: function(data) {
-        if (data == 'success') {
+        if (data.status === 'success') {
           $('#subscribeform').each(function() {
               this.reset();
           });
@@ -120,11 +188,47 @@ $(document).ready(function() {
           $('#subscribeEmail').attr('placeholder', $('#subscribeEmail').data('placeholder'));
           $('#subscribeEmail').removeClass('error-msg');
 
-          $('.subscribe-result').html('Send email!');
-          $('.subscribe-result').css('color', 'white');
+          $('.subscribe-modal').addClass('success');
         } else {
-          $('.subscribe-result').html('Server error!');
-          $('.subscribe-result').css('color', 'red');
+          $('.subscribe-modal').addClass('error');
+        }
+      }
+    });
+    return false;
+  });
+
+  $('#contactSubmit').on('click', function(e) {
+    if(!checkContact()) {
+      e.preventDefault();
+      e.returnValue = false;
+
+      return false;
+    }
+
+    $('#contactModal').modal();
+
+    $.ajax({
+      type: 'post',
+      url: 'http://18.218.189.87/populstay/contactUs',
+      dataType: 'json',
+      contentType: 'application/json; charset=utf-8',
+      data: JSON.stringify({
+        name: $("input#contactName").val(),
+        title: $("input#contactTitle").val(),
+        email: $('input#contactEmail').val(),
+        message: $("textarea#contactMessage").val()
+      }),
+      success: function(data) {
+        if (data.status === 'success') {
+          $('#contactName').attr('placeholder', $('#contactName').data('placeholder'));
+          $('#contactTitle').attr('placeholder', $('#contactTitle').data('placeholder'));
+          $('#contactEmail').attr('placeholder', $('#contactEmail').data('placeholder'));
+          $('#contactMessage').attr('placeholder', $('#contactMessage').data('placeholder'));
+          $('#contactEmail, #contactName, #contactTitle, #contactMessage').removeClass('error-msg');
+
+          $('.contact-modal').addClass('success');
+        } else {
+          $('.contact-modal').addClass('error');
         }
       }
     });

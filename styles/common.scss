@@ -178,6 +178,47 @@ button {
 .blocker {
   z-index: 100;
 }
+
+.subscribe-modal,
+.contact-modal {
+  text-align: center;
+
+  .title__3 {
+    display: none;
+    color: $pink;
+  }
+
+  .modal-loading {
+    display: block;
+    margin: 0;
+  }
+
+  .success-text {
+    display: none;
+    color: $dark-blue;
+    margin-bottom: 0;
+  }
+
+  .error-text {
+    display: none;
+    color: red;
+  }
+
+  &.error .error-text,
+  &.success .title__3,
+  &.success .success-text {
+    display: block;
+  }
+
+  &.error .modal-loading,
+  &.success .modal-loading {
+    display: none;
+  }
+}
+
+.contact-modal .success-text {
+  margin-bottom: 16px;
+}
 /* end of modal style */
 
 /* Overwrite fullpage.js */
