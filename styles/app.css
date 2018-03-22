@@ -91,6 +91,22 @@ button {
 .opacity-7 {
   opacity: 0.7; }
 
+.error-msg::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg:-moz-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg::-moz-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
+.error-msg:-ms-input-placeholder {
+  font-weight: 700;
+  color: #f00 !important; }
+
 /* modal style */
 .wechat-modal img {
   width: 100%; }

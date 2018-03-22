@@ -232,7 +232,7 @@
 					<source class="video__mp4" src="" type="video/mp4">
 					<source class="video__webm" src="" type="video/webm">
 				</video> -->
-				<iframe  width="100%" height="100%" src="https://www.youtube.com/embed/lrWl11R2ar8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+				<iframe  width="100%" height="100%" src="" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="section" id="section6">
@@ -480,12 +480,18 @@
 			<div class="s10__content">
 				<h2 class="title__2">Subscribe to our newsletter and request for white paper</h2>
 				<hr>
-				<div class="s10__form-group">
-					<div class="s10__input">
-						<input type="text" placeholder="Your Email">
+				<form id="subscribeform" name="myform" action="sendmail.php" enctype="multipart/form-data" method="post"></form>
+					<div class="s10__form-group">
+						<div class="s10__input">
+							<input type="email" placeholder="Your Email" id="subscribeEmail" name="email" data-placeholder="Email">
+						</div>
+						<input type="hidden" value="wendylw2013@gmail.com" name="receiver">
+						<input type="hidden" value="subscribe" name="subject">
+						<input type="text" value="" class="website_url" name="website_url">
+						<button type="submit" name="submit" id="subscribeSubmit">subscribe</button>
 					</div>
-					<button>subscribe</button>
-				</div>
+					<span class="subscribe-result"></span>
+				</form>
 			</div>
 		</section>
 		<section class="section" id="section11">
