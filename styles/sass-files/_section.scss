@@ -94,6 +94,14 @@
       margin-bottom: 0;
       max-width: 70px;
     }
+
+    .title__4.zh {
+      max-width: 80px;
+    }
+
+    .title__4.zh ~ hr {
+      margin-left: -30px;
+    }
   }
 
   &__title {
@@ -600,6 +608,16 @@ $s6-image-path: "../images/7-";
       background-color: $pink;
       border-radius: 4px;
     }
+
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    label {
+      color: $white;
+      cursor: pointer;
+    }
   }
 
   &__avatar {
@@ -645,9 +663,14 @@ $s6-image-path: "../images/7-";
     margin: auto;
     max-width: $max-container;
 
+    a {
+      display: block;
+      font-size: 0;
+    }
+
     .row {
       position: absolute;
-      top: 50%;
+      top: 46%;
       left: 50%;
       width: 70%;
 
@@ -674,6 +697,10 @@ $s6-image-path: "../images/7-";
     padding-top: 42%;
     background-image: url(../images/9-banner.png);
     background-size: 100% auto;
+  }
+
+  &__top-offset-1 {
+    margin-top: 40%;
   }
 }
 /* end of section 8 */
@@ -750,14 +777,26 @@ $s6-image-path: "../images/7-";
 
   .left-1 {
     margin-top: -394px;
+
+    &.zh {
+      margin-top: -315px;
+    }
   }
 
   .left-2 {
     margin-top: -104px;
+
+    &.zh {
+      margin-top: -124px;
+    }
   }
 
   .left-3 {
     margin-top: -46px;
+
+    &.zh {
+      margin-top: -95px;
+    }
   }
 
   .right-1 {
@@ -768,6 +807,11 @@ $s6-image-path: "../images/7-";
   .right-2 {
     padding-top: 10px;
     margin-top: -114px;
+
+    &.zh {
+      margin-top: -62px;
+      padding-top: 0px;
+    }
   }
 
   .left-1,
