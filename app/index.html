@@ -9,6 +9,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- build:css styles/normalize.css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- endbuild -->
+
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/fullpage.js/dist/jquery.fullpage.css" />
@@ -18,6 +22,10 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:css styles/mobile.css -->
+    <link rel="stylesheet" media="(max-width: 1024px) and (orientation: portrait)" href="./styles/mobile.css" type="text/css"
+    />
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -251,8 +259,7 @@
     					<source class="video__mp4" src="" type="video/mp4">
     					<source class="video__webm" src="" type="video/webm">
     				</video> -->
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/lrWl11R2ar8" frameborder="0" allow="encrypted-media"
-            allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src="" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
         </div>
       </section>
       <section class="section" id="section6">
@@ -526,12 +533,21 @@
         <div class="s10__content">
           <h2 class="title__2">Subscribe to our newsletter and request for white paper</h2>
           <hr>
+          <form id="subscribeform" name="myform"></form>
           <div class="s10__form-group">
             <div class="s10__input">
-              <input type="text" placeholder="Your Email">
+              <input type="email" placeholder="Your Email" id="subscribeEmail" name="email" data-placeholder="Email" />
             </div>
-            <button>subscribe</button>
+            <button type="submit" name="subscribeSubmit" id="subscribeSubmit">subscribe</button>
           </div>
+          </form>
+        </div>
+
+        <div id="subscribeModal" class="modal subscribe-modal">
+          <h3 class="title__3 modal-loading">Loading...</h3>
+          <h3 class="title__3">Thank You For Subscribing!</h3>
+          <p class="success-text">Subscribe successful</p>
+          <p class="error-text">Oop! Server has error, you can contact populstay.</p>
         </div>
       </section>
       <section class="section" id="section11">
@@ -583,20 +599,27 @@
           <label class="">+65 83381130 / walter@populstay.com</label>
           <div class="row">
             <div class="col-6">
-              <input type="text" placeholder="Your Name" />
+              <input type="text" placeholder="Your Name" id="contactName" name="contactName" data-placeholder="Name" />
             </div>
             <div class="col-6">
-              <input type="text" placeholder="Your Email" />
+              <input type="text" placeholder="Your Email" id="contactEmail" name="contactEmail" data-placeholder="Email" />
             </div>
           </div>
           <di>
-            <input type="text" placeholder="Your Title" />
+            <input type="text" placeholder="Your Title" id="contactTitle" name="contactTitle" data-placeholder="Name" />
           </di>
           <div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <textarea name="" cols="30" rows="10" placeholder="Your Message" id="contactMessage" name="contactMessage" data-placeholder="Message"
+            /></textarea>
           </div>
-          <button>Send</button>
+          <button type="submit" name="contactSubmit" id="contactSubmit">Send</button>
         </form>
+
+        <div id="contactModal" class="modal contact-modal">
+          <h3 class="title__3 modal-loading">Loading...</h3>
+          <p class="success-text">Send message successful</p>
+          <p class="error-text">Oop! Server has error, you can contact by wechat.</p>
+        </div>
       </section>
       <section class="section" id="section13">
         <div class="s12__bg-cover"></div>
