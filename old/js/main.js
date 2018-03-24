@@ -23,23 +23,6 @@ $(document).ready(function() {
     $('#videomodal').modal();
   });
 
-  // var type = navigator.appName;
-  // var lang = 'en';
-
-  // if (type === "Netscape") {
-  //   lang = navigator.language
-  // } else {
-  //   lang = navigator.userLanguage
-  // }
-
-  // lang = lang.substr(0, 2);
-
-  // if (lang === "en"){
-  //   window.location.href="http://www.populstay.com/index.html"
-  // } else if (lang === "zh"){
-  //   window.location.href="http://www.populstay.com/zh.html"
-  // }
-
   // $('#videomodal').on($.modal.OPEN, function() {
   //   var productVideo = document.getElementById('product-video');
 
@@ -72,7 +55,7 @@ $(document).ready(function() {
   // FORM VALIDATION
   function checkSubscribe() {
     //email (check if entered anything)
-    var email = $("input#subscribeEmail").val();
+    var email = $('input#subscribeEmail').val();
     var email_base = 'Provide Valid E-mail';
     //email (check if entered anything)
 
@@ -81,14 +64,14 @@ $(document).ready(function() {
       return pattern.test(emailAddress);
     }
 
-    if (!email || email === "") {
-        $("input#subscribeEmail").focus();
+    if (!email || email === '') {
+        $('input#subscribeEmail').focus();
         $('input#subscribeEmail').attr('placeholder', email_base);
         $('input#subscribeEmail').addClass('error-msg');
         return false;
-    } else if (email !== "") { // If something was entered
+    } else if (email !== '') { // If something was entered
         if (!isValidEmailAddress(email)) {
-            $("input#subscribeEmail").focus();
+            $('input#subscribeEmail').focus();
             $('input#subscribeEmail').val('');
             $('input#subscribeEmail').attr('placeholder', email_base);
             $('input#subscribeEmail').addClass('error-msg');
@@ -103,20 +86,20 @@ $(document).ready(function() {
 
   function checkContact() {
     //name
-    var name = $("input#contactName").val();
+    var name = $('input#contactName').val();
     var name_base = 'Provide Valid Name';
 
     //email (check if entered anything)
-    var email = $("input#contactEmail").val();
+    var email = $('input#contactEmail').val();
     var email_base = 'Provide Valid E-mail';
     //email (check if entered anything)
 
     // title
-    var title = $("input#contactTitle").val();
+    var title = $('input#contactTitle').val();
     var title_base = 'Title must not be empty';
 
     // comments
-    var comments = $("textarea#contactMessage").val();
+    var comments = $('textarea#contactMessage').val();
     var comments_base = 'Message must not be empty';
 
     function isValidEmailAddress(emailAddress) {
@@ -124,17 +107,17 @@ $(document).ready(function() {
         return pattern.test(emailAddress);
     }
 
-    if (!name || name === "") {
+    if (!name || name === '') {
       $('input#contactName').focus();
       $('input#contactName').attr('placeholder', name_base);
       $('input#contactName').addClass('error-msg');
       return false;
-    } else if (!email || email === "") {
+    } else if (!email || email === '') {
         $('input#contactEmail').focus();
         $('input#contactEmail').attr('placeholder', email_base);
         $('input#contactEmail').addClass('error-msg');
         return false;
-    } else if (email !== "") { // If something was entered
+    } else if (email !== '') { // If something was entered
         if (!isValidEmailAddress(email)) {
             $('input#contactEmail').focus();
             $('input#contactEmail').val('');
@@ -144,14 +127,14 @@ $(document).ready(function() {
         }
     }
 
-    if (!comments || comments === "") {
+    if (!comments || comments === '') {
       $('textarea#contactMessage').focus();
       $('textarea#contactMessage').attr('placeholder', comments_base);
       $('textarea#contactMessage').addClass('error-msg');
       return false;
     }
 
-    if (!title || title === "") {
+    if (!title || title === '') {
       $('input#contactTitle').focus();
       $('input#contactTitle').attr('placeholder', title_base);
       $('input#contactTitle').addClass('error-msg');
@@ -213,10 +196,10 @@ $(document).ready(function() {
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
-        name: $("input#contactName").val(),
-        title: $("input#contactTitle").val(),
+        name: $('input#contactName').val(),
+        title: $('input#contactTitle').val(),
         email: $('input#contactEmail').val(),
-        message: $("textarea#contactMessage").val()
+        message: $('textarea#contactMessage').val()
       }),
       success: function(data) {
         if (data.status === 'success') {
