@@ -646,6 +646,20 @@ button {
   background-repeat: no-repeat;
   background-position: bottom right; }
 
+.s0__lang {
+  text-align: right;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  padding: 30px 0;
+  margin: 20px 0;
+  color: #f5426c;
+  z-index: 2; }
+.s0__lang a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 2.0rem; }
 .s0__bg-points {
   background-image: url(../images/1-bg.png);
   background-position: center 15%; }
