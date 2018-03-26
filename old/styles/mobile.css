@@ -221,8 +221,6 @@ body {
 @media screen and (max-height: 950px) {
   .s0__lang {
     padding: 0; }
-  .s0__lang a {
-    font-size: 1.6rem; }
   .s0__logo {
     margin: 5px 0;
     width: 35px; }
