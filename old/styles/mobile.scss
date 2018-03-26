@@ -340,7 +340,9 @@ body {
       padding: 0;
     }
 
-    &__lang a {
+    &__lang a,
+    &__lang span {
+
       font-size: 1.6rem;
     }
 
