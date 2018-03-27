@@ -27,8 +27,8 @@
     text-align: right;
     position: absolute;
     top: 0;
-    left: 10%;
-    right: 10%;
+    left: 20%;
+    right: 20%;
     padding: 30px 0;
     margin: 20px 0;
     color: $pink;
@@ -639,8 +639,25 @@ $s6-image-path: "../images/7-";
   }
 
   &__avatar {
+    position: relative;
     margin: auto;
     width: 150px;
+
+    .linkedin-hover-div {
+      position: absolute;
+      top: 2px;
+      bottom: 2px;
+      left: 2px;
+      right: 2px;
+      width: 100%;
+      background: url(../../images/in.svg) no-repeat center;
+      background-color: rgba(245, 66, 108, 0.3);
+      border-radius: 50%;
+      opacity: 0;
+
+      @include autoprefixer('transition', opacity ease-in-out 0.3s);
+      -webkit-backface-visibility: hidden;
+    }
   }
 
   &__avatar:before {
@@ -652,6 +669,10 @@ $s6-image-path: "../images/7-";
     background-size: 100% auto;
     background-repeat: no-repeat;
     border-radius: 50%;
+  }
+
+  &__avatar:hover .linkedin-hover-div {
+    opacity: 1;
   }
 
   &__1:before {
