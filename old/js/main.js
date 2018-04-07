@@ -158,7 +158,11 @@ $(document).ready(function() {
       type: 'post',
       url: 'http://www.populstay.com:8080/populstay/subscribe',
       dataType: 'json',
+      crossDomain: true,
       contentType: 'application/json; charset=utf-8',
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      },
       data: JSON.stringify({
         email: $('input#subscribeEmail').val()
       }),
@@ -194,7 +198,11 @@ $(document).ready(function() {
       type: 'post',
       url: 'http://www.populstay.com:8080/populstay/contactUs',
       dataType: 'json',
+      crossDomain: true,
       contentType: 'application/json; charset=utf-8',
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      },
       data: JSON.stringify({
         name: $('input#contactName').val(),
         title: $('input#contactTitle').val(),
