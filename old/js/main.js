@@ -156,7 +156,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'post',
-      url: 'http://subscribe.populstay.com:8080/populstay/subscribe',
+      url: 'http://www.populstay.com:8080/populstay/subscribe',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
@@ -192,7 +192,7 @@ $(document).ready(function() {
 
     $.ajax({
       type: 'post',
-      url: 'http://subscribe.populstay.com:8080/populstay/contactUs',
+      url: 'http://www.populstay.com:8080/populstay/contactUs',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
