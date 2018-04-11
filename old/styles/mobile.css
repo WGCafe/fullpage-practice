@@ -219,6 +219,8 @@ body {
   .s12__content {
     max-width: 500px; } }
 @media screen and (max-height: 950px) {
+  .s0__lang {
+    padding: 0; }
   .s0__logo {
     margin: 5px 0;
     width: 35px; }
