@@ -220,7 +220,8 @@ body {
     max-width: 500px; } }
 @media screen and (max-height: 950px) {
   .s0__lang {
-    padding: 0; }
+    padding: 0;
+    right: 5%; }
   .s0__logo {
     margin: 5px 0;
     width: 35px; }
