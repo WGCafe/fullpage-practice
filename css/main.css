@@ -18,26 +18,21 @@ button {
   min-height: 500px;
   color: #f2f2f2;
   background-image: url(../email-template/images/subscribe-bg.jpg); }
-  .header .logo {
+  .header__logo {
     padding: 30px; }
-  .header .title {
+  .header__title {
     font-size: 60px;
     text-align: center; }
-  .header .contact-list {
+  .header__contact-list {
     text-align: center; }
-    .header .contact-list > li {
+    .header__contact-list > li {
       background: #fff;
       display: inline-block; }
-    .header .contact-list > .contact {
+    .header__contact-list > .contact {
       width: 20px;
       height: 20px;
       border-radius: 50%; }
-    .header .contact-list .line-left,
-    .header .contact-list .line-right {
-      width: 100px;
-      height: 1px;
-      margin-right: 20px; }
-    .header .contact-list .line-right {
+    .header__contact-list .line-right {
       margin-left: 20px; }
   .header .description {
     text-align: center; }
