@@ -5,6 +5,7 @@
 }
 
 .header {
+    min-height: 500px;
     color: #f2f2f2;
     background-image: url(../email-template/images/subscribe-bg.jpg);
 
@@ -73,4 +74,53 @@
             margin-right: 16px;
         }
    }
+}
+
+.advantage {
+    height: 200px;
+    background: #ccc;
+
+    >ul {
+        margin: 0;
+    }
+}
+
+.story {
+    min-height: 500px;
+
+    .story-content {
+        width: 1000px;
+        margin: 100px auto;
+        padding: 0 100px
+    }
+
+    .left {
+        display: inline-block;
+        margin-right: 150px;
+    }
+
+    .left .img {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        background: black;
+        display: inline-block;
+    }
+
+    .left .img:before {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        z-index: -1;
+        content: '';
+        width: 150px;
+        height: 200px;
+        background: red;
+        display: inline-block;
+    }
+
+    .right {
+        display: inline-block;
+        width: 400px;
+    }
 }
