@@ -1,0 +1,76 @@
+@import 'base';
+
+.section {
+    min-height: 600px;
+}
+
+.header {
+    color: #f2f2f2;
+    background-image: url(../email-template/images/subscribe-bg.jpg);
+
+   .logo {
+       padding: 30px;
+   } 
+
+   .title {
+       font-size: 60px;
+        text-align: center;
+   }
+
+   .contact-list {
+       text-align: center;
+
+       >li {
+            background: #fff;
+            display: inline-block;
+       }
+
+        >.contact {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .line-left,
+        .line-right {
+            width: 100px;
+            height: 1px;
+            margin-right: 20px;
+        }
+
+        .line-right {
+            margin-left: 20px;
+        }
+   }
+
+   .description {
+       text-align: center;
+   }
+
+   .visit-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        display: block;
+        margin: 0 auto;
+   }
+
+   .visit-text {
+        color: #fff;
+        font-size: 14px;
+        padding-right: 16px;
+        height: 40px;
+
+        &:before {
+            content: 'SITE';
+            background: #fff;
+            color: rgba(0, 0, 0, 7.5);
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+            font-size: 23px;
+            margin-right: 16px;
+        }
+   }
+}
