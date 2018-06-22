@@ -1,3 +1,101 @@
+* {
+  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+  box-sizing: border-box; }
 
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+button {
+  padding: 0;
+  margin: 0; }
+
+.section {
+  min-height: 600px; }
+
+.header {
+  min-height: 500px;
+  color: #f2f2f2;
+  background-image: url(../email-template/images/subscribe-bg.jpg); }
+  .header .logo {
+    padding: 30px; }
+  .header .title {
+    font-size: 60px;
+    text-align: center; }
+  .header .contact-list {
+    text-align: center; }
+    .header .contact-list > li {
+      background: #fff;
+      display: inline-block; }
+    .header .contact-list > .contact {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%; }
+    .header .contact-list .line-left,
+    .header .contact-list .line-right {
+      width: 100px;
+      height: 1px;
+      margin-right: 20px; }
+    .header .contact-list .line-right {
+      margin-left: 20px; }
+  .header .description {
+    text-align: center; }
+  .header .visit-btn {
+    background: transparent;
+    border: 2px solid #fff;
+    display: block;
+    margin: 0 auto; }
+  .header .visit-text {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 16px;
+    height: 40px; }
+    .header .visit-text:before {
+      content: 'SITE';
+      background: #fff;
+      color: black;
+      width: 100px;
+      height: 40px;
+      display: inline-block;
+      text-align: center;
+      line-height: 36px;
+      font-size: 23px;
+      margin-right: 16px; }
+
+.advantage {
+  height: 200px;
+  background: #ccc; }
+  .advantage > ul {
+    margin: 0; }
+
+.story {
+  min-height: 500px; }
+  .story .story-content {
+    width: 1000px;
+    margin: 100px auto;
+    padding: 0 100px; }
+  .story .left {
+    display: inline-block;
+    margin-right: 150px; }
+  .story .left .img {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    background: black;
+    display: inline-block; }
+  .story .left .img:before {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: -1;
+    content: '';
+    width: 150px;
+    height: 200px;
+    background: red;
+    display: inline-block; }
+  .story .right {
+    display: inline-block;
+    width: 400px; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,126 @@
+@import 'base';
+
+.section {
+    min-height: 600px;
+}
+
+.header {
+    min-height: 500px;
+    color: #f2f2f2;
+    background-image: url(../email-template/images/subscribe-bg.jpg);
+
+   .logo {
+       padding: 30px;
+   } 
+
+   .title {
+       font-size: 60px;
+        text-align: center;
+   }
+
+   .contact-list {
+       text-align: center;
+
+       >li {
+            background: #fff;
+            display: inline-block;
+       }
+
+        >.contact {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .line-left,
+        .line-right {
+            width: 100px;
+            height: 1px;
+            margin-right: 20px;
+        }
+
+        .line-right {
+            margin-left: 20px;
+        }
+   }
+
+   .description {
+       text-align: center;
+   }
+
+   .visit-btn {
+        background: transparent;
+        border: 2px solid #fff;
+        display: block;
+        margin: 0 auto;
+   }
+
+   .visit-text {
+        color: #fff;
+        font-size: 14px;
+        padding-right: 16px;
+        height: 40px;
+
+        &:before {
+            content: 'SITE';
+            background: #fff;
+            color: rgba(0, 0, 0, 7.5);
+            width: 100px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 36px;
+            font-size: 23px;
+            margin-right: 16px;
+        }
+   }
+}
+
+.advantage {
+    height: 200px;
+    background: #ccc;
+
+    >ul {
+        margin: 0;
+    }
+}
+
+.story {
+    min-height: 500px;
+
+    .story-content {
+        width: 1000px;
+        margin: 100px auto;
+        padding: 0 100px
+    }
+
+    .left {
+        display: inline-block;
+        margin-right: 150px;
+    }
+
+    .left .img {
+        position: relative;
+        width: 150px;
+        height: 200px;
+        background: black;
+        display: inline-block;
+    }
+
+    .left .img:before {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        z-index: -1;
+        content: '';
+        width: 150px;
+        height: 200px;
+        background: red;
+        display: inline-block;
+    }
+
+    .right {
+        display: inline-block;
+        width: 400px;
+    }
+}
