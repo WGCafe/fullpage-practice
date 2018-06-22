@@ -11,47 +11,43 @@ button {
   padding: 0;
   margin: 0; }
 
-.section {
-  min-height: 600px; }
-
 .header {
   min-height: 500px;
   color: #f2f2f2;
   background-image: url(../email-template/images/subscribe-bg.jpg); }
-  .header .logo {
+  .header__logo {
     padding: 30px; }
-  .header .title {
+  .header__title {
     font-size: 60px;
     text-align: center; }
-  .header .contact-list {
+  .header__contact {
     text-align: center; }
-    .header .contact-list > li {
+    .header__contact-list {
       background: #fff;
-      display: inline-block; }
-    .header .contact-list > .contact {
+      display: inline-block;
       width: 20px;
       height: 20px;
       border-radius: 50%; }
-    .header .contact-list .line-left,
-    .header .contact-list .line-right {
+    .header__contact-line-left, .header__contact-line-right {
       width: 100px;
       height: 1px;
+      border-radius: 0;
       margin-right: 20px; }
-    .header .contact-list .line-right {
+    .header__contact-line-right {
       margin-left: 20px; }
-  .header .description {
+  .header__description {
     text-align: center; }
-  .header .visit-btn {
+  .header__visit {
     background: transparent;
     border: 2px solid #fff;
     display: block;
     margin: 0 auto; }
-  .header .visit-text {
+  .header__visit-btn {
     color: #fff;
     font-size: 14px;
     padding-right: 16px;
     height: 40px; }
-    .header .visit-text:before {
+    .header__visit-btn:before {
       content: 'SITE';
       background: #fff;
       color: black;
@@ -66,25 +62,25 @@ button {
 .advantage {
   height: 200px;
   background: #ccc; }
-  .advantage > ul {
+  .advantage__list {
     margin: 0; }
 
 .story {
   min-height: 500px; }
-  .story .story-content {
+  .story__content {
     width: 1000px;
     margin: 100px auto;
     padding: 0 100px; }
-  .story .left {
+  .story__left {
     display: inline-block;
     margin-right: 150px; }
-  .story .left .img {
+  .story__left-img {
     position: relative;
     width: 150px;
     height: 200px;
     background: black;
     display: inline-block; }
-  .story .left .img:before {
+  .story__left-img:before {
     position: absolute;
     top: -20px;
     left: 20px;
@@ -94,7 +90,7 @@ button {
     height: 200px;
     background: red;
     display: inline-block; }
-  .story .right {
+  .story__right {
     display: inline-block;
     width: 400px; }
 
