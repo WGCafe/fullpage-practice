@@ -1,16 +1,15 @@
 @import 'var';
 
 * {
-	font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-	font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif;
 	box-sizing: border-box;
 	font-size: 14px;
 }
 
-ul li{
+ul {
 	list-style: none;
+	padding-left: 0;
 	margin: 0;
-	padding: 0;
 }
 
 button {
@@ -25,6 +24,23 @@ h2 {
 
 h3 {
 	font-size: 20px;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.align-middle {
+	vertical-align: middle;
 }
 
 // .container {
