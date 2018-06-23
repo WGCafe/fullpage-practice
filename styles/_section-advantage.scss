@@ -3,8 +3,12 @@
 	background: $lightter-gray;
 
 	&__list {
-		img {
+		li {
+			display: inline-block;
+		}
 
+		img {
+			max-height: 50px;
 		}
 	}
 }

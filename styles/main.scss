@@ -43,6 +43,16 @@ a {
 	vertical-align: middle;
 }
 
+.align-top {
+	vertical-align: top;
+}
+
+// .container {
+// 	width: 960px;
+// 	padding: 0 20px;
+// 	margin: 0 auto;
+// }
+
 @import 'header';
 @import 'section-advantage';
 @import 'section-story';
