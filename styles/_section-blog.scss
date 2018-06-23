@@ -1,0 +1,78 @@
+.blog {
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+
+  &__title {}
+
+  &__content {
+    overflow: hidden; 
+    position: relative;   
+  }
+
+  &__content:before,
+  &__content:after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    position: absolute;
+    top: 0;
+  }
+
+  &__content:after {
+    bottom: 0;
+  }
+
+  &__img {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    background: black;
+  }
+
+  &__text {
+    float: right;
+    display: inline-block;
+    width: 36%;
+  }
+
+  &__title {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  &__view-more-btn {
+    color: red;
+    cursor: pointer;
+  }
+
+  &__feedback-list {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    color: #ccc;
+  }
+
+  &__feedback-title {
+    color: #333;
+  }
+
+  &__visit {
+    text-align: right;
+  }
+
+  &__visit-ways {
+    display: inline-block;
+    padding-left: 10px;
+  }
+
+  &__visit-list {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+  }
+}
