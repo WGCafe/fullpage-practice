@@ -43,6 +43,19 @@
 
 
   &__bottom {
-    
+    &-img {
+      display: inline-block;
+      width: 40%;
+      height: 100px;
+      background: black;
+    }
+
+    &-logo {
+      display: inline-block;
+      width: 8%;
+      height: 100px;
+      margin-left: 2%;
+      background: black;
+    }
   }
 }
