@@ -23,6 +23,7 @@ h3 {
   margin: 0 auto; }
 
 .header {
+  position: relative;
   min-height: 500px;
   background-color: #2e246d;
   color: #fff; }
@@ -34,26 +35,18 @@ h3 {
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover; }
+  .header__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
   .header__logo {
-    padding: 30px; }
+    margin: 24px;
+    max-height: 70px; }
   .header__title {
     font-size: 60px;
     text-align: center; }
-  .header__contact {
-    text-align: center; }
-    .header__contact-list {
-      background: #fff;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%; }
-    .header__contact-line-left, .header__contact-line-right {
-      width: 100px;
-      height: 1px;
-      border-radius: 0;
-      margin-right: 20px; }
-    .header__contact-line-right {
-      margin-left: 20px; }
   .header__description {
     text-align: center; }
   .header__visit {

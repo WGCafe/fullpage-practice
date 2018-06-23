@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	min-height: 500px;
 	background-color: $header-bg-color;
 	color: $white;
@@ -14,37 +15,22 @@
 		background-size: cover;
 	}
 
+	&__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
 	&__logo {
-		padding: 30px;
+		margin: 24px;
+		max-height: 70px;
 	}
 
   &__title {
 		font-size: 60px;
 		text-align: center;
-	}
-
-	&__contact {
-		text-align: center;
-
-		&-list {
-			background: #fff;
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-		}
-
-		&-line-left,
-		&-line-right {
-			width: 100px;
-			height: 1px;
-			border-radius: 0;
-			margin-right: 20px;
-		}
-
-		&-line-right {
-			margin-left: 20px;
-		}
 	}
 
 	&__description {
