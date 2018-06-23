@@ -1,7 +1,2 @@
 node_modules
-dist
-.tmp
-bower_components
-test/bower_components
-old/fullPage.js-master
-old/jquery-modal-master
+.sass-cache
