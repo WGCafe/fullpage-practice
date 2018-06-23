@@ -104,8 +104,6 @@ a {
 .advantage {
   padding: 30px 10px;
   background: #f7f7f7; }
-  .advantage__list {
-    margin: 0; }
 
 .story__content {
   width: 960px;
@@ -178,10 +176,71 @@ a {
     display: inline-block;
     background: blue; }
 
-.lorem-ipsum__video {
-  width: 400px;
-  height: 300px;
-  display: block;
+.lorem-ipsum {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  text-align: center; }
+  .lorem-ipsum__text {
+    max-width: 700px;
+    margin: 0 auto; }
+  .lorem-ipsum__video {
+    width: 100%;
+    height: 500px;
+    display: block;
+    margin: 100px auto;
+    border: 2px solid #ddd; }
+
+.blog {
+  text-align: center;
+  width: 900px;
   margin: 0 auto; }
+  .blog__content {
+    overflow: hidden;
+    position: relative; }
+  .blog__content:before, .blog__content:after {
+    content: '';
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    display: block;
+    position: absolute;
+    top: 0; }
+  .blog__content:after {
+    bottom: 0; }
+  .blog__img {
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    background: black; }
+  .blog__text {
+    float: right;
+    display: inline-block;
+    width: 36%; }
+  .blog__title {
+    max-width: 200px;
+    margin: 0 auto; }
+  .blog__view-more-btn {
+    color: red;
+    cursor: pointer; }
+  .blog__feedback-list {
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    color: #ccc; }
+  .blog__feedback-title {
+    color: #333; }
+  .blog__visit {
+    text-align: right; }
+  .blog__visit-ways {
+    display: inline-block;
+    padding-left: 10px; }
+  .blog__visit-list {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black; }
 
 /*# sourceMappingURL=main.css.map */
