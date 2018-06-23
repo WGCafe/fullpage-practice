@@ -1,6 +1,50 @@
 .intro {
   &__team {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__team-title {
+    width: 200px;
+    height: 50px;
+    background: violet;
+    display: inline-block;
+  }
+
+  &__team-wrapper {
+    width: 100%;
+    font-size: 0;
+  }
+
+  &__team-list {
+    display: inline-block;
+    width: 20%;
+    margin-left: 4%
+  }
+
+  &__team-list-right {
+    margin-right: 4%;
+  }
+
+  &__team-member {
+    &-img {
+      width: 100px;
+      height: 100px;
+      border: 2px solid red;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
     
+    &-name {
+      display: inline-block;
+      width: 130px;
+      height: 30px;
+      line-height: 30px;
+      background: red;
+      color: white;
+    }
+    &-job {}
   }
 
   &__partner {}
