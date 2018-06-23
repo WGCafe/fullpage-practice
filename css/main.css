@@ -1,6 +1,8 @@
 * {
   font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-  box-sizing: border-box; }
+  font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 14px; }
 
 ul li {
   list-style: none;
@@ -11,10 +13,13 @@ button {
   padding: 0;
   margin: 0; }
 
+h3 {
+  font-size: 24px; }
+
 .header {
   min-height: 500px;
   color: #f2f2f2;
-  background-image: url(../email-template/images/subscribe-bg.jpg); }
+  background-color: blue; }
   .header__logo {
     padding: 30px; }
   .header__title {
@@ -92,6 +97,17 @@ button {
     display: inline-block; }
   .story__right {
     display: inline-block;
-    width: 400px; }
+    width: 480px; }
+  .story__title {
+    text-align: right; }
+  .story__title-img {
+    width: 150px;
+    height: 50px;
+    background: violet;
+    display: inline-block; }
+  .story__subtitle {
+    color: red;
+    text-align: center;
+    margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */
