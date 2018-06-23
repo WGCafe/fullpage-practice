@@ -53,6 +53,10 @@ a {
   float: left;
   width: 70%; }
 
+.container {
+  max-width: 1000px;
+  margin: auto; }
+
 .header {
   position: relative;
   padding-top: 50%;
