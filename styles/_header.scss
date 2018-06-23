@@ -1,9 +1,18 @@
 .header {
 	min-height: 500px;
+	background-color: $header-bg-color;
 	color: $white;
-	background-image: url(../img/header-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-top: 60%;
+
+		background-image: url(../img/header-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
 	&__logo {
 		padding: 30px;
