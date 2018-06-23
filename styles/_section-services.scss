@@ -1,0 +1,49 @@
+.services {
+  &__container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__type-line {
+    width: 400px;
+    height: 30px;
+    display: inline-block;
+    background: red;
+  }
+
+  &__roles {
+    overflow: hidden;
+  }
+
+  &__role-intro {
+    text-align: center;
+    width: 200px;
+    float: left;
+
+    & + & {
+      float: right;
+    }
+  }
+  
+  &__role-effects {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__role-effect-list {
+    width: 100px;
+    display: inline-block;
+    float: left;
+  }
+
+  &__role-effect-icon {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+
+}
