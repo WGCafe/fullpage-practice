@@ -1,113 +1,58 @@
-* {
-  font-family: Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-  font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  font-size: 14px; }
+/*
+Error: File to import not found or unreadable: color.
+        on line 1 of styles/main.scss
 
-ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
+1: @import 'color';
+2: 
+3: * {
+4: 	font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+5: 	font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+6: 	box-sizing: border-box;
 
-button {
-  padding: 0;
-  margin: 0; }
-
-h3 {
-  font-size: 24px; }
-
-.header {
-  min-height: 500px;
-  color: #f2f2f2;
-  background-color: blue; }
-  .header__logo {
-    padding: 30px; }
-  .header__title {
-    font-size: 60px;
-    text-align: center; }
-  .header__contact {
-    text-align: center; }
-    .header__contact-list {
-      background: #fff;
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border-radius: 50%; }
-    .header__contact-line-left, .header__contact-line-right {
-      width: 100px;
-      height: 1px;
-      border-radius: 0;
-      margin-right: 20px; }
-    .header__contact-line-right {
-      margin-left: 20px; }
-  .header__description {
-    text-align: center; }
-  .header__visit {
-    background: transparent;
-    border: 2px solid #fff;
-    display: block;
-    margin: 0 auto; }
-  .header__visit-btn {
-    color: #fff;
-    font-size: 14px;
-    padding-right: 16px;
-    height: 40px; }
-    .header__visit-btn:before {
-      content: 'SITE';
-      background: #fff;
-      color: black;
-      width: 100px;
-      height: 40px;
-      display: inline-block;
-      text-align: center;
-      line-height: 36px;
-      font-size: 23px;
-      margin-right: 16px; }
-
-.advantage {
-  height: 200px;
-  background: #ccc; }
-  .advantage__list {
-    margin: 0; }
-
-.story {
-  min-height: 500px; }
-  .story__content {
-    width: 960px;
-    margin: 100px auto;
-    padding: 0 20px; }
-  .story__left {
-    display: inline-block;
-    margin-right: 150px; }
-  .story__left-img {
-    position: relative;
-    width: 150px;
-    height: 200px;
-    background: black;
-    display: inline-block; }
-  .story__left-img:before {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    z-index: -1;
-    content: '';
-    width: 150px;
-    height: 200px;
-    background: red;
-    display: inline-block; }
-  .story__right {
-    display: inline-block;
-    width: 480px; }
-  .story__title {
-    text-align: right; }
-  .story__title-img {
-    width: 150px;
-    height: 50px;
-    background: violet;
-    display: inline-block; }
-  .story__subtitle {
-    color: red;
-    text-align: center;
-    margin-bottom: 40px; }
-
-/*# sourceMappingURL=main.css.map */
+Backtrace:
+styles/main.scss:1
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:45:in `import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: color.\A         on line 1 of styles/main.scss\A \A 1: @import 'color';\A 2: \A 3: * {\A 4: 	font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;\A 5: 	font-family: \"Helvetica Rounded CondensedBd\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\A 6: 	box-sizing: border-box;"; }
