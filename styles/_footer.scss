@@ -1,0 +1,31 @@
+.footer {
+  max-width: 900px;
+  margin: 0 auto;
+
+  &__above {
+    border-bottom: 1px solid red;
+    font-size: 0;
+  }
+
+  &__above-img {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    margin-right: 5%;
+    background: black;
+  }
+
+  &__above-contact {
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  &__above-follow {
+    display: inline-block;
+    width: 30%;
+  }
+
+
+  &__bottom {}
+}
