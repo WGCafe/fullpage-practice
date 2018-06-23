@@ -1,7 +1,9 @@
 .blog {
-  text-align: center;
-  width: 900px;
-  margin: 0 auto;
+  .blog__container {
+    text-align: center;
+    width: 900px;
+    margin: 0 auto;
+  }
 
   &__title {}
 

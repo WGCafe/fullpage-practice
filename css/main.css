@@ -199,55 +199,84 @@ a {
     margin: 100px auto;
     border: 2px solid #ddd; }
 
-.blog {
+.blog .blog__container {
   text-align: center;
   width: 900px;
   margin: 0 auto; }
-  .blog__content {
-    overflow: hidden;
-    position: relative; }
-  .blog__content:before, .blog__content:after {
-    content: '';
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    display: block;
-    position: absolute;
-    top: 0; }
-  .blog__content:after {
-    bottom: 0; }
-  .blog__img {
-    float: left;
-    display: inline-block;
-    width: 50%;
-    height: 300px;
-    background: black; }
-  .blog__text {
-    float: right;
-    display: inline-block;
-    width: 36%; }
-  .blog__title {
-    max-width: 200px;
-    margin: 0 auto; }
-  .blog__view-more-btn {
-    color: red;
-    cursor: pointer; }
-  .blog__feedback-list {
-    display: inline-block;
-    border-right: 1px solid #ccc;
-    padding-right: 10px;
-    color: #ccc; }
-  .blog__feedback-title {
-    color: #333; }
-  .blog__visit {
-    text-align: right; }
-  .blog__visit-ways {
-    display: inline-block;
-    padding-left: 10px; }
-  .blog__visit-list {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: black; }
+.blog__content {
+  overflow: hidden;
+  position: relative; }
+.blog__content:before, .blog__content:after {
+  content: '';
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  position: absolute;
+  top: 0; }
+.blog__content:after {
+  bottom: 0; }
+.blog__img {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+  background: black; }
+.blog__text {
+  float: right;
+  display: inline-block;
+  width: 36%; }
+.blog__title {
+  max-width: 200px;
+  margin: 0 auto; }
+.blog__view-more-btn {
+  color: red;
+  cursor: pointer; }
+.blog__feedback-list {
+  display: inline-block;
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+  color: #ccc; }
+.blog__feedback-title {
+  color: #333; }
+.blog__visit {
+  text-align: right; }
+.blog__visit-ways {
+  display: inline-block;
+  padding-left: 10px; }
+.blog__visit-list {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black; }
+
+.services__container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center; }
+.services__type-line {
+  width: 400px;
+  height: 30px;
+  display: inline-block;
+  background: red; }
+.services__roles {
+  overflow: hidden; }
+.services__role-intro {
+  text-align: center;
+  width: 200px;
+  float: left; }
+.services__role-effects {
+  width: 100%;
+  overflow: hidden; }
+.services__role-effect-list {
+  width: 100px;
+  display: inline-block;
+  float: left; }
+.services__role-effect-icon {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  border-radius: 50%;
+  display: inline-block; }
 
 /*# sourceMappingURL=main.css.map */
