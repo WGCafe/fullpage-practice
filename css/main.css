@@ -201,6 +201,13 @@ a {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center; }
+  .story-product__container:after {
+    content: "";
+    display: block;
+    margin: -20px auto 0;
+    border-left: 1px solid #151b4e;
+    max-width: 999px;
+    height: 20px; }
 .story-product__description {
   padding: 14px 0;
   margin: auto;
@@ -273,18 +280,17 @@ a {
     padding: 40px;
     border-left: 1px solid #151b4e; }
 
-.lock-design {
-  width: 960px;
-  margin: 0 auto; }
-  .lock-design__title {
-    font-weight: normal; }
-  .lock-design__intro {
-    margin-left: 150px; }
-  .lock-design__img {
-    width: 400px;
-    height: 200px;
-    display: inline-block;
-    background: blue; }
+.lock-design .container {
+  border-left: 1px solid #151b4e; }
+.lock-design__title {
+  margin: 0; }
+.lock-design__intro {
+  margin-left: 150px; }
+.lock-design__img {
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  background: blue; }
 
 .lorem-ipsum {
   position: relative;
