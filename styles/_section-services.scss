@@ -21,11 +21,11 @@
     width: 200px;
     float: left;
 
-    & + & {
-      float: right;
-    }
+    // & + & {
+    //   float: right;
+    // }
   }
-  
+
   &__role-effects {
     width: 100%;
     overflow: hidden;
