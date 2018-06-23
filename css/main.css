@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-size: 14px; }
 
+body {
+  margin: 0; }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -22,6 +25,12 @@ h3 {
 
 p {
   line-height: 1.4em; }
+
+label {
+  font-size: 14px; }
+
+span {
+  font-size: 12px; }
 
 a {
   text-decoration: none;
@@ -105,12 +114,75 @@ a {
     font-weight: 200; }
 
 .advantage {
-  padding: 30px 10px;
+  padding: 45px 10px 30px;
+  color: #555;
   background: #f7f7f7; }
-  .advantage__list li {
-    display: inline-block; }
-  .advantage__list img {
-    max-height: 50px; }
+  .advantage__list {
+    font-size: 0; }
+    .advantage__list img {
+      position: relative;
+      height: inherit;
+      z-index: 1; }
+    .advantage__list label {
+      display: block;
+      font-weight: bold; }
+    .advantage__list span {
+      font-weight: 300; }
+  .advantage__item {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px; }
+  .advantage__item:first-child {
+    padding-right: 30px; }
+    .advantage__item:first-child .advantage__icon:before {
+      width: 30%;
+      left: auto;
+      right: 0; }
+    .advantage__item:first-child .advantage__icon:after {
+      right: -15px; }
+  .advantage__icon {
+    display: block;
+    margin-bottom: 14px;
+    height: 48px; }
+    .advantage__icon:before, .advantage__icon:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+      background-color: #555;
+      transform: translateY(24px);
+      -webkit-transform: translateY(24px);
+      -moz-transform: translateY(24px);
+      -ms-transform: translateY(24px); }
+    .advantage__icon:after {
+      top: -4px;
+      left: auto;
+      right: 15px;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%; }
+  .advantage__logo {
+    padding-right: 0; }
+  .advantage__logo .advantage__icon {
+    padding-left: 40px;
+    height: 80px; }
+    .advantage__logo .advantage__icon img {
+      transform: translateY(-10%);
+      -webkit-transform: translateY(-10%);
+      -moz-transform: translateY(-10%);
+      -ms-transform: translateY(-10%); }
+    .advantage__logo .advantage__icon:before {
+      width: 10%; }
+    .advantage__logo .advantage__icon:after {
+      top: -7px;
+      left: 4%;
+      right: auto;
+      height: 8px;
+      width: 8px;
+      border: 4px solid #151b4e;
+      background-color: #f5426c; }
 
 .story__content {
   width: 960px;
