@@ -1,8 +1,9 @@
 .intro {
+  text-align: center;
+
   &__team {
     width: 960px;
     margin: 0 auto;
-    text-align: center;
   }
 
   &__team-title {
@@ -47,5 +48,32 @@
     &-job {}
   }
 
-  &__partner {}
+  &__partner {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  &__partner-title {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    background: violet;
+  }
+
+  &__partner-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__partner-list {
+    width: 30%;
+    height: 50px;
+    display: inline-block;
+    margin-left: 2.5%;
+    background: black;
+    float: left;
+    margin-bottom: 10px;
+  }
+
+  &__partner-logo {}
 }
