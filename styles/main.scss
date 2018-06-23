@@ -3,7 +3,11 @@
 * {
 	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: $main-font;
+}
+
+body {
+	margin: 0;
 }
 
 ul {
@@ -18,16 +22,24 @@ button {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: $title-big-font;
 }
 
 
 h3 {
-	font-size: 20px;
+	font-size: $title-font;
 }
 
 p {
 	line-height: 1.4em;
+}
+
+label {
+	font-size: $main-font;
+}
+
+span {
+	font-size: $small-font;
 }
 
 a {
