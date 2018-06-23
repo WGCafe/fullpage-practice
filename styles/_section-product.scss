@@ -1,7 +1,10 @@
 .product {
+	width: 960px;
+	margin: 0 auto;
+	
 	&__title {
 		text-align: right;
-    margin-bottom: 50px;
+    	margin-bottom: 50px;
 	}
 
 	&__title-img {
