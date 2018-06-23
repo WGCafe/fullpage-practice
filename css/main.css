@@ -14,8 +14,11 @@ button {
   padding: 0;
   margin: 0; }
 
-h3 {
+h2 {
   font-size: 24px; }
+
+h3 {
+  font-size: 20px; }
 
 .header {
   position: relative;
@@ -72,44 +75,81 @@ h3 {
   .advantage__list {
     margin: 0; }
 
-.story {
-  min-height: 500px; }
-  .story__content {
-    width: 960px;
-    margin: 100px auto;
-    padding: 0 20px; }
-  .story__left {
-    display: inline-block;
-    margin-right: 150px; }
-  .story__left-img {
-    position: relative;
-    width: 150px;
-    height: 200px;
-    background: black;
-    display: inline-block; }
-  .story__left-img:before {
-    position: absolute;
-    top: -20px;
-    left: 20px;
-    z-index: -1;
-    content: '';
-    width: 150px;
-    height: 200px;
-    background: red;
-    display: inline-block; }
-  .story__right {
-    display: inline-block;
-    width: 480px; }
-  .story__title {
-    text-align: right; }
-  .story__title-img {
+.story__content {
+  width: 960px;
+  padding: 0 20px;
+  margin: 100px auto; }
+.story__left {
+  display: inline-block;
+  margin-right: 150px; }
+.story__left-img {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  background: black;
+  display: inline-block; }
+.story__left-img:before {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  z-index: -1;
+  content: '';
+  width: 150px;
+  height: 200px;
+  background: red;
+  display: inline-block; }
+.story__right {
+  display: inline-block;
+  width: 480px; }
+.story__title {
+  text-align: right; }
+.story__title-img {
+  width: 150px;
+  height: 50px;
+  background: violet;
+  display: inline-block; }
+.story__subtitle {
+  color: red;
+  text-align: center;
+  margin-bottom: 40px; }
+
+.product {
+  width: 960px;
+  margin: 0 auto; }
+  .product__title {
+    text-align: right;
+    margin-bottom: 50px; }
+  .product__title-img {
     width: 150px;
     height: 50px;
     background: violet;
+    display: inline-block;
+    margin-right: 100px; }
+  .product__subtitle {
+    margin-bottom: 50px; }
+  .product__subtitle-img {
+    width: 200px;
+    height: 100px;
+    background: violet;
     display: inline-block; }
-  .story__subtitle {
-    color: red;
-    text-align: center;
-    margin-bottom: 40px; }
+
+.lock-design {
+  width: 960px;
+  margin: 0 auto; }
+  .lock-design__title {
+    font-weight: normal; }
+  .lock-design__intro {
+    margin-left: 150px; }
+  .lock-design__img {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    background: blue; }
+
+.lorem-ipsum__video {
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
