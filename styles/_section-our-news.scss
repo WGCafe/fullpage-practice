@@ -1,0 +1,32 @@
+.news {
+  text-align: center;
+
+  &__content {
+    font-size: 16px;
+    max-width: 408px;
+    margin: 0 auto;
+  }
+
+  &__quotation {}
+
+  &__abstract {}
+
+  &__channels {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__channel-list {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    margin-left: 4%;
+    float: left;
+    background: black;
+  }
+
+  &__channel-list {}
+
+  &__channel-img {}
+}
