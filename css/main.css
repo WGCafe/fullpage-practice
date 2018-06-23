@@ -45,6 +45,14 @@ a {
 .align-top {
   vertical-align: top; }
 
+.col-3 {
+  float: left;
+  width: 30%; }
+
+.col-7 {
+  float: left;
+  width: 70%; }
+
 .header {
   position: relative;
   padding-top: 50%;
@@ -184,43 +192,61 @@ a {
       border: 4px solid #151b4e;
       background-color: #f5426c; }
 
-.story__content {
-  width: 960px;
-  padding: 0 20px;
-  margin: 100px auto; }
-.story__left {
-  display: inline-block;
-  margin-right: 150px; }
-.story__left-img {
+.story-product__container {
+  background-image: url(../img/story-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center; }
+
+.story {
   position: relative;
-  width: 150px;
-  height: 200px;
-  background: black;
-  display: inline-block; }
-.story__left-img:before {
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  z-index: -1;
-  content: '';
-  width: 150px;
-  height: 200px;
-  background: red;
-  display: inline-block; }
-.story__right {
-  display: inline-block;
-  width: 480px; }
-.story__title {
-  text-align: right; }
-.story__title-img {
-  width: 150px;
-  height: 50px;
-  background: violet;
-  display: inline-block; }
-.story__subtitle {
-  color: red;
-  text-align: center;
-  margin-bottom: 40px; }
+  padding: 0 10px; }
+  .story:before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 1px;
+    background-color: #f5426c; }
+  .story .col-3:before {
+    content: "";
+    display: block;
+    padding-top: 56%; }
+  .story__content {
+    margin: auto;
+    max-width: 1000px;
+    border-bottom: 1px solid #f5426c; }
+    .story__content:after {
+      content: "";
+      display: block;
+      clear: both; }
+  .story__avatar {
+    position: relative;
+    width: 70%;
+    background: #fff;
+    display: inline-block; }
+  .story__article {
+    padding: 50px 0 100px;
+    border-right: 1px solid #f5426c; }
+  .story__title {
+    font-size: 0; }
+  .story__title-img {
+    display: inline-block;
+    padding-left: 15%;
+    width: 100%; }
+  .story__subtitle {
+    text-align: center;
+    padding: 40px 0;
+    margin: 0;
+    color: #f5426c; }
+  .story__description {
+    width: 60%;
+    padding: 14px 0;
+    margin: auto;
+    font-size: 12px;
+    color: #555;
+    opacity: 0.7; }
 
 .product {
   width: 960px;
