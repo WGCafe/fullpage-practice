@@ -73,9 +73,9 @@ h3 {
 .story {
   min-height: 500px; }
   .story__content {
-    width: 1000px;
+    width: 960px;
     margin: 100px auto;
-    padding: 0 100px; }
+    padding: 0 20px; }
   .story__left {
     display: inline-block;
     margin-right: 150px; }

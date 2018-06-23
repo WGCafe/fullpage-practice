@@ -1,137 +1,26 @@
-@import 'base';
-
-.header {
-	min-height: 500px;
-	color: #f2f2f2;
-	background-color: blue;
-
-	&__logo {
-		padding: 30px;
-	} 
-
-  &__title {
-		font-size: 60px;
-		text-align: center;
-	}
-
-	&__contact {
-		text-align: center;
-
-		&-list {
-			background: #fff;
-			display: inline-block;
-			width: 20px;
-			height: 20px;
-			border-radius: 50%;
-		}
-
-		&-line-left,
-		&-line-right {
-			width: 100px;
-			height: 1px;
-			border-radius: 0;
-			margin-right: 20px;
-		}
-
-		&-line-right {
-			margin-left: 20px;
-		}
-	}
-
-	&__description {
-		text-align: center;
-	}
-
-  &__visit {
-		background: transparent;
-		border: 2px solid #fff;
-		display: block;
-		margin: 0 auto;
-  }
-
-  &__visit-btn {
-		color: #fff;
-		font-size: 14px;
-		padding-right: 16px;
-		height: 40px;
-
-		&:before {
-			content: 'SITE';
-			background: #fff;
-			color: rgba(0, 0, 0, 7.5);
-			width: 100px;
-			height: 40px;
-			display: inline-block;
-			text-align: center;
-			line-height: 36px;
-			font-size: 23px;
-			margin-right: 16px;
-		}
-	}
+* {
+	font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+	font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+	font-size: 14px;
 }
 
-.advantage {
-	height: 200px;
-	background: #ccc;
-
-	&__list {
-		margin: 0;
-	}
+ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.story {
-	min-height: 500px;
-
-	&__content {
-		width: 1000px;
-		margin: 100px auto;
-		padding: 0 100px;
-	}
-
-	&__left {
-		display: inline-block;
-		margin-right: 150px;
-	}
-
-	&__left-img {
-		position: relative;
-		width: 150px;
-		height: 200px;
-		background: black;
-		display: inline-block;
-	}
-
-	&__left-img:before {
-		position: absolute;
-		top: -20px;
-		left: 20px;
-		z-index: -1;
-		content: '';
-		width: 150px;
-		height: 200px;
-		background: red;
-		display: inline-block;
-	}
-
-	&__right {
-		display: inline-block;
-		width: 480px;
-	}
-
-	&__title {
-		text-align: right;
-	}
-
-	&__title-img {
-		width: 150px;
-		height: 50px;
-		background: violet;
-		display: inline-block;
-	}
-
-	&__subtitle {
-		color: red;
-		text-align: center;
-		margin-bottom: 40px;
-	}
+button {
+	padding: 0;
+	margin: 0;
 }
+
+h3 {
+	font-size: 24px;
+}
+
+@import 'header';
+@import 'section-advantage';
+@import 'section-story';
+@import 'section-product';
