@@ -53,10 +53,6 @@ a {
   float: left;
   width: 70%; }
 
-.container {
-  width: 1000px;
-  margin: 0 auto; }
-
 .header {
   position: relative;
   padding-top: 50%;
@@ -368,6 +364,8 @@ a {
   text-align: center;
   width: 200px;
   float: left; }
+  .services__role-intro + .services__role-intro {
+    float: right; }
 .services__role-effects {
   width: 100%;
   overflow: hidden; }
@@ -381,5 +379,114 @@ a {
   background: blue;
   border-radius: 50%;
   display: inline-block; }
+
+.intro {
+  text-align: center; }
+  .intro__team {
+    width: 960px;
+    margin: 0 auto; }
+  .intro__team-title {
+    width: 200px;
+    height: 50px;
+    background: violet;
+    display: inline-block; }
+  .intro__team-wrapper {
+    width: 100%;
+    font-size: 0; }
+  .intro__team-list {
+    display: inline-block;
+    width: 20%;
+    margin-left: 4%; }
+  .intro__team-list-right {
+    margin-right: 4%; }
+  .intro__team-member-img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin: 0 auto; }
+  .intro__team-member-name {
+    display: inline-block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    background: red;
+    color: #fff; }
+  .intro__partner {
+    width: 600px;
+    margin: 0 auto; }
+  .intro__partner-title {
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    background: violet; }
+  .intro__partner-wrapper {
+    width: 100%;
+    overflow: hidden; }
+  .intro__partner-list {
+    width: 30%;
+    height: 50px;
+    display: inline-block;
+    margin-left: 2.5%;
+    background: black;
+    float: left;
+    margin-bottom: 10px; }
+
+.subscribe {
+  text-align: center; }
+  .subscribe__logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #555; }
+  .subscribe__email {
+    width: 360px;
+    font-size: 0;
+    margin: 0 auto; }
+  .subscribe__input {
+    width: 260px;
+    height: 40px; }
+  .subscribe__btn {
+    width: 100px;
+    height: 40px;
+    margin-left: -2px; }
+
+.news {
+  text-align: center; }
+  .news__content {
+    font-size: 16px;
+    max-width: 408px;
+    margin: 0 auto; }
+  .news__channels {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .news__channel-list {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    margin-left: 4%;
+    float: left;
+    background: black; }
+
+.footer {
+  max-width: 900px;
+  margin: 0 auto; }
+  .footer__above {
+    border-bottom: 1px solid red;
+    font-size: 0; }
+  .footer__above-img {
+    display: inline-block;
+    width: 30%;
+    height: 100px;
+    margin-right: 5%;
+    background: black; }
+  .footer__above-contact {
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%; }
+  .footer__above-follow {
+    display: inline-block;
+    width: 30%; }
 
 /*# sourceMappingURL=main.css.map */

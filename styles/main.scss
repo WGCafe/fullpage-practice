@@ -69,11 +69,6 @@ a {
 	width: 70%;
 }
 
-.container {
-	width: 1000px;
-	margin: 0 auto;
-}
-
 @import 'header';
 @import 'section-advantage';
 @import 'section-story-product';
@@ -83,4 +78,5 @@ a {
 @import 'section-services';
 @import 'section-team-member';
 @import 'section-subscribe';
+@import 'section-our-news';
 @import 'footer';

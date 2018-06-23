@@ -21,9 +21,9 @@
     width: 200px;
     float: left;
 
-    // & + & {
-    //   float: right;
-    // }
+    & + & {
+      float: right;
+    }
   }
 
   &__role-effects {
