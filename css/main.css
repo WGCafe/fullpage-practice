@@ -17,6 +17,11 @@ button {
 h3 {
   font-size: 24px; }
 
+.container {
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
 .header {
   min-height: 500px;
   background-color: #2e246d;
@@ -82,9 +87,7 @@ h3 {
 .story {
   min-height: 500px; }
   .story__content {
-    width: 960px;
-    margin: 100px auto;
-    padding: 0 20px; }
+    margin-top: 100px; }
   .story__left {
     display: inline-block;
     margin-right: 150px; }
@@ -119,24 +122,31 @@ h3 {
     text-align: center;
     margin-bottom: 40px; }
 
-.product {
-  width: 960px;
-  margin: 0 auto; }
-  .product__title {
-    text-align: right;
-    margin-bottom: 50px; }
-  .product__title-img {
-    width: 150px;
-    height: 50px;
-    background: violet;
-    display: inline-block;
-    margin-right: 100px; }
-  .product__subtitle {
-    margin-bottom: 50px; }
-  .product__subtitle-img {
-    width: 200px;
-    height: 100px;
-    background: violet;
-    display: inline-block; }
+.product__title {
+  text-align: right;
+  margin-bottom: 50px; }
+.product__title-img {
+  width: 150px;
+  height: 50px;
+  background: violet;
+  display: inline-block;
+  margin-right: 100px; }
+.product__subtitle {
+  margin-bottom: 50px; }
+.product__subtitle-img {
+  width: 200px;
+  height: 100px;
+  background: violet;
+  display: inline-block; }
+
+.lock-design__title {
+  font-weight: normal; }
+.lock-design__intro {
+  margin-left: 150px; }
+.lock-design__img {
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  background: blue; }
 
 /*# sourceMappingURL=main.css.map */

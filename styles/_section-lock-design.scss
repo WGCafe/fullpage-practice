@@ -1,0 +1,16 @@
+.lock-design {
+  &__title {
+    font-weight: normal;
+  }
+
+  &__intro {
+    margin-left: 150px;
+  }
+
+  &__img {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    background: blue;
+  }
+}

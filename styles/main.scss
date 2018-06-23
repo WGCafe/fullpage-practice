@@ -18,11 +18,23 @@ button {
 	margin: 0;
 }
 
+
 h3 {
 	font-size: 24px;
 }
+
+.container {
+	width: 960px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+// .text-center {
+// 	text-align: center;
+// }
 
 @import 'header';
 @import 'section-advantage';
 @import 'section-story';
 @import 'section-product';
+@import 'section-lock-design';
