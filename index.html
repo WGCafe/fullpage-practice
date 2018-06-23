@@ -14,7 +14,6 @@
 
   <link rel="stylesheet" href="css/normalize.css" type="text/css" >
   <link rel="stylesheet" href="css/main.css" type="text/css">
-  <link rel="stylesheet" href="css/yang.css" type="text/css">
 </head>
 
 <body>
@@ -27,46 +26,48 @@
     <header class="header">
       <img class="header__logo" src="./email-template/images/logo.png" alt="populstay-logo">
       <h1 class="header__title">PopulStay</h1>
-      <ul class="header__contact-list">
-        <li class="contact">
+      <ul class="header__contact">
+        <li class="header__contact-list header__contact-line-left"></li>
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
-        <li class="contact">
+        <li class="header__contact-list">
           <a href=""><img src="" alt=""></a>
         </li>
+        <li class="header__contact-list header__contact-line-right"></li>
       </ul>
-      <p class="description">
+      <p class="header__description">
         The decentralized booking and autonomous property management platform<br/>
         for vacation rental and the home sharing economy.<br/>
         PopulStay has been selected as part of the Blockchain Business Camp Tokyo.<br/>
         Details can be found here..
       </p>
-      <button class="visit-btn">
-        <span class="visit-text">Visit PopulStay Demo</span>
+      <button class="header__visit">
+        <span class="header__visit-btn">Visit PopulStay Demo</span>
       </button>
     </header>
 
     <!-- company advantage -->
-    <div class="advantage">
-      <ul>
+    <section class="advantage">
+      <ul class="advantage__list">
         <li>
           <i></i>
         </li>
@@ -83,18 +84,20 @@
           <i></i>
         </li>
       </ul>
-    </div>
+    </section>
     <!-- end of company advantage -->
 
     <!-- our story -->
     <section class="story">
-     <div class="story-content">
-        <div class="left">
-            <img class="img" src="" alt="" />
+     <div class="story__content">
+        <div class="story__left">
+            <img class="story__left-img" src="" alt="" />
           </div>
-          <div class="right">
-            <h>Our story</h>
-            <h3>Get to know Us</h3>
+          <div class="story__right">
+            <div class="story__title">
+              <img class="story__title-img" src="" alt="our story">
+            </div>
+            <h3 class="story__subtitle">Get to know Us</h3>
             <p>
               The founder Walter Wang Yue is a veteran property management guru for the sharing economy. He was an Airbnb host with over 200 reviews since 2013. He has been hosting more than 500 guests from 100 cities, making friends from all over the world.
             </p>
@@ -107,9 +110,9 @@
     <!-- end of our story -->
 
     <!-- Product -->
-    <section>
-      <div></div>
-      <div></div>
+    <section class="product">
+      <div class="product__title">Product</div>
+      <div class="product__subtitle">Blcokchainbased</div>
 
       <p>The biggest challenge and hidden danger of smart locks is security.</p>
       <p>For the hardware part, the cylinder in the lock allows the locksmith or thieve to open the door lock easily, it is just a matter of time, depending on the grade of the cylinder. For the software part, a central door lock management system means that once the server is hacked, hackers will acquire the control rights of all the door locks at zero cost. This would be a catastrophic event.</p>
