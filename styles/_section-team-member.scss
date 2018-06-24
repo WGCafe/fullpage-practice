@@ -1,79 +1,143 @@
 .intro {
-  text-align: center;
+  padding: 0 10px;
+  margin: 50px 0;
 
-  &__team {
-    width: 960px;
-    margin: 0 auto;
+  .container {
+    position: relative;
+    font-size: 0;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      display: block;
+      width: 1px;
+      height: 100%;
+    }
+
+    &:before {
+      top: 15%;
+      left: 1%;
+      background-color: $pink;
+    }
+
+    &:after {
+      top: 18%;
+      right: 1.8%;
+      background-color: $blue;
+    }
+  }
+
+  .container ~ .container {
+    &:before,
+    &:after {
+      top: 0;
+    }
+  }
+
+  &__bottom-line {
+    position: absolute;
+    width: 80%;
+    height: 14px;
+
+    &.pink {
+      bottom: -14px;
+      left: 1%;
+      border-bottom: 1px solid $pink;
+      border-left: 1px solid $pink;
+    }
+
+    &.blue {
+      bottom: 0;
+      right: 1.8%;
+      border-bottom: 1px solid $blue;
+      border-right: 1px solid $blue;
+    }
   }
 
   &__team-title {
-    width: 200px;
-    height: 50px;
-    background: violet;
-    display: inline-block;
+    width: 100%;
   }
 
   &__team-wrapper {
-    width: 100%;
+    padding: 70px 0;
     font-size: 0;
   }
 
-  &__team-list {
+  &__team-item {
     display: inline-block;
-    width: 20%;
-    margin-left: 4%
+    margin-bottom: 30px;
+    width: 25%;
   }
 
-  &__team-list-right {
-    margin-right: 4%;
-  }
-
-  &__team-member {
-    &-img {
-      width: 100px;
-      height: 100px;
-      border: 2px solid red;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-    
-    &-name {
-      display: inline-block;
-      width: 130px;
-      height: 30px;
-      line-height: 30px;
-      background: red;
-      color: $white;
-    }
-    &-job {}
-  }
-
-  &__partner {
-    width: 600px;
+  &__team-item-img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid $pink;
+    border-radius: 50%;
     margin: 0 auto;
   }
 
+  &__team-item-name {
+    display: block;
+    padding: 5px 0;
+    margin: 15px auto 5px;
+    width: 120px;
+    color: $white;
+    background-color: $pink;
+    font-style: normal;
+  }
+
+  &__team-item-title {
+    color: $light-gray;
+    font-weight: $font-weight-normal;
+  }
+
+  &__partner-container {
+    position: relative;
+    padding: 70px 0;
+  }
+
   &__partner-title {
-    display: inline-block;
-    width: 160px;
-    height: 40px;
-    background: violet;
+    margin-bottom: 50px;
+    width: 25%;
   }
 
-  &__partner-wrapper {
-    width: 100%;
-    overflow: hidden;
+  &__partners {
+    margin: auto;
+    width: 70%;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 
-  &__partner-list {
-    width: 30%;
-    height: 50px;
-    display: inline-block;
-    margin-left: 2.5%;
-    background: black;
+  &__partner {
     float: left;
-    margin-bottom: 10px;
+    padding: 0 5%;
+    margin: 5px 0;
+    width: 33.333333%;
+
+    img {
+      width: 100%;
+    }
   }
 
-  &__partner-logo {}
+  &__partner:first-child img {
+    padding: 10px 0;
+  }
+
+  &__divider {
+    width: 50%;
+    padding-top: 7%;
+    margin-left: 50%;
+
+    background-image: url(../img/team-pic.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+  }
 }

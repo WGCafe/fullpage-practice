@@ -3,7 +3,7 @@
   margin-top: 70px;
   margin-bottom: 70px;
 
-  .container{
+  .sub-container {
     border: 1px solid $blue;
 
     transform: translate(15px, -15px);
@@ -18,7 +18,7 @@
     border: 1px solid $pink;
     background-color: $white;
 
-    transform: translate(-15px 15px);
+    transform: translate(-15px, 15px);
     -webkit-transform: translate(-15px, 15px);
     -moz-transform: translate(-15px, 15px);
     -ms-transform: translate(-15px, 15px);
