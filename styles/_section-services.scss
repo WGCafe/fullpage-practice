@@ -18,7 +18,7 @@
 
   &__role-intro {
     text-align: center;
-    width: 200px;
+    max-width: 200px;
     float: left;
 
     & + & {
@@ -32,16 +32,13 @@
   }
 
   &__role-effect-list {
-    width: 100px;
+    width: 50%;
     display: inline-block;
     float: left;
   }
 
   &__role-effect-icon {
-    width: 100px;
-    height: 100px;
-    background: blue;
-    border-radius: 50%;
+    width: 100%;
     display: inline-block;
   }
 

@@ -64,6 +64,16 @@ a {
 	width: 30%;
 }
 
+.col-4 {
+	float: left;
+	width: 40%;
+}
+
+.col-6 {
+	float: left;
+	width: 60%;
+}
+
 .col-7 {
 	float: left;
 	width: 70%;
@@ -85,3 +95,5 @@ a {
 @import 'section-subscribe';
 @import 'section-our-news';
 @import 'footer';
+@import 'section-machine';
+@import 'section-communication';
