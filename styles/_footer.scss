@@ -11,27 +11,51 @@
     display: inline-block;
     width: 30%;
     height: 100px;
-    margin-right: 5%;
+    margin-right: 10%;
     background: black;
   }
 
   &__above-contact {
     display: inline-block;
     width: 30%;
-    margin-right: 5%;
+    margin-right: 10%;
   }
 
   &__above-follow {
     display: inline-block;
-    width: 30%;
+    width: 20%;
+    float: right;
+    max-width: 180px;
   }
 
   &__above-follow-ways {
-    
+    min-width: 100px;
   }
 
-  &__above-follow-list {}
+  &__above-follow-list {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 
 
-  &__bottom {}
+  &__bottom {
+    &-img {
+      display: inline-block;
+      width: 40%;
+      height: 100px;
+      background: black;
+    }
+
+    &-logo {
+      display: inline-block;
+      width: 8%;
+      height: 100px;
+      margin-left: 2%;
+      background: black;
+    }
+  }
 }

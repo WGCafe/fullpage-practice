@@ -1,0 +1,19 @@
+.machine {
+  overflow: hidden;
+
+  &__title-img {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: black;
+  }
+
+  &__subtitle {}
+
+  &__img {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    background: black;
+  }
+}
