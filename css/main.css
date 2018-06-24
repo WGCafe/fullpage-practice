@@ -288,22 +288,71 @@ a {
     padding: 40px;
     border-left: 1px solid #151b4e; }
 
-.lock-design .container {
-  padding: 40px 60px;
-  border-left: 1px solid #151b4e;
-  background-color: #f7f7f7;
-  border-radius: 0 24px 24px 0; }
-.lock-design__title {
-  margin: 0;
-  color: #555;
-  font-weight: 500; }
-.lock-design__intro {
-  margin-left: 150px; }
-.lock-design__img {
-  width: 400px;
-  height: 200px;
-  display: inline-block;
-  background: blue; }
+.lock-design {
+  position: relative;
+  max-width: 100%;
+  overflow-x: hidden; }
+  .lock-design:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: #f7f7f7; }
+  .lock-design li {
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; }
+    .lock-design li:before {
+      content: "";
+      display: block;
+      width: 100%; }
+  .lock-design .container {
+    position: relative;
+    padding: 40px 60px;
+    border-left: 1px solid #151b4e;
+    background-color: #f7f7f7;
+    border-radius: 0 24px 24px 0;
+    z-index: 1; }
+  .lock-design__title {
+    margin: 0;
+    color: #555;
+    font-weight: 500; }
+  .lock-design__intro {
+    text-align: right;
+    padding: 50px 10px; }
+  .lock-design li.lock-design__avatar {
+    margin: 0 20px;
+    width: 12%;
+    background-image: url(../img/lock-design-avatar.png); }
+    .lock-design li.lock-design__avatar:before {
+      padding-top: 104%; }
+  .lock-design__process {
+    background-image: url(../img/lock-design-process1.png); }
+    .lock-design__process:before {
+      padding-top: 100%; }
+  .lock-design__process ~ .lock-design__process {
+    background-image: url(../img/lock-design-process2.png); }
+  .lock-design__locker {
+    position: relative;
+    margin-left: 20px;
+    margin-right: -10px;
+    background-image: url(../img/lock-design-locker.png); }
+    .lock-design__locker:before {
+      padding-top: 120%; }
+    .lock-design__locker:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      width: 58%;
+      height: 100%;
+      background-image: url(../img/lock-design-smarter.png);
+      background-size: 100% auto; }
 
 .lorem-ipsum {
   position: relative;
