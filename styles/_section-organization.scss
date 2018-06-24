@@ -1,0 +1,31 @@
+.organization {
+  padding-bottom: 80px;
+  background-image: url(../img/organization-bg.png);
+  background-repeat: no-repeat;
+  background-size: auto 90%;
+  background-position: right center;
+
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  &__title {
+    width: 50%;
+  }
+
+  &__detail {
+    padding-left: 10%;
+  }
+
+  &__subtitle {
+    padding: 14px 0;
+    color: $gray;
+  }
+
+  &__description {
+    color: $light-gray;
+		opacity: 0.8;
+  }
+}
