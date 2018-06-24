@@ -1,27 +1,64 @@
 .subscribe {
   text-align: center;
+  padding: 70px 0;
+  background-image: url(../img/email-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center;
 
   &__logo {
-    display: inline-block;
+    display: block;
+    margin: auto;
     width: 50px;
     height: 50px;
-    background: $gray;
+    background-image: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  &__title {
+    margin: 30px 0;
+    color: $white;
+    font-weight: $font-weight-normal;
   }
 
   &__email {
-    width: 360px;
-    font-size: 0;
     margin: 0 auto;
+    max-width: 400px;
+    height: 40px;
+    font-size: 0;
   }
 
   &__input {
-    width: 260px;
-    height: 40px;
+    display: inline-block;
+    font-size: $main-font;
+    width: 65%;
+    height: 100%;
+    color: $gray;
+
+    input {
+      padding: 3px 12px;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      font-weight: $font-weight-normal;
+    }
   }
 
   &__btn {
-    width: 100px;
-    height: 40px;
-    margin-left: -2px;
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+
+    button {
+      margin-left: -2px;
+      border: 0;
+      font-size: $small-font;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      background-color: $blue;
+      font-weight: $font-weight-normal;
+    }
   }
 }

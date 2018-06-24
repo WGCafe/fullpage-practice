@@ -76,13 +76,21 @@ a {
   max-width: 900px;
   margin: auto; }
 
+.road-map {
+  padding: 70px 10px; }
+  .road-map__title {
+    width: 25%;
+    margin-bottom: 70px; }
+  .road-map__content {
+    width: 100%; }
+
 .header {
   position: relative;
   padding-top: 50%;
   min-height: 500px;
   background-color: #2e246d;
   color: #fff;
-  background-image: url(../img/header-bg.png);
+  background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
   .header__content {
@@ -730,23 +738,54 @@ a {
     background-position: top center; }
 
 .subscribe {
-  text-align: center; }
+  text-align: center;
+  padding: 70px 0;
+  background-image: url(../img/email-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center center; }
   .subscribe__logo {
-    display: inline-block;
+    display: block;
+    margin: auto;
     width: 50px;
     height: 50px;
-    background: #555; }
+    background-image: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+  .subscribe__title {
+    margin: 30px 0;
+    color: #fff;
+    font-weight: 300; }
   .subscribe__email {
-    width: 360px;
-    font-size: 0;
-    margin: 0 auto; }
-  .subscribe__input {
-    width: 260px;
-    height: 40px; }
-  .subscribe__btn {
-    width: 100px;
+    margin: 0 auto;
+    max-width: 400px;
     height: 40px;
-    margin-left: -2px; }
+    font-size: 0; }
+  .subscribe__input {
+    display: inline-block;
+    font-size: 14px;
+    width: 65%;
+    height: 100%;
+    color: #555; }
+    .subscribe__input input {
+      padding: 3px 12px;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      font-weight: 300; }
+  .subscribe__btn {
+    display: inline-block;
+    width: 35%;
+    height: 100%; }
+    .subscribe__btn button {
+      margin-left: -2px;
+      border: 0;
+      font-size: 12px;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: #151b4e;
+      font-weight: 300; }
 
 .news {
   text-align: center; }

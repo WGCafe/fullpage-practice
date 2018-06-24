@@ -98,6 +98,19 @@ a {
 	margin: auto;
 }
 
+.road-map {
+	padding: 70px 10px;
+
+	&__title {
+		width: 25%;
+		margin-bottom: 70px;
+	}
+
+	&__content {
+		width: 100%;
+	}
+}
+
 @import 'header';
 @import 'section-advantage';
 @import 'section-story-product';
