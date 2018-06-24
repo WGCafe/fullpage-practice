@@ -1,26 +1,52 @@
 .blog {
-  .blog__container {
-    text-align: center;
-    width: 900px;
-    margin: 0 auto;
+  padding: 0 10px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  .container{
+    border: 1px solid $blue;
+
+    transform: translate(15px, -15px);
+    -webkit-transform: translate(15px, -15px);
+    -moz-transform: translate(15px, -15px);
+    -ms-transform: translate(15px, -15px);
   }
 
-  &__title {}
+  &__detail {
+    position: relative;
+    padding: 30px 50px;
+    border: 1px solid $pink;
+    background-color: $white;
+
+    transform: translate(-15px 15px);
+    -webkit-transform: translate(-15px, 15px);
+    -moz-transform: translate(-15px, 15px);
+    -ms-transform: translate(-15px, 15px);
+  }
+
+  &__title {
+    margin: 20px 0;
+    color: $gray;
+  }
+
+  &__subtitle {
+    display: block;
+    margin: 20px 0 40px;
+    font-weight: $font-weight-normal;
+  }
 
   &__content {
-    overflow: hidden; 
-    position: relative; 
-    padding: 40px 0 20px;  
-  }
+    position: relative;
+    padding: 50px 0;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: $light-gray;
 
-  &__content:before,
-  &__content:after {
-    content: '';
-    width: 100%;
-    border-bottom: 1px solid #ddd;
-    display: block;
-    position: absolute;
-    top: 0;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 
   &__content:after {
@@ -28,59 +54,118 @@
   }
 
   &__img {
-    float: left;
-    display: inline-block;
-    width: 50%;
-    height: 300px;
-    background: black;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 1px;
+    background: $lightter-gray;
   }
 
-  &__text {
-    float: right;
-    display: inline-block;
-    width: 36%;
+  &__tag {
+    padding: 3px 20px;
+    line-height: 1em;
+    color: $white;
+    background-color: $pink;
+    font-weight: $font-weight-normal;
+    font-style: normal;
   }
 
-  &__title {
+  &__article-title {
+    margin: 30px auto;
     max-width: 200px;
-    margin: 0 auto;
+    color: $gray;
+  }
+
+  &__article {
+    margin: 0 auto 50px;
+    font-size: $big-font;
+    max-width: 350px;
+    color: $light-gray;
+    font-weight: $font-weight-normal;
+    opacity: 0.8;
   }
 
   &__view-more-btn {
-    color: red;
+    color: $pink;
     cursor: pointer;
+    font-size: $small-font;
   }
 
-  &__feedback-list {
+  &__feedback {
     display: inline-block;
-    border-right: 1px solid #ccc;
-    padding-right: 10px;
-    color: #ccc;
+    color: $gray;
   }
 
-  &__feedback-title {
-    color: #333;
-  }
-
-  &__visit {
-    text-align: right;
-  }
-
-  &__visit-ways {
+  &__feedback + &__feedback:before {
+    content: "";
+    vertical-align: middle;
     display: inline-block;
-    padding-left: 10px;
+    margin: 0 5px;
+    width: 1px;
+    height: 10px;
+    background-color: $gray;
   }
 
-  &__visit-list {
+  &__message-icon,
+  &__watch-icon,
+  &__share-icon {
+    max-height: 12px;
+  }
+
+  &__social-container {
+    padding: 30px 0;
+    color: $gray;
+
+    label {
+      font-size: $small-font;
+    }
+  }
+
+  &__social-icons {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: black;
   }
 
-  &__pre-btn {}
+  &__social {
+		display: inline-block;
+    margin: 0 3px;
+    color: $white;
+
+		a {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: $gray;
+			border-radius: 50%;
+    }
+
+    .iconfont {
+			font-size: $small-font;
+			line-height: 20px;
+		}
+	}
+
+  &__prev-btn,
   &__next-btn {
-    
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+
+  &__prev-btn {
+    left: -25px;
+    background-image: url(../img/blog-prev.png);
+  }
+
+  &__next-btn {
+    right: -25px;
+    background-image: url(../img/blog-next.png);
   }
 }

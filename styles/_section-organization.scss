@@ -1,14 +1,18 @@
 .organization {
-  padding-bottom: 80px;
-  background-image: url(../img/organization-bg.png);
-  background-repeat: no-repeat;
-  background-size: auto 90%;
-  background-position: right center;
+  padding: 0 10px;
 
-  &:after {
-    content: "";
-    display: block;
-    clear: both;
+  .container {
+    padding-bottom: 80px;
+    background-image: url(../img/organization-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+    background-position: right center;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
 
   &__title {

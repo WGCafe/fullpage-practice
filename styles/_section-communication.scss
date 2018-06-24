@@ -1,7 +1,56 @@
 .communication {
-  overflow: hidden;
+  padding: 0 10px;
 
-  &__ways {
-    
+  &__detail {
+    position: relative;
+  }
+
+  &__detail:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .col-5 {
+    padding: 50px 0;
+  }
+
+  .col-5:first-child {
+    position: absolute;
+    left: 0;
+    height: 100%;
+
+    background-image: url(../img/communication-pic.png);
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: center center;
+  }
+
+  .col-5 ~ .col-5 {
+    margin-left: 50%;
+    padding-right: 5%;
+  }
+
+  &__title-img {
+    width: 76%;
+  }
+
+  &__subtitle {
+    color: $gray;
+  }
+
+  &__description {
+    color: $light-gray;
+		opacity: 0.8;
+  }
+
+  &__bg {
+    width: 100%;
+    padding-top: 10%;
+
+    background-image: url(../img/communication-bg.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right center;
   }
 }
