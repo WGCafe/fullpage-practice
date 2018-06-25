@@ -5,8 +5,10 @@
   overflow-x: hidden;
 
   &:before {
-    position: absolute;
     content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
     display: block;
     width: 50%;
     height: 100%;
@@ -56,6 +58,21 @@
     &:before {
       padding-top: 104%;
     }
+
+    &:after {
+      display: block;
+      content: "Guest";
+      color: $gray;
+
+      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+    }
+  }
+
+  li ~ li.lock-design__avatar:after {
+    content: "Host";
   }
 
   &__process {

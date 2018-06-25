@@ -9,7 +9,6 @@
 body {
 	margin: 0;
 	padding-bottom: 70px;
-	min-width: 1100px;
 }
 
 ul {
@@ -115,7 +114,74 @@ a {
 
 	&__content {
 		width: 100%;
+		padding-top: 80%;
+
+		background-image: url(../img/road-map.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: center center;
 	}
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+	}
+
+	.sub-container {
+		max-width: 720px;
+	}
+}
+
+@media (max-width: 1024px) {
+	h2 {
+    font-size: $title-font;
+  }
+
+
+  h3 {
+    font-size: $main-font;
+  }
+
+  label {
+    font-size: $small-font;
+  }
+
+  span {
+    font-size: $smaller-font;
+  }
+}
+
+@media (max-width: 960px) {
+	p {
+		font-size: $small-font;
+	}
+
+	.container {
+    max-width: 640px;
+	}
+
+	.sub-container {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 767px) {
+	.road-map{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+			margin: 14px 0;
+			width: 36%;
+		}
+
+		&__content {
+			padding-top: 285%;
+
+			background-image: url(../img/road-map-mobile.png);
+		}
+  }
 }
 
 @import 'header';

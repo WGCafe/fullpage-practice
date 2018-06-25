@@ -7,8 +7,7 @@
 
 body {
   margin: 0;
-  padding-bottom: 70px;
-  min-width: 1100px; }
+  padding-bottom: 70px; }
 
 ul {
   list-style: none;
@@ -88,8 +87,50 @@ a {
     width: 25%;
     margin-bottom: 70px; }
   .road-map__content {
-    width: 100%; }
+    width: 100%;
+    padding-top: 80%;
+    background-image: url(../img/road-map.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center center; }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 800px; }
+
+  .sub-container {
+    max-width: 720px; } }
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 20px; }
+
+  h3 {
+    font-size: 14px; }
+
+  label {
+    font-size: 12px; }
+
+  span {
+    font-size: 11px; } }
+@media (max-width: 960px) {
+  p {
+    font-size: 12px; }
+
+  .container {
+    max-width: 640px; }
+
+  .sub-container {
+    max-width: 600px; } }
+@media (max-width: 767px) {
+  .road-map {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .road-map__title {
+      margin: 14px 0;
+      width: 36%; }
+    .road-map__content {
+      padding-top: 285%;
+      background-image: url(../img/road-map-mobile.png); } }
 .header {
   position: relative;
   padding-top: 50%;
@@ -255,7 +296,7 @@ a {
   .story:before {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -10px;
     content: "";
     width: 50%;
     height: 1px;
@@ -320,8 +361,10 @@ a {
   max-width: 100%;
   overflow-x: hidden; }
   .lock-design:before {
-    position: absolute;
     content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
     display: block;
     width: 50%;
     height: 100%;
@@ -357,6 +400,16 @@ a {
     background-image: url(../img/lock-design-avatar.png); }
     .lock-design li.lock-design__avatar:before {
       padding-top: 104%; }
+    .lock-design li.lock-design__avatar:after {
+      display: block;
+      content: "Guest";
+      color: #555;
+      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%); }
+  .lock-design li ~ li.lock-design__avatar:after {
+    content: "Host"; }
   .lock-design__process {
     background-image: url(../img/lock-design-process1.png); }
     .lock-design__process:before {
@@ -988,60 +1041,57 @@ a {
       margin-left: 10px;
       color: #f5426c; }
 
-.footer {
-  max-width: 900px;
-  margin: 0 auto; }
-  .footer .header__social-icons {
-    font-size: 0;
-    color: #fff; }
-    .footer .header__social-icons:before, .footer .header__social-icons:after {
-      content: none; }
-  .footer .header__social {
-    margin-top: 3px;
-    margin-bottom: 3px; }
-    .footer .header__social a {
-      background-color: #827d77; }
-  .footer__info {
-    border-bottom: 1px solid #f5426c;
-    font-size: 0;
-    font-size: 0; }
-    .footer__info:after {
-      content: "";
-      display: block;
-      clear: both; }
-  .footer__info-img {
-    display: inline-block;
-    padding-top: 25%;
-    margin: 20px 0 12px;
-    width: 100%;
-    background-image: url(../img/machine-pic.png);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center center; }
-  .footer__contact {
-    padding-top: 2%; }
-  .footer__contact-title {
-    color: #555;
-    font-weight: normal; }
-  .footer__follow {
-    padding-top: 2%;
-    padding-left: 5%; }
-  .footer__contact-email, .footer__contact-address {
-    font-size: 12px;
-    color: #827d77; }
-  .footer__follow-title {
-    margin-left: 3px;
-    margin-right: 3px;
-    color: #555;
-    font-weight: normal; }
-  .footer__copyright {
-    margin: 30px 0; }
-  .footer__copyright-title {
-    display: inline-block;
-    max-width: 300px; }
-  .footer__copyright-logo {
-    display: inline-block;
-    margin: 0 20px;
-    max-width: 44px; }
+.footer .header__social-icons {
+  font-size: 0;
+  color: #fff; }
+  .footer .header__social-icons:before, .footer .header__social-icons:after {
+    content: none; }
+.footer .header__social {
+  margin-top: 3px;
+  margin-bottom: 3px; }
+  .footer .header__social a {
+    background-color: #827d77; }
+.footer__info {
+  border-bottom: 1px solid #f5426c;
+  font-size: 0;
+  font-size: 0; }
+  .footer__info:after {
+    content: "";
+    display: block;
+    clear: both; }
+.footer__info-img {
+  display: inline-block;
+  padding-top: 25%;
+  margin: 20px 0 12px;
+  width: 100%;
+  background-image: url(../img/machine-pic.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center center; }
+.footer__contact {
+  padding-top: 2%; }
+.footer__contact-title {
+  color: #555;
+  font-weight: normal; }
+.footer__follow {
+  padding-top: 2%;
+  padding-left: 5%; }
+.footer__contact-email, .footer__contact-address {
+  font-size: 12px;
+  color: #827d77; }
+.footer__follow-title {
+  margin-left: 3px;
+  margin-right: 3px;
+  color: #555;
+  font-weight: normal; }
+.footer__copyright {
+  margin: 30px 0; }
+.footer__copyright-title {
+  display: inline-block;
+  max-width: 300px; }
+.footer__copyright-logo {
+  display: inline-block;
+  margin: 0 20px;
+  max-width: 44px; }
 
 /*# sourceMappingURL=main.css.map */
