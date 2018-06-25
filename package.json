@@ -5,7 +5,7 @@
   "scripts": {
     "start": "http-server . -p 8089",
     "scss": "scss --watch styles/main.scss:css/main.css",
-    "release": "tar zcvf fullpage-practice-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./css/*.css ./fonts-icons ./js",
+    "release": "tar zcvf fullpage-practice-$(date +%Y%m%dT%H%M).tar.gz ./*.html ./*.png ./*.ico ./css/*.css ./fonts ./img ./js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "directories": {
