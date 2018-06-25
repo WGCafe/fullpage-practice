@@ -8,6 +8,8 @@
 
 body {
 	margin: 0;
+	padding-bottom: 70px;
+	min-width: 1100px;
 }
 
 ul {
@@ -61,6 +63,11 @@ a {
 
 .align-top {
 	vertical-align: top;
+}
+
+.col-2 {
+	float: left;
+	width: 20%;
 }
 
 .col-3 {
@@ -123,6 +130,7 @@ a {
 @import 'section-team-member';
 @import 'section-subscribe';
 @import 'section-our-news';
-@import 'footer';
 @import 'section-machine';
 @import 'section-communication';
+@import 'section-contact-us';
+@import 'footer';

@@ -2,60 +2,88 @@
   max-width: 900px;
   margin: 0 auto;
 
-  &__above {
-    border-bottom: 1px solid red;
+  .header__social-icons {
     font-size: 0;
+    color: $white;
+
+		&:before,
+		&:after {
+			content: none;
+		}
   }
 
-  &__above-img {
-    display: inline-block;
-    width: 30%;
-    height: 100px;
-    margin-right: 10%;
-    background: black;
-  }
+  .header__social {
+    margin-top: 3px;
+    margin-bottom: 3px;
 
-  &__above-contact {
-    display: inline-block;
-    width: 30%;
-    margin-right: 10%;
-  }
-
-  &__above-follow {
-    display: inline-block;
-    width: 20%;
-    float: right;
-    max-width: 180px;
-  }
-
-  &__above-follow-ways {
-    min-width: 100px;
-  }
-
-  &__above-follow-list {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background: black;
-    margin-left: 10px;
-    margin-bottom: 10px;
-  }
-
-
-  &__bottom {
-    &-img {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: black;
+    a {
+      background-color: $light-gray;
     }
+  }
 
-    &-logo {
-      display: inline-block;
-      width: 8%;
-      height: 100px;
-      margin-left: 2%;
-      background: black;
+  &__info {
+    border-bottom: 1px solid $pink;
+    font-size: 0;
+    font-size: 0;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
     }
+  }
+
+  &__info-img {
+    display: inline-block;
+    padding-top: 25%;
+    margin: 20px 0 12px;
+    width: 100%;
+
+    background-image: url(../img/machine-pic.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+
+  &__contact {
+    padding-top: 2%;
+  }
+
+  &__contact-title {
+    color: $gray;
+    font-weight: normal;
+  }
+
+  &__follow {
+    padding-top: 2%;
+    padding-left: 5%;
+  }
+
+  &__contact-email,
+  &__contact-address {
+    font-size: $small-font;
+    color: $light-gray;
+  }
+
+  &__follow-title {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: $gray;
+    font-weight: normal;
+  }
+
+  &__copyright {
+    margin: 30px 0;
+  }
+
+  &__copyright-title {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  &__copyright-logo {
+    display: inline-block;
+    margin: 0 20px;
+    max-width: 44px;
   }
 }

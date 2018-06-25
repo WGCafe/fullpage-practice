@@ -83,7 +83,7 @@
         </li>
         <li class="align-top text-center advantage__item">
           <i class="advantage__icon">
-            <img src="./img/advantage-2.png" alt="populstay-advantage-2">
+            <img src="./img/advantage-2.jpg" alt="populstay-advantage-2">
           </i>
           <label>Decentralized Platform </label>
           <span>No middleman</span>
@@ -493,130 +493,136 @@
       <p class="subscribe__title">Subscribe to our Newsletter</p>
       <div class="subscribe__email">
         <div class="subscribe__input align-middle">
-          <input type="text"  placeholder="Enter your email address" />
+          <input type="email" placeholder="Enter your email address" id="subscribeEmail" name="email" data-placeholder="Email" />
         </div>
-        <div class="subscribe__btn align-middle"><button>SIGN UP</button></div>
+        <div class="subscribe__btn align-middle">
+          <button type="submit" name="subscribeSubmit" id="subscribeSubmit">SIGN UP</button>
+        </div>
       </div>
     </div>
     <!-- end of subscribe -->
 
     <!-- News -->
-    <section class="news">
-      <p class="news__content">
-				<b class="news__quotation">"</b>
-				目前Populstay(潮箱)项目已在东京顺利落地，并成功录取为日本东京都政府区块链加速器项目中全球仅有的8个名额其中之一。
-				<b class="news__quotation">"</b>
-			</p>
-      <h2 class="news__abstract">“PopulStay ( 潮箱 )” 抢滩东京<br>成功完成日本区块链创业项目路演大会！</h2>
-      <ul class="news__channels">
-        <li class="news__channel-list">
-					<img class="news__channel-img" src="" alt="" >
-				</li>
-				<li class="news__channel-list">
-					<img class="news__channel-img" src="" alt="" >
-				</li>
-				<li class="news__channel-list">
-					<img class="news__channel-img" src="" alt="" >
-				</li>
-				<li class="news__channel-list">
-					<img class="news__channel-img" src="" alt="" >
-				</li>
-      </ul>
+    <section class="news text-center">
+      <div class="container">
+        <div class="news__detail">
+          <img class="news__content" src="./img/news-content.png" alt="populstay-news-content">
+          <img class="news__title" src="./img/news-text.png" alt="populstay-news-title">
+          <ul class="news__channels">
+            <li class="news__channel align-middle">
+              <a href=""><img class="news__channel-img" src="./img/news-1.png" alt="populstay-news-1" ></a>
+            </li>
+            <li class="news__channel align-middle">
+              <a href=""><img class="news__channel-img" src="./img/news-2.png" alt="populstay-news-2" ></a>
+            </li>
+            <li class="news__channel align-middle">
+              <a href=""><img class="news__channel-img" src="./img/news-3.png" alt="populstay-news-3" ></a>
+            </li>
+            <li class="news__channel align-middle">
+              <a href=""><img class="news__channel-img" src="./img/news-4.png" alt="populstay-news-4" ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
     <!--end of News -->
 
     <!-- contact us -->
-    <section>
-      <div>
-        <form action="">
-          <input type="text" />
-          <input type="number" />
-          <input type="email" />
-          <input type="text" />
-          <!-- <textarea /> -->
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-us__card">
+          <div>
+            <img class="contact-us__title" src="./img/contact-us-title.png" alt="populstay-contact-us-title" />
+          </div>
+          <form class="col-5" action="">
+            <div class="contact-us__form-item">
+              <input type="text" placeholder="Name" id="contactName" name="contactName" data-placeholder="Name"/>
+            </div>
+            <div class="contact-us__form-item">
+              <input type="number" placeholder="Telephone" id="contactPhone" name="contactPhone" data-placeholder="Phone"/>
+            </div>
+            <div class="contact-us__form-item">
+              <input type="text" placeholder="Email" id="contactEmail" name="contactEmail" data-placeholder="Email"/>
+            </div>
+            <div class="contact-us__form-item">
+              <input type="text" placeholder="Address" id="contactAddress" name="contactAddress" data-placeholder="Address"/>
+            </div>
+            <div class="contact-us__textarea contact-us__form-item">
+              <label>Message</label>
+              <textarea name="" cols="30" rows="10" id="contactMessage" name="contactMessage" data-placeholder="Message" /></textarea>
+            </div>
 
-          <button>send</button>
-        </form>
-        <div>
-          <ul>
-            <li>
-              <i></i>
-              <span>Walter Wang Yue</span>
-            </li>
-            <li>
-              <i></i>
-              <span>walter@populstay.com</span>
-            </li>
-            <li>
-              <i></i>
-              <span>+65 83381130</span>
-            </li>
-          </ul>
-          <label>Download White Paper :</label>
-          <i>PDF</i>
-          <i>Google Doc</i>
+            <button class="contact-us__submit" type="submit" name="contactSubmit" id="contactSubmit">
+              <img src="./img/contact-us-send.png" alt="">
+            </button>
+          </form>
+          <div class="contact-us__contacter-info col-5">
+            <ul class="contact-us__contacter">
+              <li>
+                <i class="contact-us__icon name align-middle"></i>
+                <span class="align-middle">Walter Wang Yue</span>
+              </li>
+              <li>
+                <i class="contact-us__icon email align-middle"></i>
+                <span class="align-middle">walter@populstay.com</span>
+              </li>
+              <li>
+                <i class="contact-us__icon phone align-middle"></i>
+                <span class="align-middle">+65 83381130</span>
+              </li>
+            </ul>
+            <label>Download <strong>White Paper :</strong> </label>
+            <a class="contact-us__tag" href="#"><i>PDF</i></a><br />
+            <a class="contact-us__tag" href="#"><i>Google Doc</i></a>
+          </div>
         </div>
       </div>
     </section>
     <!-- end of contact us -->
 
     <footer class="footer">
-      <div class="footer__above">
-        <img class="footer__above-img">
-        <div class="footer__above-contact">
-          <h3 class="footer__above-contact-title">Contact Us</h3>
-          <label class="footer__above-contact-email">walter@populstay.com</label>
-          <p class="footer__above-contact-address">10 Anson Road #26-04 lntenational Plaza, Singapore 079903</p>
+      <div class="footer__info">
+        <div class="col-5">
+          <img class="footer__info-img">
         </div>
-        <div class="footer__above-follow">
-          <h3 class="footer__above-follow-title">Follow Us</h3>
-          <ul class="footer__above-follow-ways">
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+        <div class="footer__contact col-3">
+          <h3 class="footer__contact-title">Contact Us</h3>
+          <label class="footer__contact-email">walter@populstay.com</label>
+          <p class="footer__contact-address">10 Anson Road #26-04 lntenational Plaza, Singapore 079903</p>
+        </div>
+        <div class="footer__follow col-2">
+          <h3 class="footer__follow-title">Follow Us</h3>
+          <ul class="header__social-icons text-center">
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-facebook"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-youtube"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-instagram"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-telegram"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-twitter"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-reddit"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-wechat"></i></a>
             </li>
-            <li class="footer__above-follow-list">
-              <a href="" class="footer__above-follow-link">
-                <img class="footer__above-follow-img" src="" alt="">
-              </a>
+            <li class="header__social align-middle">
+              <a href=""><i class="iconfont icon-weibo"></i></a>
             </li>
           </ul>
         </div>
       </div>
-      <div class="footer__bottom">
-        <img class="footer__bottom-img" src="" alt="">
-        <img class="footer__bottom-logo" src="" alt="">
+      <div class="footer__copyright">
+        <img class="footer__copyright-title align-middle" src="./img/footer-title.png" alt="">
+        <img class="footer__copyright-logo align-middle" src="./img/footer-logo.png" alt="">
       </div>
     </footer>
 
