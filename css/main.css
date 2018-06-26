@@ -498,8 +498,8 @@ a {
   .platform__intro {
     position: absolute;
     top: 50px;
-    left: -10px;
-    right: -10px;
+    left: 0;
+    right: 0;
     background: #f7f7f7; }
     .platform__intro h3 {
       padding: 10px 15px;
