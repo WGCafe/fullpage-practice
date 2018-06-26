@@ -72,6 +72,7 @@
   }
 
   &__team-item-img {
+    display: inline-block;
     width: 100px;
     height: 100px;
     border: 2px solid $pink;
