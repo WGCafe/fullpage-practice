@@ -96,17 +96,17 @@
     &:before {
       padding-top: 120%;
     }
+  }
 
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: block;
-      width: 58%;
-      height: 100%;
-      background-image: url(../img/lock-design-smarter.png);
-      background-size: 100% auto;
-    }
+  &__intro ~ &__intro &__locker:after {
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 0;
+    display: block;
+    width: 58%;
+    height: 100%;
+    background-image: url(../img/lock-design-smarter.png);
+    background-size: 100% auto;
   }
 }
