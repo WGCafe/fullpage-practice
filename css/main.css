@@ -495,6 +495,8 @@ a {
       content: "";
       display: block;
       clear: both; }
+  .platform__intro {
+    background: #f7f7f7; }
   .platform .col-4 {
     position: relative; }
     .platform .col-4:before {
