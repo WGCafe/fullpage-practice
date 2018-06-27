@@ -885,10 +885,17 @@ a {
     color: #fff;
     font-weight: 300; }
   .subscribe__email {
+    position: relative;
     margin: 0 auto;
     max-width: 400px;
     height: 40px;
     font-size: 0; }
+  .subscribe__email-validate-error {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    color: red;
+    font-size: 13px; }
   .subscribe__input {
     display: inline-block;
     font-size: 14px;
