@@ -1080,6 +1080,7 @@ a {
     background-color: transparent;
     border-radius: 12px; }
   .contact-us__textarea {
+    position: relative;
     margin: 5px 0;
     border: 1px solid #555;
     border-radius: 12px; }
@@ -1097,6 +1098,9 @@ a {
       background-color: transparent;
       resize: none;
       outline: none; }
+    .contact-us__textarea .formtips {
+      position: absolute;
+      margin-top: 5px; }
   .contact-us__submit {
     margin-top: 50px;
     max-width: 100px;
@@ -1138,6 +1142,8 @@ a {
     .contact-us__icon ~ span {
       margin-left: 10px;
       color: #f5426c; }
+  .contact-us .formtips {
+    color: red; }
 
 .footer .header__social-icons {
   font-size: 0;
