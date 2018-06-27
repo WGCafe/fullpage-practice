@@ -1051,6 +1051,10 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 80%;
   background-position: left top; }
+  .contact-us input[type=number]::-webkit-outer-spin-button,
+  .contact-us input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield; }
   .contact-us .col-5 {
     padding-top: 50px; }
   .contact-us:before {
