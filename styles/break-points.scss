@@ -253,7 +253,7 @@
     }
 
     &__subtitle-img {
-      width: 60%;
+      width: 80%;
     }
   }
 
@@ -352,6 +352,10 @@
     &__pic.col-5:first-child {
       background-size: 80% auto;
       padding-top: 40%;
+    }
+
+    &__title-img {
+      width: 100%;
     }
 
     &__bg {
