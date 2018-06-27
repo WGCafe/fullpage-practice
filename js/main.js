@@ -8,7 +8,7 @@ $(function() {
     return pattern.test(emailAddress);
   }
 
-  $('#subscribeSubmit').click((function() {
+  $('#subscribeSubmit').on("click", function() {
     var inputValue = $('#subscribeEmail').val();
 
     $('.subscribe__email-validate-error').remove();
@@ -19,8 +19,6 @@ $(function() {
     } else if (!isValidEmailAddress(inputValue)) {
       $('#subscribeEmail').focus();
       $('#subscribeEmail').after('<span class="subscribe__email-validate-error">Mailbox format error, please re-enter! </span>');
-    } else {
-      // TODO: Do Subscribing request
     }
-  }));
+  });
 });
