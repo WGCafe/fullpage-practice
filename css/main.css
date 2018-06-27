@@ -808,7 +808,8 @@ a {
   .intro__team-item {
     display: inline-block;
     margin-bottom: 30px;
-    width: 25%; }
+    /* width: 25%; */
+    width: 33.333333%; }
     .intro__team-item a {
       display: inline-block; }
     .intro__team-item a ~ a {
@@ -821,7 +822,26 @@ a {
     height: 100px;
     border: 2px solid #f5426c;
     border-radius: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; }
+    .intro__team-item-img.wang {
+      background-image: url(../img/team-wangyue.jpg); }
+    .intro__team-item-img.cai {
+      background-image: url(../img/team-cai.jpg); }
+    .intro__team-item-img.lin {
+      background-image: url(../img/team-brainLin.jpg); }
+    .intro__team-item-img.l-jun {
+      background-image: url(../img/team-cai.jpg); }
+    .intro__team-item-img.tao {
+      background-image: url(../img/team-cai.jpg); }
+    .intro__team-item-img.zhong {
+      background-image: url(../img/team-christie.jpg); }
+    .intro__team-item-img.e {
+      background-image: url(../img/team-e.jpg); }
+    .intro__team-item-img.dw-jun {
+      background-image: url(../img/team-eric.jpg); }
   .intro__team-item-name {
     display: block;
     padding: 5px 0;
