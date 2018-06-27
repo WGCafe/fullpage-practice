@@ -23,10 +23,19 @@
   }
 
   &__email {
+    position: relative;
     margin: 0 auto;
     max-width: 400px;
     height: 40px;
     font-size: 0;
+  }
+
+  &__email-validate-error {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    color: red;
+    font-size: 13px;
   }
 
   &__input {
