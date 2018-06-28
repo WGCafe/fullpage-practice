@@ -168,6 +168,12 @@ a {
 	animation-delay: -1.0s;
 }
 
+.qrcode-modal {
+	&-img {
+		width: 100%;
+	}
+}
+
 @-webkit-keyframes sk-bounce {
   0%, 100% {
 		-webkit-transform: scale(0);
