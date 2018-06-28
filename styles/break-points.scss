@@ -284,6 +284,19 @@
     &__intro {
       padding: 10px 0 24px;
     }
+
+    li.lock-design__locker {
+      margin: 0 -10px;
+    }
+
+    li.lock-design__process {
+      margin-left: 10px;
+    }
+
+    li.lock-design__process ~ &__process {
+      margin-left: 0;
+      margin-right: 10px;
+    }
   }
 
   .platform {

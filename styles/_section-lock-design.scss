@@ -89,8 +89,6 @@
 
   &__locker {
     position: relative;
-    margin-left: 20px;
-    margin-right: -10px;
     background-image: url(../img/lock-design-locker.png);
 
     &:before {
@@ -101,10 +99,10 @@
   &__intro ~ &__intro &__locker:after {
     content: "";
     position: absolute;
-    left: 15%;
+    left: 0;
     top: 0;
     display: block;
-    width: 58%;
+    width: 100%;
     height: 100%;
     background-image: url(../img/lock-design-smarter.png);
     background-size: 100% auto;
