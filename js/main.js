@@ -13,6 +13,14 @@ function isValidPhoneNumber(phoneNumber) {
 }
 
 $(function() {
+  // Hide the loading if time exceeds 20 seconds
+  var loading = setTimeout(function(){
+    if (!$('.loading').hasClass('hidden')) {
+      $('.loading').addClass('hidden');
+      clearTimeout(loading);
+    }
+  }, 20000);
+
   $('#subscribeSubmit').on('click', function() {
     var inputValue = $('#subscribeEmail').val();
 
