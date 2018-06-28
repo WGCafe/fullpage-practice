@@ -239,6 +239,8 @@ a {
       border-radius: 50%; }
   .header__description {
     font-weight: 300; }
+    .header__description a {
+      text-decoration: underline; }
   .header__demo-button {
     display: inline-block;
     margin: 20px 0;

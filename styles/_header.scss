@@ -71,6 +71,10 @@
 
 	&__description {
 		font-weight: $font-weight-normal;
+
+		a {
+			text-decoration: underline;
+		}
 	}
 
 	&__demo-button {
