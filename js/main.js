@@ -12,7 +12,17 @@ function isValidPhoneNumber(phoneNumber) {
   return pattern.test(phoneNumber);
 }
 
+
+
 $(function() {
+  // Hide the loading if time exceeds 20 seconds
+  var loading = setTimeout(function(){
+    if (!$('.loading').hasClass('hidden')) {
+      $('.loading').addClass('hidden');
+      clearTimeout(loading);
+    }
+  }, 20000);
+
   $('#subscribeSubmit').on('click', function() {
     var inputValue = $('#subscribeEmail').val();
 
@@ -41,7 +51,7 @@ $(function() {
       var _this = $('#contactName');
 
       if(!_this.val() || _this.val() === ''){
-        errorMsg = '请输入至少用户名.';
+        errorMsg = 'Please enter the contact name.';
         $('#contactName').parent().append('<span class="formtips onError">'+errorMsg+'</span>');
       }
     }
