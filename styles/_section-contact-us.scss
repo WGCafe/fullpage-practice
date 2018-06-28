@@ -5,6 +5,12 @@
   background-size: 100% 80%;
   background-position: left top;
 
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+
   .col-5 {
     padding-top: 50px;
   }

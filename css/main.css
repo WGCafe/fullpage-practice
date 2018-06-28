@@ -402,7 +402,7 @@ a {
   .product__subtitle {
     padding: 50px 0; }
   .product__subtitle-img {
-    width: 30%; }
+    width: 50%; }
   .product__article {
     padding: 40px;
     border-left: 1px solid #151b4e; }
@@ -548,9 +548,9 @@ a {
       display: block;
       clear: both; }
   .organization__title {
-    width: 50%; }
+    width: 100%; }
   .organization__detail {
-    padding-left: 10%; }
+    padding-left: 8%; }
   .organization__subtitle {
     padding: 14px 0;
     color: #555; }
@@ -1031,7 +1031,7 @@ a {
     margin-left: 50%;
     padding-right: 5%; }
   .communication__title-img {
-    width: 76%; }
+    width: 105%; }
   .communication__subtitle {
     color: #555; }
   .communication__description {
@@ -1051,6 +1051,10 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 80%;
   background-position: left top; }
+  .contact-us input[type=number]::-webkit-outer-spin-button,
+  .contact-us input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield; }
   .contact-us .col-5 {
     padding-top: 50px; }
   .contact-us:before {
