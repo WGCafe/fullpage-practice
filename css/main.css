@@ -212,9 +212,13 @@ a {
     margin: 24px;
     max-height: 70px; }
   .header__title {
+    display: inline-block;
     margin: 0 0 0.5em;
     line-height: 1em;
     font-size: 100px; }
+  .header__subtitle {
+    font-weight: 300;
+    text-align: right; }
   .header__social-icons {
     padding: 1em 0;
     color: #5f3082; }
