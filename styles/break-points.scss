@@ -356,6 +356,12 @@
     }
   }
 
+  .organization {
+    &__title {
+      width: 100%;
+    }
+  }
+
   .communication {
     .col-5 ~ .col-5 {
       padding: 20px 0 10px 10%;

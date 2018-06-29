@@ -555,9 +555,9 @@ a {
       display: block;
       clear: both; }
   .organization__title {
-    width: 100%; }
+    width: 110%; }
   .organization__detail {
-    padding-left: 8%; }
+    padding-left: 10%; }
   .organization__subtitle {
     padding: 14px 0;
     color: #555; }
