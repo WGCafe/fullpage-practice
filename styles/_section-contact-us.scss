@@ -11,6 +11,22 @@
     -moz-appearance: textfield;
   }
 
+  input::-webkit-input-placeholder {
+    color: $pink;
+  }
+
+  input::-moz-placeholder {
+    color: $pink;
+  }
+
+  input:-ms-input-placeholder {
+    color: $pink;
+  }
+
+  input:-moz-placeholder {
+    color: $pink;
+  }
+
   .col-5 {
     padding-top: 50px;
   }

@@ -1062,6 +1062,14 @@ a {
   .contact-us input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     -moz-appearance: textfield; }
+  .contact-us input::-webkit-input-placeholder {
+    color: #f5426c; }
+  .contact-us input::-moz-placeholder {
+    color: #f5426c; }
+  .contact-us input:-ms-input-placeholder {
+    color: #f5426c; }
+  .contact-us input:-moz-placeholder {
+    color: #f5426c; }
   .contact-us .col-5 {
     padding-top: 50px; }
   .contact-us:before {
