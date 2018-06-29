@@ -22,7 +22,8 @@
 @media (max-width: 1024px) {
   .header{
     &__title {
-      font-size: $m-heaer-title-font;
+      margin: 0 0 0.2em;
+      max-width: 350px;
     }
 
     &__social-icons:before,
@@ -127,7 +128,7 @@
 @media (max-width: 767px) {
   .header{
     &__title {
-      font-size: $min-heaer-title-font;
+      max-width: 250px;
     }
 
     &__social-icons {

@@ -215,7 +215,9 @@ a {
     display: inline-block;
     margin: 0 0 0.5em;
     line-height: 1em;
-    font-size: 100px; }
+    max-width: 500px; }
+    .header__title img {
+      width: 100%; }
   .header__subtitle {
     font-weight: 300;
     text-align: right; }
