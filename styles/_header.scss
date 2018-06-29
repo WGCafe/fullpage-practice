@@ -31,9 +31,15 @@
 	}
 
   &__title {
+		display: inline-block;
 		margin: 0 0 0.5em;
 		line-height: 1em;
 		font-size: $heaer-title-font;
+	}
+
+	&__subtitle {
+		font-weight: $font-weight-normal;
+		text-align: right;
 	}
 
 	&__social-icons {
