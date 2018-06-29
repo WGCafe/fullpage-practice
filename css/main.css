@@ -565,27 +565,51 @@ a {
     color: #827d77;
     opacity: 0.8; }
 
-.lorem-ipsum {
+.video {
   position: relative;
   padding: 0 10px; }
-  .lorem-ipsum iframe {
+  .video iframe {
     position: absolute;
     left: 0;
     top: 0; }
-  .lorem-ipsum__title {
+  .video__title {
     margin: 60px 0 0;
     color: #555; }
-  .lorem-ipsum__hint {
+  .video__hint {
     max-width: 700px;
     margin: 40px auto;
     line-height: 1.3em;
     color: #827d77;
     opacity: 0.8; }
-  .lorem-ipsum__video {
+  .video__detail {
     position: relative;
     width: 100%;
-    padding-top: 60%;
-    background-color: #f7f7f7; }
+    padding-top: 58%;
+    background-color: #263238;
+    border-radius: 20px;
+    background-image: url(../img/video-frame.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center; }
+  .video__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    background-color: #fff;
+    /* temp styles */ }
+    .video__content h1 {
+      position: relative;
+      top: 50%;
+      margin: 0;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%); }
 
 .blog {
   padding: 0 10px;
