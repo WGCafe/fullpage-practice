@@ -1,0 +1,86 @@
+.footer {
+  .header__social-icons {
+    font-size: 0;
+    color: $white;
+
+		&:before,
+		&:after {
+			content: none;
+		}
+  }
+
+  .header__social {
+    margin-top: 3px;
+    margin-bottom: 3px;
+
+    a {
+      background-color: $light-gray;
+    }
+  }
+
+  &__info {
+    border-bottom: 1px solid $pink;
+    font-size: 0;
+    font-size: 0;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  &__info-img {
+    display: inline-block;
+    padding-top: 25%;
+    margin: 20px 0 12px;
+    width: 100%;
+
+    background-image: url(../img/machine-pic.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+
+  &__contact {
+    padding-top: 2%;
+  }
+
+  &__contact-title {
+    color: $gray;
+    font-weight: normal;
+  }
+
+  &__follow {
+    padding-top: 2%;
+    padding-left: 5%;
+  }
+
+  &__contact-email,
+  &__contact-address {
+    font-size: $small-font;
+    color: $light-gray;
+  }
+
+  &__follow-title {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: $gray;
+    font-weight: normal;
+  }
+
+  &__copyright {
+    margin: 30px 0;
+  }
+
+  &__copyright-title {
+    display: inline-block;
+    max-width: 300px;
+  }
+
+  &__copyright-logo {
+    display: inline-block;
+    margin: 0 20px;
+    max-width: 44px;
+  }
+}

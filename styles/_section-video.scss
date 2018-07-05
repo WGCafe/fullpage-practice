@@ -1,0 +1,59 @@
+.video {
+  position: relative;
+  padding: 0 10px;
+
+  iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &__title {
+    margin: 60px 0 0;
+    color: $gray;
+  }
+
+  &__hint {
+    max-width: 700px;
+    margin: 40px auto;
+    line-height: 1.3em;
+    color: $light-gray;
+		opacity: 0.8;
+  }
+
+  &__detail {
+    position: relative;
+    width: 100%;
+    padding-top: 58%;
+    background-color: $video-bg-color;
+    border-radius: 20px;
+
+    background-image: url(../img/video-frame.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+
+  &__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: 85%;
+    margin: auto;
+    background-color: $white;
+
+    /* temp styles */
+    h1 {
+      position: relative;
+      top: 50%;
+      margin: 0;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+    }
+  }
+}

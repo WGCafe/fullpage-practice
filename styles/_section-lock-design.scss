@@ -1,0 +1,110 @@
+.lock-design {
+  position: relative;
+  padding: 0 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background-color: $lightter-gray;
+  }
+
+  li {
+    text-align: center;
+    display: inline-block;
+    width: 15%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+    padding: 40px 60px;
+    border-left: 1px solid $blue;
+    background-color: $lightter-gray;
+    border-radius: 0 24px 24px 0;
+    z-index: 1;
+  }
+
+  &__title {
+    margin: 0;
+    color: $gray;
+    font-weight: $font-weight-bold;
+  }
+
+  &__intro {
+    text-align: right;
+    padding: 50px 10px;
+  }
+
+  li.lock-design__avatar {
+    margin: 0 20px;
+    width: 12%;
+    background-image: url(../img/lock-design-avatar.png);
+
+    &:before {
+      padding-top: 104%;
+    }
+
+    &:after {
+      display: block;
+      content: "Guest";
+      color: $gray;
+
+      transform: translateY(100%);
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+    }
+  }
+
+  li ~ li.lock-design__avatar:after {
+    content: "Host";
+  }
+
+  &__process {
+    background-image: url(../img/lock-design-process1.png);
+
+    &:before {
+      padding-top: 100%;
+    }
+  }
+
+  &__process ~ &__process {
+    background-image: url(../img/lock-design-process2.png);
+  }
+
+  &__locker {
+    position: relative;
+    background-image: url(../img/lock-design-locker.png);
+
+    &:before {
+      padding-top: 120%;
+    }
+  }
+
+  &__intro ~ &__intro &__locker:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/lock-design-smarter.png);
+    background-size: 100% auto;
+  }
+}

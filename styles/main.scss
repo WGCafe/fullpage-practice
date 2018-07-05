@@ -1,14 +1,20 @@
+@import 'var';
+
 * {
-	font-family:Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
-	font-family: "Helvetica Rounded CondensedBd", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", Arial, sans-serif;
 	box-sizing: border-box;
-	font-size: 14px;
+	font-size: $main-font;
 }
 
-ul li{
-	list-style: none;
+body {
 	margin: 0;
-	padding: 0;
+	padding-bottom: 70px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
 }
 
 button {
@@ -16,11 +22,254 @@ button {
 	margin: 0;
 }
 
+h2 {
+	font-size: $title-big-font;
+}
+
+
 h3 {
-	font-size: 24px;
+	font-size: $title-font;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+label {
+	font-size: $main-font;
+}
+
+span {
+	font-size: $small-font;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
+
+.align-top {
+	vertical-align: top;
+}
+
+.col-2 {
+	float: left;
+	width: 20%;
+}
+
+.col-3 {
+	float: left;
+	width: 30%;
+}
+
+.col-4 {
+	float: left;
+	width: 40%;
+}
+
+.col-5 {
+	float: left;
+	width: 50%;
+}
+
+.col-6 {
+	float: left;
+	width: 60%;
+}
+
+.col-7 {
+	float: left;
+	width: 70%;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.sub-container {
+	max-width: 900px;
+	margin: auto;
+}
+
+.road-map {
+	padding: 70px 10px;
+
+	&__title {
+		width: 25%;
+		margin-bottom: 70px;
+	}
+
+	&__content {
+		width: 100%;
+		padding-top: 80%;
+
+		background-image: url(../img/road-map.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-position: center center;
+	}
+}
+
+.loading {
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #151b4e;
+	z-index: 200;
+}
+
+.loading.hidden {
+	display: none !important;
+}
+
+.spinner {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: 50%;
+	margin: 20px auto;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.double-bounce1,
+.double-bounce2 {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #f5426c;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+	animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+
+.qrcode-modal {
+	&-img {
+		width: 100%;
+	}
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+		-webkit-transform: scale(0);
+	}
+
+  50% {
+		-webkit-transform: scale(1);
+	}
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+
+  50% {
+    transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+	}
+
+	.sub-container {
+		max-width: 720px;
+	}
+}
+
+@media (max-width: 1024px) {
+	h2 {
+    font-size: $title-font;
+  }
+
+
+  h3 {
+    font-size: $main-font;
+  }
+
+  label {
+    font-size: $small-font;
+  }
+
+  span {
+    font-size: $smaller-font;
+  }
+}
+
+@media (max-width: 960px) {
+	p {
+		font-size: $small-font;
+	}
+
+	.container {
+    max-width: 640px;
+	}
+
+	.sub-container {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 767px) {
+	.road-map{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &__title {
+			margin: 14px 0;
+			width: 36%;
+		}
+
+		&__content {
+			padding-top: 285%;
+
+			background-image: url(../img/road-map-mobile.png);
+		}
+  }
 }
 
 @import 'header';
 @import 'section-advantage';
-@import 'section-story';
-@import 'section-product';
+@import 'section-story-product';
+@import 'section-lock-design';
+@import 'section-platform';
+@import 'section-organization';
+@import 'section-video';
+@import 'section-blog';
+@import 'section-services';
+@import 'section-team-member';
+@import 'section-subscribe';
+@import 'section-our-news';
+@import 'section-machine';
+@import 'section-communication';
+@import 'section-contact-us';
+@import 'footer';

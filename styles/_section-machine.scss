@@ -1,0 +1,41 @@
+.machine {
+  padding: 0 10px;
+
+  .container{
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+
+  .col-5 {
+    padding: 50px 0 40px 5%;
+  }
+
+  .col-5 ~ .col-5 {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+
+    background-image: url(../img/machine-pic.png);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    background-position: right center;
+  }
+
+  &__title-img {
+    width: 50%;
+  }
+
+  &__subtitle {
+    color: $gray;
+  }
+
+  &__description {
+    color: $light-gray;
+		opacity: 0.8;
+  }
+}
