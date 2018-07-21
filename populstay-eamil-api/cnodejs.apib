@@ -1,0 +1,283 @@
+FORMAT: 1A
+HOST: http://cnodejs.org/api/v1
+
+# CNodejs API
+欢迎使用 **CNodejs** API ，这些 API 提供了访问 **CNodejs** 基本的数据接口。
+
+# Group 主题
+CNodejs 主题部分的资源集合
+
+## Topics [/topics{?page,tab,limit,mdrender,accesstoken,title,content}]
+主题集合
+
+### 首页主题 [GET]
+分页按类型获取首页主题列表
+
++ Parameters
+
+    + page: `1` (number,optional) - 页数
+    + tab: `ask` (string,optional) - 主题分类。目前有 ask share job good
+        + Members
+            + `ask`
+            + `share`
+            + `job`
+            + `good`
+    + limit: `10` (number,optional) - 每一页的主题数量
+    + mdrender (string,optional) - 是否渲染出现的所有 markdown 格式+ 文本。
+        + Default: `true`
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true,
+                "data": [{
+                    "id": "57563b08c1326f410e9147f5",
+                    "author_id": "542bff0c10ab5791322617c7",
+                    "tab": "share",
+                    "content": "...省略了",
+                    "title": "Freecodecamp 第一回：端午节之约",
+                    "last_reply_at": "2016-06-08T01:05:03.911Z",
+                    "good": false,
+                    "top": true,
+                    "reply_count": 5,
+                    "visit_count": 678,
+                    "create_at": "2016-06-07T03:10:00.284Z",
+                    "author": {
+                        "loginname": "Samurais",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/3538629?v=3&s=120"
+                    }
+                }, {
+                    "id": "572afb6b15c24e592c16e1e6",
+                    "author_id": "504c28a2e2b845157708cb61",
+                    "tab": "share",
+                    "content": "...省略了",
+                    "title": "新的社区推荐客户端：Noder",
+                    "last_reply_at": "2016-06-07T14:47:00.183Z",
+                    "good": false,
+                    "top": true,
+                    "reply_count": 153,
+                    "visit_count": 15410,
+                    "create_at": "2016-05-05T07:51:07.576Z",
+                    "author": {
+                        "loginname": "alsotang",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1147375?v=3&s=120"
+                    }
+                }, {
+                    "id": "5696e43e6272216e51bff67e",
+                    "author_id": "54009f5ccd66f2eb37190485",
+                    "tab": "share",
+                    "content": "<div class=\"markdown-text\">...省略了<p><img src=\"//dn-cnode.qbox.me/FtALxsauUkYDGdzcuA5y6BaIdUMC\" alt=\"node全栈.png\"></p>\n</div>",
+                    "title": "国内Nodejs 2015汇总",
+                    "last_reply_at": "2016-06-03T07:45:07.581Z",
+                    "good": true,
+                    "top": true,
+                    "reply_count": 118,
+                    "visit_count": 54347,
+                    "create_at": "2016-01-13T23:56:46.312Z",
+                    "author": {
+                        "loginname": "i5ting",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/3118295?v=3&s=120"
+                    }
+                }]
+            }
+
+### 新建主题 [POST]
+新建一个主题
+
++ Parameters
+
+    + accesstoken (string) - 用户的 accessToken
+    + title (string) - 标题
+    + tab (string) 目前有 ask share job
+        + Members
+            + ask
+            + share
+            + job
+    + content (string) - 主体内容
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                success: true,
+                topic_id: '5433d5e4e737cbe96dcef312'
+            }
+
+## 主题详情 [GET /topic/{id}/{?mdrender,accesstoken}]
+根据`id`获取主题详情
+
++ Parameters
+
+    + id: `a2d4fa` (string) - 主题ID
+    + mdrender (string,optional) - 是否渲染出现的所有 markdown 格式文本。
+      + Default: `true`
+    + accesstoken (string,optional) - 当需要知道一个主题是否被特定用户收藏时，才需要带此参数。会影响返回值中的 `is_collect` 值。
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true,
+                "data": {
+                    "id": "5433d5e4e737cbe96dcef312",
+                    "author_id": "504c28a2e2b845157708cb61",
+                    "tab": "share",
+                    "content": "省略了……",
+                    "title": "一个面向 Node.js 初学者的系列课程：node-lessons",
+                    "last_reply_at": "2015-04-12T12:36:58.320Z",
+                    "good": true,
+                    "top": false,
+                    "reply_count": 84,
+                    "visit_count": 21997,
+                    "create_at": "2014-10-07T12:00:36.270Z",
+                    "author": {
+                        "loginname": "alsotang",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1147375?v=3&s=120"
+                    },
+                    "replies": [{
+                        "id": "5433d866e737cbe96dcef313",
+                        "author": {
+                            "loginname": "leapon",
+                            "avatar_url": "https://avatars.githubusercontent.com/u/4295945?v=3&s=120"
+                        },
+                        "content": "<div class=\"markdown-text\"><p>我喜欢你的写作风格</p>\n</div>",
+                        "ups": ["5404a4120256839f712590f3", "50f3b267df9e9fcc58452224"],
+                        "create_at": "2014-10-07T12:11:18.981Z",
+                        "reply_id": null
+                    },  {
+                        "id": "5528eaa7831bc33a414106e2",
+                        "author": {
+                            "loginname": "jacksun90",
+                            "avatar_url": "https://avatars.githubusercontent.com/u/8536173?v=3&s=120"
+                        },
+                        "content": "<div class=\"markdown-text\"><p>还不错，先收录了\n自豪地采用 <a href=\"https://github.com/lanceli/cnodejs-ionic\">CNodeJS ionic</a></p>\n</div>",
+                        "ups": [],
+                        "create_at": "2015-04-11T09:34:31.464Z",
+                        "reply_id": null
+                    }],
+                    "is_collect": false
+                }
+            }
+
+# Group 主题收藏
+取消，加入收藏，以及用户收藏
+
+## 收藏主题 [POST /topic_collect/collect{?accesstoken,topic_id}]
+收藏主题
+
++ Parameters
+
+    + accesstoken: `xxxxx` (string) -  用户的 accessToken
+    + topic_id: `5433d5e4e737cbe96dcef312` (string) - 主题的id
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true
+            }
+
+## 取消主题 [POST /topic_collect/de_collect{?accesstoken,topic_id}]
+收藏主题
+
++ Parameters
+
+    + accesstoken: `xxxxx` (string) -  用户的 accessToken
+    + topic_id: `5433d5e4e737cbe96dcef312` (string) - 主题的id
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true
+            }
+
+## 用户所收藏的主题 [GET /topic_collect/{loginname}]
+
++ Parameters
+
+    + loginname: `alsotang` (string) -  用户名
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true,
+                "data": [{
+                    "id": "56e8c95dcf7763a6045c4ae4",
+                    "author_id": "54009f5ccd66f2eb37190485",
+                    "tab": "share",
+                    "content": "rd)",
+                    "title": "展望Nodejs 2016和新年祝福",
+                    "last_reply_at": "2016-06-01T11:23:12.278Z",
+                    "good": false,
+                    "top": true,
+                    "reply_count": 42,
+                    "visit_count": 26447,
+                    "create_at": "2016-02-07T09:19:17.268Z",
+                    "author": {
+                        "loginname": "i5ting",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/3118295?v=3&s=120"
+                    }
+                }, {
+                    "id": "56e79399b5b04c8f6d4ec35e",
+                    "author_id": "56d5b9687fc3af3a77db46f9",
+                    "tab": "share",
+                    "content": "强烈建议增加收藏功能",
+                    "title": "强烈建议增加收藏功能",
+                    "last_reply_at": "2016-03-16T07:12:48.272Z",
+                    "good": false,
+                    "top": false,
+                    "reply_count": 25,
+                    "visit_count": 611,
+                    "create_at": "2016-03-15T04:46:17.096Z",
+                    "author": {
+                        "loginname": "zhangyou1010",
+                        "avatar_url": "https://avatars.githubusercontent.com/u/1215483?v=3&s=120"
+                    }
+                }]
+            }
+
+# Group 评论
+新增评论，为评论点赞
+
+## 新建评论 [GET /topic/{topic_id}/replies{?accesstoken,content,reply_id}]
+根据主题id进行评论
+
++ Parameters
+
+    + topic_id: `xxxx` (string) - 主题ID
+    + accesstoken (string,optional) -  用户的 accessToken
+    + content (string,optional) - 评论的主体
+    + reply_id (string,optional) - 如果这个评论是对另一个评论的回复，请务必带上此字段。这样前端就可以构建出评论线索图。
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+              success: true,
+              reply_id: '5433d5e4e737cbe96dcef312'
+            }
+
+## 为评论点赞 [POST /reply/{reply_id}/ups{?accesstoken}]
+
++ Parameters
+
+    + accesstoken (string,optional) -  用户的 accessToken
+
++ Response 200 (application/json)
+
+    + Body
+
+            {
+                "success": true,
+                "action": "down"
+            }
